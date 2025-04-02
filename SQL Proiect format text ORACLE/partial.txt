@@ -1,0 +1,344 @@
+1)
+
+CREATE TABLE Proprietar(
+id_proprietar NUMBER(6) primary key,  <- tipul de date este ales NUMBER deoarece datele au format numeric, adica sunt numere. Ele sunt numere din Z, adica intregi, neavand voie sa fie numere cu virgula. Pentru a avea o mai buna usurinta de lucru cu datele.
+
+
+
+nume VARCHAR2(30) NOT NULL, <- tipul de date este ales VARCHAR2 deoarece datele sunt caractere, adica mai specific datele sunt litere, avand o lungime de 30 de caractere. In mod general nu exista nume cu o lungime mai mare de 30 de caractre
+
+
+prenume VARCHAR2(30) NOT NULL, <- tipul de date este ales VARCHAR2 deoarece datele sunt caractere, adica mai specific datele sunt litere, avand o lungime de 30 de caractere.  In mod general nu exista prenume cu o lungime mai mare de 30 de caractre
+
+
+email VARCHAR2(30) UNIQUE <- tipul de date este ales VARCHAR2 deoarece datele sunt caractere, adica mai specific datele sunt litere, avand o lungime de 30 de caractere.  In mod general nu exista email cu o lungime mai mare de 30 de caractre
+)
+
+2)
+
+Ralul principal al PRIMARY KEY este de a oferi unicitate datelor, adica coloana unde este pusa aceasta constrangere nu are voie sa aiba duplicate ale valorilor prezente in baza de date, dar totodata nici valoarea NULL nu este voie sa fie inserata sau regasita printre valorile din tabela.
+
+PRIMARY KEY poate sa fie singular sau compus. Cel compus specifica faptul ca la nivel de tupla se pune o constrangere care inglobeaza mai multe coloane din tabela, astfel unicitatea datelor este data de:  introducerea acelui set de date, care are cel putin o valoare a unui rand din cele selectate ca fiind primary key ca fiind diferita in comparatie cu celelalte date din tabel care ii corespund acelei coloane. Mai concret, daca una din cele X elemente selectate are o valoare diferita fata de cele regasite in tabel, iar celelalte au valori identice, acel nou rand/ informatie se v-a insera in tabela noastra. In caz contrar daca setul de date corespunzator constrangeri PRIMARY KEY compuse se regaseste cu exactitate in tabel, v-a produce eroare si nu se v-a putea insera acea valoare in tabel.
+
+
+
+INSTRUCTIUNI CARE VERIFICA PRIMARY KEY: 
+
+Instructiunea PRIMARY KEY este verificata in momentul creeri tabelei, deoarece nu este voie sa se scrie in urmatorul mod
+
+CREATE TABLE Proprietar(
+id_proprietar NUMBER(6) primary key,
+id_proprietar VARCHAR2(30) primary key,
+prenume VARCHAR2(30) NOT NULL,
+email VARCHAR2(30) UNIQUE
+)
+V-a rezulta o eroare, constrangerea PRIMARY KEY se pune la nivel de tupla nu de atribut.
+Constrangerea PRIMARY KEY este verificata la INSERTde noi valori, deoarece valorile inserate trebuie sa fie unice, adica sa nu se regaseasca deja in tabela noastra si totodata sa nu fie valori NULL
+
+INSERT INTO Proprietar
+VALUES (null, 'Balcescu', 'Grigore', 'balcescu77@gmail.com');
+(ERROR) VALOARE NULL INSERATA
+
+INSERT INTO Proprietar
+VALUES (77, 'Balcescu', 'Grigore', 'balcescu77@gmail.com');
+INSERT INTO Proprietar
+VALUES (77, 'Balcescu', 'Grigore', 'balcescu77@gmail.com');
+(ERROR) VALOARE REGASITA DEJA IN TABEL
+
+Constrangerea PRIMARY KEY este verificata in momentul in care facem UPDATE, respectanduse aceleasi reguli ca la insert.
+
+INSERT INTO Proprietar
+VALUES (77, 'Balcescu', 'Grigore', 'balcescu77@gmail.com');
+UPDATE Proprietar
+SET id_proprietar = 77
+WHERE  id_proprietar = 78
+(ERROR) VALOARE REGASITA DEJA IN TABEL => NU SE POATE FACE UPDATE
+
+
+Constrangerea PRIMARY KEY este verificata in momentul in care facem ALTER TABLE, de exemplu in momentul in care noi vrem unei coloane sa ii facem enable la constrangerea PRIMARY KEY, in acele momente datele sunt verificate si analizate.
+Constrangerea PRIMARY KEY este verificata in momentul in care intr-o tabela copil avem FOREIGN KEY la tabela curenta, iar datele trebuie sa fie consecvente acesteia.
+
+
+3)
+
+Rolul constrangeri FOREIGN KEY este de a face legatura intre 2 tabele. Aceasta legatura se face intre aceasta cheie straina, care este legata de o cheie primara dintr-un alt tabel. O proprietate a aceste constrangeri este faptul ca de aceasta data se pot introduce si valori null. Totodata valorile care sunt introduse in aceasta coloana trebuie sa corespunda cu valorile care le avem in tabela parinte, unde am facut referie cu legatura.
+
+Instructiunea FOREIGN KEY este verificatea la creerea tabelelor(CREATE TABLE), adica se verifica daca datele introduse sunt in conformitate cu tabela parinte
+
+CREATE TABLE CHITANȚĂ(
+nr NUMBER(6) PRIMARY KEY,
+data DATE DEFAULT SYSDATE,
+id_ap NUMBER(6) NOT NULL,
+valoare NUMBER(5, 2) NOT NULL,
+
+CONSTRAINTS id_ap_ap FOREIGN KEY(id_ap) REFERENCES Apartament (id_ap)
+)
+Instructiunea FOREIGN KEY este pusa la nivel de tupla, facanduse referire la tabela si coloana cu care aceasta se leaga.
+
+
+Instructiunea FOREIGN KEY este verificatea la INSERT, deoarece datele introduse trebuie sa fie identice cu datele din tabelul parinte
+Instructiunea FOREIGN KEY este verificatea la UPDATE, respectandu-se aceleasi principi ca cele spuse anterior
+Instructiunea FOREIGN KEY este verificatea in momentul in care vrem sa facem DELETE deoarece trebuie sa se verifice anumite constrangeri puse ''mai sus pe ramura'', cum ar fi faptul ca dupa stergere nu este voie ca intr-o coloana a unui tabel sa existe valori de NULL, sau daca mai sunt facute si alte conexiuni trebuie scrisa instructiunea CASCADE
+
+
+4)
+
+Scopul definiri constrangerilor la nivel de tupla sau atribut este de a defini anumite reguli care le impunem acelei coloane pentru a putea pastra in timp integritatea datelor. 
+
+Instructiunea CHECK este verificata in momentul in care noi facem INSERT, deoarece datele trebuie sa corespunda parametrilori impusi de constrangerea noastra pentru a putea fi inserate.
+Instructiunea CHECK este verificata in momentul in care noi facem UPDATE, deoarece datele trebuie sa se incadreze in parametri pusi de CHECK
+Instructiunea CHECK este verificata in momentul in care noi facem ALTER TABLE, in momentul in care noi vrem sa modificam tabelul, iar anumite date din anumite coloane nu corespund valorilor pe care noi vrem sa le facem cu CHECK atunci => o discrepanta a valorilor, dar totodata poate aparea si in moemntul in care deja avem o constrangere pusa pe date, iar noi vrem sa mai adaugam una care sa nege acea constrangere. 
+
+
+
+ALTER TABLE CHITANȚĂ
+ADD CONSTRAINT verificare_data CHECK (data > TO_DATE('31-12-2023', 'DD-MM-YYYY'));
+
+
+INSERT INTO CHITANȚĂ(NR, DATA, ID_AP, VALOARE)
+VALUES (14, TO_DATE('01-OCT-2021','DD-MONTH-YYYY'), 4, 150)
+Aceasta instructiune nu se v-a efectua deoarece nu corespunde parametrilor impusi de constrangerea CHECK, care ne zice ca datele inserate sa fie corespondente anului 2024, nu mai vechi decat atata
+
+
+
+5)
+
+ORDER BY dupa 2 sau mai multe criterii functioneaza in felul urmator: prima data datele sunt ordonate dupa primul criteriu. dupa aceasta ordonare datele care sunt identice v-or fi ordonate dupa al 2 -lea criteriu, mai apoi datele care sunt identice atat dupa efectuarea criteriului1 cat si dupa criteriului2, se efectueaza o ordonare dupa al 3 -lea criteriu.
+
+6)
+Intr-o baza relationala de date datele sunt tinute in mai multe tabele deoarece fiecare tabela in parte are un anumit rol specific in acea baza de date. Datele sunt tinute in tabele diferite deoarece permite o mai buna relationare cu datele si usureaza munca cu acestea. Permite o mai usoara manevrabilitate a datelor, o mai buna portabilitate a lor, cat si o siguranta mai buna, deoarece in caz de corupere, sunt ''furate'' doar anumite date, nu toate, celelalte fiind asigurate in alt mod. Fiecare tabel avand un continut specific, se poate face legatura dorita intre tabele pentru a putea accesa datele dorite.
+
+
+SELECT nr_ap, nume, prenume, valoare
+FROM APARTAMENT NATURAL JOIN CONSUM NATURAL JOIN PROPRIETAR
+WHERE adresa = 'Cluj-Napoca strada Observatorului, nr. 9' and luna = 1 and AN = 2024
+
+NATURAL JOIN este o instrucțiune care combina randurile din doua tabele pe baza coloanelor comune intre ele, adica coloanele care au acelasi nume din cele N tabele concatenate
+Nu necesita specificarea explicita a unei conditii ON deoarece avand acelasi nume sistemul le poate identifica si a face legaturile intre ele. In schimb, se vor utiliza coloanele cu acelasi nume si acelasi tip de data pentru a realiza potrivirea.
+
+
+
+7)
+SELECT c1.id_ap as id_ap1, c2.id_ap as id_ap2
+FROM CONSUM c1 JOIN CONSUM c2 ON
+c1.an = c2.an
+and c1.luna = c2.luna
+and c1.id_ap < c2.id_ap
+
+La exercitiul 4.b am asigurat faptul ca am o unica pereche in rezultat prin impunerea unor conditi in instructiunea ON. Adica cele 2 tabele v-or avea valori afisate doar daca datele respecta conditiile puse. Acestea fiind anul din cele 2 tabele sa fie identic, luna la fel, iar aceasta constrangere c1.id_ap < c2.id_ap admite faptul ca nu vor exista valori duplicate la afisare, deoarece ele sunt luate o singura data.
+
+exemplu:
+
+for(int i = 0; i <= n; i++){
+for(int j = i + 1; j <= n; j++){
+       ...
+}
+}
+
+
+JOIN-ul folosit la aceasta problema se numeste SELF-JOIN
+
+
+
+8)
+
+Interogarile imbricate functioneaza in urmatorul mod: interogarea din exterior(outerquery), depinde de datele rezultate din cea de a doua interogare, cea din interior(innerquery). Astfel cele 2 interogari sunt imbricate, adica una in interiorul cealeilalte. 
+
+Tipuri de interogari imbricate:
+-necorelate, nu depind una de cealalta, adica in innerquery nu avem o conditie care sa depinda de outerquery
+-corelate,  in care innerquery depinde de o datele returnate outerquery
+-interogari care sunt formate cu ajutorul operatorilor IN, ALL, ANY, EXISTS
+
+9)
+EXISTS:
+Acest operator parcurge sirul rezultat de o interogare, verifica fiecare rezultat in parte iar daca exista o valoare identica cu cea cautata v-a rezulta true, iar mai apoi se v-or afisa datele dorite. Datele sunt parcurse cu un 'for' si verificate
+
+IN:
+Acest operator parcurge sirul rezultat de o interogare, verifica fiecare rezultat in parte iar daca exista o valoare identica cu cea cautata v-a rezulta true, iar mai apoi se v-or afisa datele dorite. Datele sunt parcurse cu un 'for' si verificate. In acest caz valoarea dorita trebuie sa se regaseasca cel putin odata printre rezultate-le returnate
+
+ALL:
+Acest operator parcurge sirul rezultat de o interogare, verifica fiecare rezultat in parte si daca acesta nu corespunde cu cerinta data, v-a returna false iar programul v-a inceta din a rula. Toate datele rezultate din acea interogare trebuie sa fie valide. Datele sunt parcurse cu un 'for' si verificate
+
+ANY:
+Acest operator parcurge sirul rezultat de o interogare, si verifica fiecare data in parte. Daca este gasita o valoare, oricare ar fi aceasta care indeplineste conditia dorita, se v-a returna true iar datele dorite v-or fi procesate mai departe. Datele sunt parcurse cu un 'for' si verificate
+
+10)
+
+Functii de agregare: COUNT, SUM, AVG, MIN, MAX, STDDEV
+
+O functie de agregare este o constrangere impusa datelor astfel incat se v-a returna valoarea ceruta prin functia de agregare apelata.
+O functie de agregare returneaza o singura valoare, care este reprezentativa pentru setul de date dat. Aceaste functii au un rol specific, care pot indeplini cerintele utilizatorului. 
+
+COUNT <- numara cate linii sunt in tabela
+SUM <- face suma valorilor date intre paranteze, de pe fiecare linie
+AVG <- face media valorilor date
+MIN <- returneaza valoarea minima
+MAX <- returneaza valoarea maxima
+STDDEV <- deviatia standard
+Si abaterea medie a valorilor sunt functii de agregare
+
+11)
+SELECT ROUND(LUNA / 4, 0) + 1 as "trimestru", id_ap, MIN(VALOARE), MAX(VALOARE), ROUND(AVG(VALOARE), 2)
+FROM CONSUM
+GROUP BY ROUND(LUNA / 4, 0), id_ap
+
+In prima parte pentru a afisa trimestrul in care datele sunt prezent, am impartit luna la 4 si am adaugat 1 pentru a incepe numaratoarea trimestrelor de la 1. Am aflat valoarea minima, cu ajutorul functiei de agregare MIN.  Am aflat valoarea maxima, cu ajutorul functiei de agregare MAX. Si cu ajutorul functiei AVG am afisat valoarea medie a valorii. Am folosit round pentru a rotunji valoarea la 2 zecimale.
+
+Toti acesti parametri iam grupat dupa fiecare trimestru in parte si dupa id_ap. Clauza GROUP BY grupează rândurile care au valori comune  intr-una sau mai multe coloane si permite aplicarea functiilor agregate (SUM, COUNT, AVG, etc.) pe fiecare grup.
+
+12)
+
+INSERT INTO CONSUM
+VALUES (4, 2024, 9, 3, 23, 150, 6.23)
+
+INSERT INTO CHITANȚĂ(NR, DATA, ID_AP, VALOARE)
+VALUES (14, TO_DATE('01-OCT-2024','DD-MONTH-YYYY'), 4, 150)
+
+Rularea codului pe rand, si verificarea faptului ca nu rezulta o eroare. 
+
+Mai apoi pentru a vedea daca datele au fost inserate putem face urmatoarele lucruri:
+1) Ne uitam in baza de date, ne uitam concret in tabel si cautat valorile respectiva
+2) Scriem instructiunea
+SELECT *
+FROM CONSUM
+
+si instructiunea 
+SELECT *
+FROM CHITANȚĂ
+
+etc...
+
+Si verificam daca datele au fost introduse in tabela. putem impune mai multe conditii cu ajutorul lui WHERE, pentru a fi mai specifici si pentru a ne usura munca de cautare
+
+
+
+13)
+CREATE TABLE Excepții (
+nr NUMBER(6),
+data DATE,
+
+id_ap NUMBER(6) NOT NULL,
+valoare NUMBER(5, 2) NOT NULL,
+natura_exceptiei VARCHAR2(30),
+diferenta_valorilor NUMBER(12, 2),
+
+CONSTRAINT nr_data_pk PRIMARY KEY (nr, data, id_ap)
+);
+
+ Initial am creat tabela Excepții, pentru a putea rezolva cerinta. 
+
+
+
+CREATE OR REPLACE PROCEDURE insert_exceptie IS ///am scris procedura CREATE OR REPLACE PROCEDURE cu aceasta instructiunea in caz ca deja este inserata in baza de date, aceasta sa fie reinlocuita cu aceasta procedura
+
+CURSOR c_ins IS ///declararea cursorului pe tabelele dorite
+SELECT ch.NR, ch.DATA, ch.ID_AP, ch.VALOARE, co.AN AS an_consum, co.LUNA AS luna_consum, co.VALOARE AS valoare_consum
+FROM CHITANȚĂ ch
+JOIN CONSUM co ON ch.ID_AP = co.ID_AP;
+
+///declararea variabilelor aferente fiecarei valori din selectul de mai sus
+
+v_NR CHITANȚĂ.NR%TYPE;
+v_DATA CHITANȚĂ.DATA%TYPE;
+v_ID_AP CHITANȚĂ.ID_AP%TYPE;
+v_VALOARE CHITANȚĂ.VALOARE%TYPE;
+v_AN_CONSUM CONSUM.AN%TYPE;
+v_LUNA_CONSUM CONSUM.LUNA%TYPE;
+v_VALOARE_CONSUM CONSUM.VALOARE%TYPE;
+
+BEGIN
+OPEN c_ins; ////am deschis cursorul pentru a-l putea folosi in parcurgerea datelor
+
+///merg cu un loop pe fiecare rand din tabela selectata de cursor si imi pun datele in variabilele declarate mai sus
+LOOP
+FETCH c_ins INTO v_NR, v_DATA, v_ID_AP, v_VALOARE, v_AN_CONSUM, v_LUNA_CONSUM, v_VALOARE_CONSUM;
+EXIT WHEN c_ins%NOTFOUND; ///ies in moementul in care nu mai gasesc date
+
+IF EXTRACT(YEAR FROM v_DATA) > v_AN_CONSUM OR ///imi verific conditiile impuse de problema
+
+(EXTRACT(YEAR FROM v_DATA) = v_AN_CONSUM AND EXTRACT(MONTH FROM v_DATA) > v_LUNA_CONSUM) THEN
+
+// Vedem dacă există o înregistrare pentru aceleleași valori (nr, data, id_ap)
+DECLARE
+v_count NUMBER;
+BEGIN
+SELECT COUNT(*) INTO v_count
+FROM Excepții
+WHERE nr = v_NR AND data = v_DATA AND id_ap = v_ID_AP;
+
+IF v_count = 0 THEN
+//Dacă nu există, atunci o sa facem inserarea
+
+///inserarea se face pentru fiecare mod in parte, dupa cerinta data.
+IF v_VALOARE > v_VALOARE_CONSUM THEN
+INSERT INTO Excepții (NR, DATA, ID_AP, VALOARE, NATURA_EXCEPTIEI, DIFERENTA_VALORILOR)
+VALUES (v_NR, v_DATA, v_ID_AP, v_VALOARE, 'Restant', ROUND(v_VALOARE - v_VALOARE_CONSUM, 2));
+ELSIF v_VALOARE < v_VALOARE_CONSUM THEN
+INSERT INTO Excepții (NR, DATA, ID_AP, VALOARE, NATURA_EXCEPTIEI, DIFERENTA_VALORILOR)
+VALUES (v_NR, v_DATA, v_ID_AP, v_VALOARE, 'Avans', ROUND(v_VALOARE_CONSUM - v_VALOARE, 2));
+END IF;
+END IF;
+END;
+END IF;
+END LOOP;
+
+CLOSE c_ins; ///inchidem cursorul
+COMMIT; ///aplicam instructiunile de mai sus in baza de date
+
+END;
+
+
+
+///pentru a exeuta procedura de mai sus rulam codul de mai jos, acesta nu are parametru deoarece functia nu are parametri de intrare si se foloseste direct de tabelele din baza de date.
+
+///COD PL/SQL 
+BEGIN
+insert_exceptie;
+END;
+
+Am verificat sa fie indeplinite cerintele prin: 
+a) sa nu dee eroare codul la rulare
+b) datele sunt introdu-se in tabela Excepții, prin apelarea urmatoarei instructiuni
+SELECT *
+FROM Excepții
+
+
+c) Analizam datele care sunt introduse in tabela exceptii si rezultam o conculzie, daca nu sunt bune atunci regandim problema
+
+
+14)
+Cele 2 triggere au fost testate prin introducerea unor valori sau prin modificarea acestora.
+9.a)
+
+BEGIN
+DELETE FROM CHITANȚĂ
+WHERE data = TO_DATE('13-OCT-2024', 'DD-MONTH-YYYY');
+
+END;
+
+Iar daca codul functioneaza v-oi primi o eroare. deoarece nu este voie sa se stearga chitantele care au valori in luniile viitoare.
+
+9.b)
+
+Dupa apelarea VIEW-ului din cerinta, si apelul trigger-ului construit de mine, pentru a putea testa daca fnctioneaza am inserat valori prin acesta: adica am apelat urmatorul cod:
+
+
+INSERT INTO Consum_Ap_Turda (id_proprietar, nume, email, id_ap, adresa, nr_ap, suprafata, an, luna, nr_pers, cantitate, valoare, pret_apa)
+VALUES (41, 'Popescu', 'popescu@email.com', 102, 'Turda, Strada Mihai Viteazu', 12, 80, 2024, 10, 3, 15, 200.50, 13.37);
+
+Iar triggerul cum se apeleaza automat dupa fiecare, in functie de modul in care este creat acesta creeaza constrangeri pentru date, adica verifica daca datele sunt bune sau nu pentru a fi introduse in tabela in acest caz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

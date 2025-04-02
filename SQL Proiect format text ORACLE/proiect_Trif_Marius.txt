@@ -1,0 +1,391 @@
+06.01)
+
+a)
+CREATE TABLE Proprietar(
+    id_proprietar NUMBER(6) primary key,
+    nume VARCHAR2(30) NOT NULL, 
+    prenume VARCHAR2(30) NOT NULL,
+    email VARCHAR2(30) UNIQUE
+)
+
+PRIMARY KEY:
+-creere tabel, sa nu existe duplicate, coloane valide
+-alter table- repecta conditiile impuse, 
+-insert
+-update
+-referințe externe FK valoarea cheii primare trebuie să fie consistentă cu datele din tabelele copil.
+
+b)
+CREATE TABLE Apartament(
+    id_ap NUMBER(6) primary key,
+    adresa VARCHAR2(40) NOT NULL, 
+    nr_ap NUMBER(3),
+    suprafata NUMBER(3),
+    id_proprietar NUMBER(6),
+
+    CONSTRAINTS propr_id_proprietar_fk FOREIGN KEY (id_proprietar) REFERENCES Proprietar(id_proprietar)
+)
+
+c)
+CREATE TABLE Consum (
+    id_ap NUMBER(6),
+    an NUMBER(4) NOT NULL, 
+    luna NUMBER(2) NOT NULL CHECK (luna BETWEEN 1 AND 12), 
+    nr_pers NUMBER(3),
+    cantitate NUMBER(5,2), 
+    valoare NUMBER(6,2),
+    pret_apa NUMBER(5,2),
+
+    CONSTRAINT consum_pk PRIMARY KEY (id_ap, an, luna),
+    CONSTRAINT consum_fk_ap FOREIGN KEY (id_ap) REFERENCES Apartament(id_ap)
+);
+
+d)
+CREATE TABLE CHITANȚĂ(
+    nr NUMBER(6)  PRIMARY KEY,
+    data DATE DEFAULT SYSDATE,
+    id_ap NUMBER(6) NOT NULL,
+    valoare NUMBER(5, 2) NOT NULL,
+
+    CONSTRAINTS id_ap_ap FOREIGN KEY(id_ap) REFERENCES Apartament (id_ap)
+)
+
+FK:
+-create table: vede daca respecta regulile din tabela parinte
+-inserare: valori identice cu cele din tabela parinte
+-actualizare
+-delete: CASCADE
+
+
+e) Tick
+
+f)
+ALTER TABLE PROPRIETAR
+MODIFY NUME VARCHAR(100)
+
+
+
+
+Constrângerile sunt reguli impuse pe coloane pentru a asigura integritatea datelor. Tipuri comune:
+
+PRIMARY KEY: Garantează unicitatea(nu pot fi introdu-se mai multe elemente care au cheie asemanatoare
+cu o cheie din baza noastra de date) și non-null pentru o coloană.
+
+Exista primary key-uri compuse
+
+FOREIGN KEY: Constrânge o coloană să se refere la o cheie primară din alt tabel, astfel creind o conexiune/legatura intre cele 2 tabele, poate fi NULL. Legatura tabele, restrictii valori, coincide cu valorile din parinte, corectitudinea datelor(dupa stergere etc)
+CHECK: Validează datele introduse pe baza unei condiții impuse de catre cel care a scris codul
+UNIQUE: Garantează unicitatea valorilor (dar permite valori nule).
+NOT NULL: Interzice valorile nule.
+
+
+
+06.02)
+
+a)
+ALTER TABLE CHITANȚĂ
+ADD CONSTRAINT verificare_data CHECK (data > TO_DATE('31-12-2023', 'DD-MM-YYYY'));
+
+Modifica structura tabelului adaugand o constrangere noua
+
+b)
+ALTER TABLE Apartament
+ADD CONSTRAINT verificare_nr_apartament CHECK (MOD(nr_ap, 2) <> 0 or MOD(nr_ap, 2) = 0 and suprafata >= 70 and suprafata <= 80);
+
+
+06.03)
+
+a)
+SELECT *
+FROM PROPRIETAR 
+WHERE NUME LIKE '%p%' OR NUME LIKE '%e%' 
+ORDER BY NUME ASC, PRENUME DESC
+
+b)
+SELECT *
+FROM CHITANȚĂ
+WHERE TO_CHAR(data, 'YYYY') = '2024'
+ORDER BY valoare;
+
+06.04)
+
+a)
+SELECT nr_ap, nume, prenume, valoare
+FROM APARTAMENT NATURAL JOIN CONSUM NATURAL JOIN PROPRIETAR 
+WHERE adresa = 'Cluj-Napoca strada Observatorului, nr. 9' and luna = 1 and AN = 2024
+
+NATURAL JOIN este o instrucțiune SQL care combină rândurile din două tabele pe baza coloanelor comune între ele
+Nu necesită specificarea explicită a unei condiții ON. În schimb, SQL va utiliza coloanele cu același nume și tip de date pentru a realiza potrivirea.
+
+
+JOIN este utilizat pentru a combina date din două sau mai multe tabele pe baza unei relații între coloane. Relația este de obicei specificată printr-o condiție încluse în clauza ON.
+INNER JOIN (Join intern) Aduce numai rândurile care au potriviri în ambele tabele.
+LEFT JOIN (Join extern stânga)
+RIGHT JOIN (Join extern dreapta)
+FULL OUTER JOIN (Join extern complet)
+CROSS JOIN (Produs cartezian)
+SELF JOIN (Joinează o tabelă cu ea însăși)
+
+b)
+SELECT c1.id_ap as id_ap1, c2.id_ap as id_ap2
+FROM CONSUM c1 JOIN CONSUM c2 ON
+c1.an = c2.an
+and c1.luna = c2.luna
+and c1.id_ap < c2.id_ap
+
+Self Join
+
+06.05)
+a)
+SELECT *
+FROM CONSUM c1
+WHERE c1.LUNA = 1 and c1.AN = 2024 and
+VALOARE >= ALL (SELECT VALOARE
+            FROM CONSUM c2
+            WHERE c2.LUNA = 1 and c2.AN = 2024 
+            )
+
+
+Interogare imbricata => Select in select(subinterogările)
+
+necorelate - nu depinde una de alta
+corelate - depind una de alta
+cu IN
+
+
+b)
+SELECT p1.nume, p1.prenume
+FROM APARTAMENT ap JOIN CONSUM cs ON (ap.ID_AP = cs.ID_AP) JOIN PROPRIETAR p1 ON (p1.ID_PROPRIETAR = ap.ID_PROPRIETAR)
+WHERE cs.LUNA = 3 and cs.AN = 2024 and
+cs.VALOARE IN (SELECT cs1.VALOARE 
+               FROM CONSUM cs1
+               WHERE cs1.ID_AP = 1 and cs1.LUNA = 3 and cs1.AN = 2024
+            )
+and ap.id_ap <> 1
+
+06.06)
+
+a)
+SELECT ROUND(LUNA / 4, 0) + 1 as "trimestru", id_ap, MIN(VALOARE), MAX(VALOARE), ROUND(AVG(VALOARE), 2)
+FROM CONSUM
+GROUP BY ROUND(LUNA / 4, 0), id_ap
+--ORDER BY ROUND(LUNA / 4, 0)
+
+Clauza GROUP BY grupează rândurile care au valori comune într-una sau mai multe coloane și permite aplicarea funcțiilor agregate (SUM, COUNT, AVG, etc.) pe fiecare grup.
+
+b)
+SELECT pr.nume--, pr.prenume, ap.id_ap, SUM(ch.valoare) AS suma_chitante, SUM(co.valoare) AS suma_consum, SUM(ch.valoare) - SUM(co.valoare) AS diferenta
+FROM PROPRIETAR pr JOIN APARTAMENT ap ON (pr.ID_PROPRIETAR = ap.ID_PROPRIETAR) JOIN CHITANȚĂ ch ON (ap.ID_AP = ch.ID_AP)
+ JOIN CONSUM co ON (ap.ID_AP = co.ID_AP)
+WHERE ch.DATA <= TO_DATE('01-OCT-2024', 'DD-MONTH-YYYY')  AND ap.ADRESA = 'Turda, strada Baladei, nr. 3'  AND (co.AN < 2024 OR (co.AN = 2024 AND co.LUNA < 10))
+GROUP BY pr.nume, pr.prenume, ap.id_ap
+HAVING (SUM(ch.valoare) - SUM(co.valoare)) < 0;
+
+Functii de agregare: COUNT, SUM, AVG, MIN, MAX, STDDEV
+
+06.07)
+
+a)
+INSERT INTO CONSUM
+VALUES (4, 2024, 9, 3, 23, 150, 6.23)
+
+INSERT INTO CHITANȚĂ(NR, DATA, ID_AP, VALOARE)
+VALUES (14, TO_DATE('01-OCT-2024','DD-MONTH-YYYY'), 4, 150)
+
+b)
+DELETE FROM APARTAMENT 
+WHERE ID_AP IN (
+    SELECT ID_AP
+    FROM CONSUM
+    WHERE VALOARE = 0
+)
+
+Pt a verifica functia
+
+INSERT INTO APARTAMENT (ID_AP, ADRESA, NR_AP, SUPRAFATA, ID_PROPRIETAR)
+VALUES (31, 'Cluj-Napoca, Strada Observatorului nr. 5', 2, 70, 2);
+
+INSERT INTO APARTAMENT (ID_AP, ADRESA, NR_AP, SUPRAFATA, ID_PROPRIETAR)
+VALUES (33, 'Turda, strada Baladei nr. 3', 3, 60, 3);
+
+c)
+UPDATE CONSUM
+SET NR_PERS = 0, VALOARE = 35
+WHERE ID_AP = 1 AND (LUNA = 1 OR LUNA = 2) AND AN = 2024
+
+
+06.08)
+
+CREATE TABLE Excepții (
+    nr NUMBER(6),
+    data DATE,
+    id_ap NUMBER(6) NOT NULL,
+    valoare NUMBER(5, 2) NOT NULL,
+    natura_exceptiei VARCHAR2(30),
+    diferenta_valorilor NUMBER(12, 2),
+
+    CONSTRAINT nr_data_pk PRIMARY KEY (nr, data, id_ap)
+);
+
+
+
+CREATE OR REPLACE PROCEDURE insert_exceptie IS
+
+    CURSOR c_ins IS
+        SELECT ch.NR, ch.DATA, ch.ID_AP, ch.VALOARE, co.AN AS an_consum, co.LUNA AS luna_consum, co.VALOARE AS valoare_consum
+        FROM CHITANȚĂ ch
+        JOIN CONSUM co ON ch.ID_AP = co.ID_AP;
+
+    v_NR CHITANȚĂ.NR%TYPE;
+    v_DATA CHITANȚĂ.DATA%TYPE;
+    v_ID_AP CHITANȚĂ.ID_AP%TYPE;
+    v_VALOARE CHITANȚĂ.VALOARE%TYPE;
+    v_AN_CONSUM CONSUM.AN%TYPE;
+    v_LUNA_CONSUM CONSUM.LUNA%TYPE;
+    v_VALOARE_CONSUM CONSUM.VALOARE%TYPE;
+
+BEGIN
+    OPEN c_ins;
+    
+    LOOP
+        FETCH c_ins INTO v_NR, v_DATA, v_ID_AP, v_VALOARE, v_AN_CONSUM, v_LUNA_CONSUM, v_VALOARE_CONSUM;
+        EXIT WHEN c_ins%NOTFOUND;  
+
+        IF EXTRACT(YEAR FROM v_DATA) > v_AN_CONSUM OR 
+           (EXTRACT(YEAR FROM v_DATA) = v_AN_CONSUM AND EXTRACT(MONTH FROM v_DATA) > v_LUNA_CONSUM) THEN
+            
+            -- Vedem dacă există o înregistrare pentru aceleleași valori (nr, data, id_ap)
+            DECLARE
+                v_count NUMBER;
+            BEGIN
+                SELECT COUNT(*) INTO v_count
+                FROM Excepții
+                WHERE nr = v_NR AND data = v_DATA AND id_ap = v_ID_AP;
+
+                IF v_count = 0 THEN
+                    -- Dacă nu există, procedăm la inserare
+                    IF v_VALOARE > v_VALOARE_CONSUM THEN
+                        INSERT INTO Excepții (NR, DATA, ID_AP, VALOARE, NATURA_EXCEPTIEI, DIFERENTA_VALORILOR)
+                        VALUES (v_NR, v_DATA, v_ID_AP, v_VALOARE, 'Restant', ROUND(v_VALOARE - v_VALOARE_CONSUM, 2));
+                    ELSIF v_VALOARE < v_VALOARE_CONSUM THEN
+                        INSERT INTO Excepții (NR, DATA, ID_AP, VALOARE, NATURA_EXCEPTIEI, DIFERENTA_VALORILOR)
+                        VALUES (v_NR, v_DATA, v_ID_AP, v_VALOARE, 'Avans', ROUND(v_VALOARE_CONSUM - v_VALOARE, 2));
+                    END IF;
+                END IF;
+            END;
+        END IF;
+    END LOOP;
+    
+    CLOSE c_ins;
+    COMMIT;
+    
+END;
+
+
+BEGIN
+    insert_exceptie;
+END;
+
+
+06.09)
+
+a)
+
+CREATE OR REPLACE TRIGGER modificare_detalii_chitanta
+BEFORE UPDATE OR DELETE ON CHITANȚĂ
+
+FOR EACH ROW
+DECLARE 
+
+v_Exista_consum NUMBER(10,2);
+
+BEGIN
+
+SELECT COUNT(*) INTO v_Exista_consum
+FROM CONSUM co
+WHERE co.ID_AP = :OLD.ID_AP AND TO_DATE(co.AN || '-' || co.LUNA || '-01', 'YYYY-MM-DD') > :OLD.DATA;
+
+IF v_Exista_consum > 0 THEN 
+    RAISE_APPLICATION_ERROR(-20072, 'Nu se poate modifica sau șterge această chitanță deoarece există consum ulterior.');
+END IF;
+END;
+
+b)
+CREATE VIEW Consum_Ap_Turda AS  
+SELECT id_proprietar, nume, email, id_ap, adresa, nr_ap, suprafata, an, luna, 
+nr_pers, cantitate, valoare, pret_apa  
+FROM Proprietar NATURAL JOIN Apartament NATURAL JOIN  Consum 
+WHERE adresa LIKE 'Turda%'; 
+
+
+
+CREATE OR REPLACE TRIGGER insert_view_trg
+INSTEAD OF INSERT ON Consum_Ap_Turda
+FOR EACH ROW
+
+BEGIN
+    BEGIN
+        INSERT INTO Proprietar(ID_PROPRIETAR, NUME, EMAIL)
+        VALUES(:NEW.ID_PROPRIETAR, :NEW.NUME, :NEW.EMAIL);
+    EXCEPTION
+        WHEN DUP_VAL_ON_INDEX THEN
+            NULL;
+    END;
+
+    BEGIN
+        INSERT INTO Apartament(ID_AP, ADRESA, NR_AP, SUPRAFATA, ID_PROPRIETAR)
+        VALUES(:NEW.ID_AP, :NEW.ADRESA, :NEW.NR_AP, :NEW.SUPRAFATA, :NEW.ID_PROPRIETAR);
+    EXCEPTION
+        WHEN DUP_VAL_ON_INDEX THEN
+            NULL;
+    END;
+
+    BEGIN
+        INSERT INTO Consum(ID_AP, AN, LUNA, NR_PERS, CANTITATE, VALOARE, PRET_APA)
+        VALUES(:NEW.ID_AP, :NEW.AN, :NEW.LUNA, :NEW.NR_PERS, :NEW.CANTITATE, :NEW.VALOARE, :NEW.PRET_APA);
+    EXCEPTION
+        WHEN DUP_VAL_ON_INDEX THEN
+            NULL;
+    END;
+
+END;
+/
+
+
+INSERT INTO Consum_Ap_Turda (id_proprietar, nume, email, id_ap, adresa, nr_ap, suprafata, an, luna, nr_pers, cantitate, valoare, pret_apa)
+VALUES (41, 'Popescu', 'popescu@email.com', 102, 'Turda, Strada Mihai Viteazu', 12, 80, 2024, 10, 3, 15, 200.50, 13.37);
+
+
+INSERT INTO Consum_Ap_Turda (id_proprietar, nume, email, id_ap, adresa, nr_ap, suprafata, an, luna, nr_pers, cantitate, valoare, pret_apa)
+VALUES (41, 'Popescu', 'popescu@email.com', 101, 'Turda, Strada Mihai Viteazu', 12, 80, 2024, 10, 3, 15, 200.50, 13.37);
+
+
+Un trigger este o procedură care se execută automat la un anumit eveniment (inserare, actualizare, ștergere) asupra unui tabel sau vizualizare.
+
+Tipuri de trigger:
+BEFORE Trigger: Se execută înainte de operațiune.
+AFTER Trigger: Se execută după operațiune.
+INSTEAD OF Trigger: Pentru operațiuni pe vizualizări (nu pe tabele directe).
+
+
+
+SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE, TABLE_NAME, STATUS
+FROM USER_CONSTRAINTS
+WHERE TABLE_NAME = 'PROPRIETAR';
+
+ALTER TABLE PROPRIETAR
+DISABLE CONSTRAINTS SYS_C0014258964
+
+
+Cum funcționează erorile în Oracle
+Când RAISE_APPLICATION_ERROR este declanșat:
+
+Oprește execuția: Procesul curent este întrerupt imediat.
+Generează o eroare SQL: Este returnat un cod de eroare personalizat în cadrul aplicației care interacționează cu baza de date.
+Mesaj afișat utilizatorului: Mesajul definit în eroare este transmis utilizatorului sau sistemului apelant.
+
+Oracle permite gestionarea erorilor prin blocuri EXCEPTION. Acestea pot fi utilizate pentru a captura și trata erorile declanșate, inclusiv cele cu RAISE_APPLICATION_ERROR.
+
+
+
+

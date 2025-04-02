@@ -1,0 +1,21 @@
+ID_AP,ADRESA,NR_AP,SUPRAFATA,ID_PROPRIETAR
+11,"Turda, strada Baladei, nr. 3",2,80,11
+32,"Turda, strada Baladei nr. 3",3,60,3
+30,"Cluj-Napoca, Strada Republicii nr. 10",1,50,1
+5,"Constanta, Str. Mircea, Nr. 12",10,70,5
+11,Cluj-Napoca strada Observatorului nr. 9,101,75,11
+9,"Cluj-Napoca strada Observatorului, nr. 9",16,72,9
+4,"Iasi, Str. Independentei, Nr. 24",8,78,4
+14,"Turda, strada Baladei, nr. 3",2,80,11
+6,"Oradea, Str. Republicii, Nr. 20",12,76,8
+31,"Cluj-Napoca, Strada Observatorului nr. 5",2,70,2
+33,"Turda, strada Baladei nr. 3",3,60,3
+10,"Turda, strada Baladei, nr. 3",1,75,10
+3,"Timisoara, Str. Libertatii, Nr. 18",6,72,3
+8,"Cluj-Napoca strada Observatorului, nr. 9",18,75,8
+7,"Sibiu, Str. Victoriei, Nr. 3",14,79,7
+2,"Cluj-Napoca, Str. Universitatii, Nr. 5",4,80,2
+1,"Bucuresti, Str. Aviatorilor, Nr. 10",2,75,1
+12,Cluj-Napoca strada Observatorului nr. 10,102,80,12
+13,Cluj-Napoca strada Observatorului nr. 11,103,70,13
+101,"Turda, Strada Mihai Viteazu",12,80,41
