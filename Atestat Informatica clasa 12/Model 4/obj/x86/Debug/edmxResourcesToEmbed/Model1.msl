@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Gestiunea_unui_restaurantEntities2">
+    <EntitySetMapping Name="COMPOZITIE">
+      <EntityTypeMapping TypeName="Model.COMPOZITIE">
+        <MappingFragment StoreEntitySet="COMPOZITIE">
+          <ScalarProperty Name="idC" ColumnName="idC" />
+          <ScalarProperty Name="Denumire_aliment" ColumnName="Denumire_aliment" />
+          <ScalarProperty Name="Cantitate_aliment" ColumnName="Cantitate_aliment" />
+          <ScalarProperty Name="idP" ColumnName="idP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FURNIZORI">
+      <EntityTypeMapping TypeName="Model.FURNIZORI">
+        <MappingFragment StoreEntitySet="FURNIZORI">
+          <ScalarProperty Name="idF" ColumnName="idF" />
+          <ScalarProperty Name="Denumire" ColumnName="Denumire" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENIURI">
+      <EntityTypeMapping TypeName="Model.MENIURI">
+        <MappingFragment StoreEntitySet="MENIURI">
+          <ScalarProperty Name="idM" ColumnName="idM" />
+          <ScalarProperty Name="Denumire_Principala" ColumnName="Denumire_Principala" />
+          <ScalarProperty Name="idR" ColumnName="idR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PREPARATE">
+      <EntityTypeMapping TypeName="Model.PREPARATE">
+        <MappingFragment StoreEntitySet="PREPARATE">
+          <ScalarProperty Name="idP" ColumnName="idP" />
+          <ScalarProperty Name="Denumire" ColumnName="Denumire" />
+          <ScalarProperty Name="Cantitate" ColumnName="Cantitate" />
+          <ScalarProperty Name="Alergeni" ColumnName="Alergeni" />
+          <ScalarProperty Name="Pret" ColumnName="Pret" />
+          <ScalarProperty Name="idM" ColumnName="idM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESTAURANTE">
+      <EntityTypeMapping TypeName="Model.RESTAURANTE">
+        <MappingFragment StoreEntitySet="RESTAURANTE">
+          <ScalarProperty Name="idR" ColumnName="idR" />
+          <ScalarProperty Name="Denumire" ColumnName="Denumire" />
+          <ScalarProperty Name="Locatie" ColumnName="Locatie" />
+          <ScalarProperty Name="Numar_locuri_disp" ColumnName="Numar_locuri_disp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STOCURI">
+      <EntityTypeMapping TypeName="Model.STOCURI">
+        <MappingFragment StoreEntitySet="STOCURI">
+          <ScalarProperty Name="idS" ColumnName="idS" />
+          <ScalarProperty Name="Denumire_produs" ColumnName="Denumire_produs" />
+          <ScalarProperty Name="Cantitate" ColumnName="Cantitate" />
+          <ScalarProperty Name="Data_achizitiei" ColumnName="Data_achizitiei" />
+          <ScalarProperty Name="Data_expirari" ColumnName="Data_expirari" />
+          <ScalarProperty Name="Pret_kg" ColumnName="Pret_kg" />
+          <ScalarProperty Name="idR" ColumnName="idR" />
+          <ScalarProperty Name="idF" ColumnName="idF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Gestiunea_unui_restaurantEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="COMPOZITIE" EntityType="Model.COMPOZITIE" />
+    <EntitySet Name="FURNIZORI" EntityType="Model.FURNIZORI" />
+    <EntitySet Name="MENIURI" EntityType="Model.MENIURI" />
+    <EntitySet Name="PREPARATE" EntityType="Model.PREPARATE" />
+    <EntitySet Name="RESTAURANTE" EntityType="Model.RESTAURANTE" />
+    <EntitySet Name="STOCURI" EntityType="Model.STOCURI" />
+    <AssociationSet Name="RESTAURANTESTOCURI" Association="Model.RESTAURANTESTOCURI">
+      <End Role="RESTAURANTE" EntitySet="RESTAURANTE" />
+      <End Role="STOCURI" EntitySet="STOCURI" />
+    </AssociationSet>
+    <AssociationSet Name="STOCURIFURNIZORI" Association="Model.STOCURIFURNIZORI">
+      <End Role="STOCURI" EntitySet="STOCURI" />
+      <End Role="FURNIZORI" EntitySet="FURNIZORI" />
+    </AssociationSet>
+    <AssociationSet Name="RESTAURANTEMENIURI" Association="Model.RESTAURANTEMENIURI">
+      <End Role="RESTAURANTE" EntitySet="RESTAURANTE" />
+      <End Role="MENIURI" EntitySet="MENIURI" />
+    </AssociationSet>
+    <AssociationSet Name="MENIURIPREPARATE" Association="Model.MENIURIPREPARATE">
+      <End Role="MENIURI" EntitySet="MENIURI" />
+      <End Role="PREPARATE" EntitySet="PREPARATE" />
+    </AssociationSet>
+    <AssociationSet Name="PREPARATECOMPOZITIE" Association="Model.PREPARATECOMPOZITIE">
+      <End Role="PREPARATE" EntitySet="PREPARATE" />
+      <End Role="COMPOZITIE" EntitySet="COMPOZITIE" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="COMPOZITIE">
+    <Key>
+      <PropertyRef Name="idC" />
+    </Key>
+    <Property Name="idC" Type="Int32" Nullable="false" />
+    <Property Name="Denumire_aliment" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="Cantitate_aliment" Type="Single" Nullable="false" />
+    <Property Name="idP" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PREPARATE" Relationship="Model.PREPARATECOMPOZITIE" FromRole="COMPOZITIE" ToRole="PREPARATE" />
+    <Property Type="Int32" Name="PREPARATE_idP" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FURNIZORI">
+    <Key>
+      <PropertyRef Name="idF" />
+    </Key>
+    <Property Name="idF" Type="Int32" Nullable="false" />
+    <Property Name="Denumire" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="Telefon" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="STOCURI" Relationship="Model.STOCURIFURNIZORI" FromRole="FURNIZORI" ToRole="STOCURI" />
+    <Property Type="Int32" Name="STOCURI_idS" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MENIURI">
+    <Key>
+      <PropertyRef Name="idM" />
+    </Key>
+    <Property Name="idM" Type="Int32" Nullable="false" />
+    <Property Name="Denumire_Principala" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="idR" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RESTAURANTE" Relationship="Model.RESTAURANTEMENIURI" FromRole="MENIURI" ToRole="RESTAURANTE" />
+    <Property Type="Int32" Name="RESTAURANTE_idR" Nullable="false" />
+    <NavigationProperty Name="PREPARATE" Relationship="Model.MENIURIPREPARATE" FromRole="MENIURI" ToRole="PREPARATE" />
+  </EntityType>
+  <EntityType Name="PREPARATE">
+    <Key>
+      <PropertyRef Name="idP" />
+    </Key>
+    <Property Name="idP" Type="Int32" Nullable="false" />
+    <Property Name="Denumire" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="true" />
+    <Property Name="Cantitate" Type="Single" Nullable="false" />
+    <Property Name="Alergeni" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="Pret" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="idM" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MENIURI" Relationship="Model.MENIURIPREPARATE" FromRole="PREPARATE" ToRole="MENIURI" />
+    <Property Type="Int32" Name="MENIURI_idM" Nullable="false" />
+    <NavigationProperty Name="COMPOZITIE" Relationship="Model.PREPARATECOMPOZITIE" FromRole="PREPARATE" ToRole="COMPOZITIE" />
+  </EntityType>
+  <EntityType Name="RESTAURANTE">
+    <Key>
+      <PropertyRef Name="idR" />
+    </Key>
+    <Property Name="idR" Type="Int32" Nullable="false" />
+    <Property Name="Denumire" Type="String" Nullable="false" MaxLength="55" Unicode="true" FixedLength="true" />
+    <Property Name="Locatie" Type="String" Nullable="false" MaxLength="43" Unicode="true" FixedLength="true" />
+    <Property Name="Numar_locuri_disp" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="STOCURI" Relationship="Model.RESTAURANTESTOCURI" FromRole="RESTAURANTE" ToRole="STOCURI" />
+    <NavigationProperty Name="MENIURI" Relationship="Model.RESTAURANTEMENIURI" FromRole="RESTAURANTE" ToRole="MENIURI" />
+  </EntityType>
+  <EntityType Name="STOCURI">
+    <Key>
+      <PropertyRef Name="idS" />
+    </Key>
+    <Property Name="idS" Type="Int32" Nullable="false" />
+    <Property Name="Denumire_produs" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="Cantitate" Type="Int32" Nullable="false" />
+    <Property Name="Data_achizitiei" Type="DateTime" Nullable="false" />
+    <Property Name="Data_expirari" Type="DateTime" Nullable="false" />
+    <Property Name="Pret_kg" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="idR" Type="Int32" Nullable="false" />
+    <Property Name="idF" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RESTAURANTE" Relationship="Model.RESTAURANTESTOCURI" FromRole="STOCURI" ToRole="RESTAURANTE" />
+    <Property Type="Int32" Name="RESTAURANTE_idR" Nullable="false" />
+    <NavigationProperty Name="FURNIZORI" Relationship="Model.STOCURIFURNIZORI" FromRole="STOCURI" ToRole="FURNIZORI" />
+  </EntityType>
+  <Association Name="RESTAURANTESTOCURI">
+    <End Type="Model.RESTAURANTE" Role="RESTAURANTE" Multiplicity="1" />
+    <End Type="Model.STOCURI" Role="STOCURI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESTAURANTE">
+        <PropertyRef Name="idR" />
+      </Principal>
+      <Dependent Role="STOCURI">
+        <PropertyRef Name="RESTAURANTE_idR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="STOCURIFURNIZORI">
+    <End Type="Model.STOCURI" Role="STOCURI" Multiplicity="1" />
+    <End Type="Model.FURNIZORI" Role="FURNIZORI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STOCURI">
+        <PropertyRef Name="idS" />
+      </Principal>
+      <Dependent Role="FURNIZORI">
+        <PropertyRef Name="STOCURI_idS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RESTAURANTEMENIURI">
+    <End Type="Model.RESTAURANTE" Role="RESTAURANTE" Multiplicity="1" />
+    <End Type="Model.MENIURI" Role="MENIURI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RESTAURANTE">
+        <PropertyRef Name="idR" />
+      </Principal>
+      <Dependent Role="MENIURI">
+        <PropertyRef Name="RESTAURANTE_idR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MENIURIPREPARATE">
+    <End Type="Model.MENIURI" Role="MENIURI" Multiplicity="1" />
+    <End Type="Model.PREPARATE" Role="PREPARATE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MENIURI">
+        <PropertyRef Name="idM" />
+      </Principal>
+      <Dependent Role="PREPARATE">
+        <PropertyRef Name="MENIURI_idM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PREPARATECOMPOZITIE">
+    <End Type="Model.PREPARATE" Role="PREPARATE" Multiplicity="1" />
+    <End Type="Model.COMPOZITIE" Role="COMPOZITIE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PREPARATE">
+        <PropertyRef Name="idP" />
+      </Principal>
+      <Dependent Role="COMPOZITIE">
+        <PropertyRef Name="PREPARATE_idP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

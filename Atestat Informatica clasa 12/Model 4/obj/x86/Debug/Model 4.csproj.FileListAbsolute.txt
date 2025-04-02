@@ -1,0 +1,36 @@
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\bin\Debug\Model 4.exe.config
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\bin\Debug\Gestiunea unui restaurant.mdf
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\bin\Debug\Gestiunea unui restaurant_log.ldf
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\bin\Debug\Model 4.exe
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\bin\Debug\Model 4.pdb
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model_4.Form1.resources
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model_4.Properties.Resources.resources
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model 4.csproj.GenerateResource.Cache
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model 4.exe
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model 4.pdb
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model_4.Form2.resources
+C:\Users\Marius\Desktop\folder pt foldere\scoala clasa a 12\INFORMATICA\Atestat\Model 4\Model 4\obj\x86\Debug\Model 4.csprojResolveAssemblyReference.cache
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\bin\Debug\Model 4.exe.config
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model 4.exe
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model 4.pdb
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\bin\Debug\Gestiunea unui restaurant.mdf
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\bin\Debug\Gestiunea unui restaurant_log.ldf
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\bin\Debug\Model 4.exe
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\bin\Debug\Model 4.pdb
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model 4.csprojResolveAssemblyReference.cache
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model_4.Form1.resources
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model_4.Form2.resources
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model_4.Properties.Resources.resources
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4\Model 4\obj\x86\Debug\Model 4.csproj.GenerateResource.Cache
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\bin\Debug\Model 4.exe.config
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model 4.exe
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model 4.pdb
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\bin\Debug\Gestiunea unui restaurant.mdf
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\bin\Debug\Gestiunea unui restaurant_log.ldf
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\bin\Debug\Model 4.exe
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\bin\Debug\Model 4.pdb
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model 4.csprojResolveAssemblyReference.cache
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model_4.Form1.resources
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model_4.Form2.resources
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model_4.Properties.Resources.resources
+C:\Users\Marius\OneDrive\Desktop\Folder pt foldere\Clasa 12\Info atestat\Model 4 final\Model 4\obj\x86\Debug\Model 4.csproj.GenerateResource.Cache

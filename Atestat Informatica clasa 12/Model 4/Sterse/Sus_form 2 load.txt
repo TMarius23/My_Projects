@@ -1,0 +1,15 @@
+ // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.STOCURI' table. You can move, or remove it, as needed.
+            this.sTOCURITableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.STOCURI);
+            // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.STOCURI' table. You can move, or remove it, as needed.
+            this.sTOCURITableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.STOCURI);
+            // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.RESTAURANTE' table. You can move, or remove it, as needed.
+            this.rESTAURANTETableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.RESTAURANTE);
+            // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.PREPARATE' table. You can move, or remove it, as needed.
+            this.pREPARATETableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.PREPARATE);
+            // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.MENIURI' table. You can move, or remove it, as needed.
+            this.mENIURITableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.MENIURI);
+            // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.FURNIZORI' table. You can move, or remove it, as needed.
+            this.fURNIZORITableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.FURNIZORI);
+            // TODO: This line of code loads data into the 'gestiunea_unui_restaurantDataSet.COMPOZITIE' table. You can move, or remove it, as needed.
+            this.cOMPOZITIETableAdapter.Fill(this.gestiunea_unui_restaurantDataSet.COMPOZITIE);
+
