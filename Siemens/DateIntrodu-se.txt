@@ -1,0 +1,22 @@
+INSERT INTO ITEM (ID, NAME, DESCRIPTION, STATUS, EMAIL)
+VALUES
+    (1, 'Ion', 'Inginer software', 'lucrator', 'ionvasile@yahoo.com'),
+    (2, 'Maria', 'Manager proiect', 'manager', 'maria.popescu@gmail.com'),
+    (3, 'George', 'Tester QA', 'lucrator', 'george.ion@gmail.com'),
+    (4, 'Elena', 'Dezvoltator Frontend', 'lucrator', 'elena.stan@outlook.com'),
+    (5, 'Andrei', 'DevOps Engineer', 'administrator', 'andrei.mihai@company.com'),
+    (6, 'Diana', 'Analist business', 'lucrator', 'diana.gheorghe@enterprise.com'),
+    (7, 'Mihai', 'Director IT', 'administrator', 'mihai.radu@techcorp.com'),
+    (8, 'Gabriela', 'Project Manager', 'manager', 'gabriela.ion@company.com'),
+    (9, 'Vlad', 'Designer UX/UI', 'lucrator', 'vlad.popa@designstudio.com'),
+    (10, 'Iulia', 'Frontend Developer', 'lucrator', 'iulia.munteanu@startup.com'),
+    (11, 'Cristi', 'Backend Developer', 'lucrator', 'cristi.neagu@software.com'),
+    (12, 'Ana', 'Product Manager', 'manager', 'ana.vasile@product.com'),
+    (13, 'Alex', 'Cloud Architect', 'administrator', 'alex.serban@cloudtech.com'),
+    (14, 'Simona', 'HR Specialist', 'lucrator', 'simona.constantin@hr.com'),
+    (15, 'Cosmin', 'Full Stack Developer', 'lucrator', 'cosmin.marin@company.com'),
+    (16, 'Marius', 'Cybersecurity Expert', 'administrator', 'marius.stanciu@security.com'),
+    (17, 'Ioana', 'Data Scientist', 'lucrator', 'ioana.petre@datascience.com'),
+    (18, 'Radu', 'Database Administrator', 'administrator', 'radu.tudor@database.com'),
+    (19, 'Larisa', 'Marketing Specialist', 'manager', 'larisa.sandu@marketing.com'),
+    (20, 'Sorin', 'Software Architect', 'administrator', 'sorin.balan@architecture.com');
