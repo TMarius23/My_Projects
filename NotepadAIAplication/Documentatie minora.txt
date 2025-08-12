@@ -1,0 +1,4 @@
+Este o aplicatie care primeste un text ca input si pe baza inteligentei artificiale face un rezumat la el. Poti primi
+totodata sfaturi despre cum ti-ai putea imbunatati textul sau moduri pe care sa te axezi in rezumatul dat. Este o 
+lucrare bazata in prim plan pe integrarea inteligentei artificiale in lucurul de zi cu zi incepand de la cele mai usoare lucuri.
+Spre viitor putand evolua spre ceva mai complex
