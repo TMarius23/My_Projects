@@ -1,0 +1,4 @@
+Creati o aplicatie care comunica cu un site web parsand-ui urmatoarele elemente. Titlul, link-urile
+si totodata imaginile. Acestea trebuie sa poata fi vizualizate independent una de cealalata,
+putand fi redirectionati in cazul link-urilor si a imaginilor printr-un simplu click la pagina respectiva.
+Totodata ele putand fi salvate intr-un format PDF la o locatie aleasa de utilizator

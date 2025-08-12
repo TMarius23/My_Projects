@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.webcrawler.ControlerView">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="4.0" prefHeight="397.0" prefWidth="510.0">
+         <children>
+            <Label layoutX="69.0" layoutY="45.0" prefHeight="59.0" prefWidth="415.0" text="Salvarea elementelor in format PDF" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="butonSave" layoutX="185.0" layoutY="253.0" mnemonicParsing="false" onAction="#saveToPDFFormat" prefHeight="46.0" prefWidth="118.0" text="Save" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textFieldPath" layoutX="49.0" layoutY="146.0" onAction="#resetLinkText" prefHeight="46.0" prefWidth="415.0" promptText="Inserati un path valid pentru locul de salvare">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textFieldPath2" layoutX="-7.0" layoutY="351.0" onAction="#resetLinkText" opacity="0.0" prefHeight="46.0" prefWidth="415.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="butonBack" layoutY="13.0" mnemonicParsing="false" onAction="#switchToScene2" opacity="0.0" prefHeight="23.0" prefWidth="46.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+            <Line fx:id="backButton" endX="-71.0" layoutX="105.0" layoutY="26.0" startX="-93.0" />
+            <Line endX="-91.0" endY="-30.0" layoutX="112.0" layoutY="63.0" startX="-100.5" startY="-36.5" />
+            <Line endX="-113.20709228515625" endY="-6.2071075439453125" layoutX="124.0" layoutY="32.0" startX="-102.0" startY="-14.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
