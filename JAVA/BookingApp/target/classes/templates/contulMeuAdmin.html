@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contul Meu – Magic Style Events</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #1abc9c, #16a085);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .nav-menu {
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .account-info p,
+        .settings input {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .settings input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .settings button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #1abc9c;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .summary-box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            max-width: 100%;
+        }
+
+        .footer {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="header">Magic Style Events</div>
+
+<div class="nav-menu">
+    <a href="indexAdmin">Acasă</a>
+    <a href="contactAdmin">Contact</a>
+    <a href="about">Despre noi</a>
+</div>
+
+<div class="container">
+    <div class="section account-info">
+        <h2>Detalii cont</h2>
+        <p><strong>Nume:</strong> Andrei Popescu</p>
+        <p><strong>Email:</strong> andrei.popescu@email.com</p>
+        <p><strong>Rol:</strong> Organizator</p>
+    </div>
+
+    <div class="section settings">
+        <h2>Setări cont</h2>
+        <label for="password">Schimbă parola:</label>
+        <input type="password" id="password" placeholder="Parolă nouă" />
+        <button onclick="alert('Parola a fost actualizată!')">Salvează</button>
+    </div>
+
+    <div class="section stats">
+        <h2>Statistici</h2>
+        <div class="summary-box">Număr total de săli postate: <strong id="hallCount">0</strong></div>
+        <canvas id="occupancyChart" height="300"></canvas>
+    </div>
+</div>
+
+<div class="footer">&copy; 2025 Magic Style Events</div>
+
+<script>
+    // Simulare: săli postate de utilizator
+    const halls = [
+        { id: 1, ownerId: 3, name: "Sala Verde", ocupare: { Luni: 2, Marti: 1, Joi: 1 } },
+        { id: 2, ownerId: 3, name: "Crystal Palace", ocupare: { Luni: 0, Miercuri: 3, Vineri: 2 } },
+        { id: 3, ownerId: 3, name: "Luxury Hall", ocupare: { Joi: 2, Sambata: 4, Duminica: 1 } }
+    ];
+
+    const currentUserId = 3;
+    const userHalls = halls.filter(h => h.ownerId === currentUserId);
+
+    // Actualizează numărul de săli
+    document.getElementById("hallCount").textContent = userHalls.length;
+
+    // Calculare grad ocupare pe zile
+    const zile = ["Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata", "Duminica"];
+    const ocupareZilnica = zile.map(zi =>
+        userHalls.reduce((total, h) => total + (h.ocupare[zi] || 0), 0)
+    );
+
+    // Desenare grafic
+    const ctx = document.getElementById('occupancyChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: zile,
+            datasets: [{
+                label: 'Număr evenimente',
+                data: ocupareZilnica,
+                backgroundColor: '#3498db'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: false },
+                title: { display: true, text: 'Grad de ocupare pe zilele săptămânii' }
+            },
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
