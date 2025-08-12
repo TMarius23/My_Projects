@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Style Events</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #1abc9c, #16a085);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 36px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .nav-menu {
+            background-color: #3498db;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+            color: #ecf0f1;
+        }
+
+        .command-bar {
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .command-bar select,
+        .command-bar input,
+        .command-bar button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .command-bar button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .command-bar button:hover {
+            background-color: #159c88;
+        }
+
+        .content {
+            padding: 40px 20px;
+            background: url('https://images.unsplash.com/photo-1525163133706-b1c1d739140e?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
+            position: relative;
+            min-height: 80vh;
+        }
+
+        .content::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .hall-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hall-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .hall-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .hall-card h3 {
+            margin: 15px 15px 5px;
+            font-size: 20px;
+        }
+
+        .hall-card p {
+            margin: 0 15px 15px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        #pagination {
+            margin-top: 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #pagination button {
+            padding: 6px 12px;
+            margin: 0 4px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        #pagination button.active {
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .command-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .command-bar select,
+            .command-bar input,
+            .command-bar button {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .header {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Magic Style Events</div>
+
+<div class="nav-menu">
+    <a href="indexAdmin">Acasă</a>
+    <a href="about">Despre noi</a>
+    <a href="contactAdmin">Contact</a>
+    <a href="adaugareSala">Adaugă Sală</a>
+    <a href="contulMeuAdmin">Contul meu</a>
+</div>
+
+<div class="command-bar">
+    <select id="eventType">
+        <option value="">Tip eveniment</option>
+        <option value="Nuntă">Nuntă</option>
+        <option value="Botez">Botez</option>
+        <option value="Majorat">Majorat</option>
+    </select>
+    <input type="date" id="eventDate">
+    <input type="number" id="eventBudget" placeholder="Buget (RON)" min="0">
+    <button onclick="applyFilters()">Filtrează</button>
+</div>
+
+<div class="content">
+    <div class="hall-grid" id="hallContainer"></div>
+    <div id="pagination"></div>
+</div>
+
+<div class="modal" id="addModal">
+    <div class="modal-content">
+        <h2>Adaugă sală</h2>
+        <input type="text" id="newName" placeholder="Nume sală">
+        <select id="newType">
+            <option value="">Tip eveniment</option>
+            <option value="Nuntă">Nuntă</option>
+            <option value="Botez">Botez</option>
+            <option value="Majorat">Majorat</option>
+        </select>
+        <input type="number" id="newPrice" placeholder="Preț RON">
+        <input type="text" id="newImage" placeholder="URL imagine">
+        <button onclick="addHall()">Adaugă</button>
+        <button class="close" onclick="closeAddModal()">Anulează</button>
+    </div>
+</div>
+
+<footer>
+    © 2025 Magic Style Events · Toate drepturile rezervate
+</footer>
+
+<script>
+
+    const currentUserId = 3;
+    let halls = [];
+
+    for (let i = 1; i <= 10; i++) {
+        halls.push({
+            id: i,
+            ownerId: (i % 5) + 1,
+            name: "Sala " + i,
+            type: i % 2 === 0 ? "Nuntă" : "Majorat",
+            price: 3000 + i * 300,
+            image: "https://via.placeholder.com/300x180",
+            description: "Descriere scurtă..."
+        });
+    }
+
+    let filteredHalls = [...halls];
+
+    function displayHalls() {
+        const container = document.getElementById("hallContainer");
+        container.innerHTML = "";
+
+        if (filteredHalls.length === 0) {
+            container.innerHTML = "<p>Nu s-au găsit săli.</p>";
+            return;
+        }
+
+        filteredHalls.forEach(hall => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+        <img src="${hall.image}">
+        <h3>${hall.name}</h3>
+        <p>${hall.type} - ${hall.price} RON</p>
+        <p>${hall.description}</p>
+        ${hall.ownerId === currentUserId ? `<button onclick="deleteHall(${hall.id})">Șterge</button>` : ""}
+      `;
+            container.appendChild(card);
+        });
+    }
+
+    function applyFilters() {
+        const name = document.getElementById("searchName").value.toLowerCase();
+        const type = document.getElementById("filterType").value;
+        const budget = parseInt(document.getElementById("maxBudget").value);
+
+        filteredHalls = halls.filter(h => {
+            const matchName = name ? h.name.toLowerCase().includes(name) : true;
+            const matchType = type ? h.type === type : true;
+            const matchBudget = budget ? h.price <= budget : true;
+            return matchName && matchType && matchBudget;
+        });
+
+        displayHalls();
+    }
+
+    function deleteHall(id) {
+        const index = halls.findIndex(h => h.id === id && h.ownerId === currentUserId);
+        if (index !== -1) {
+            halls.splice(index, 1);
+            applyFilters();
+        } else {
+            alert("Nu poți șterge această sală.");
+        }
+    }
+
+    function openAddModal() {
+        document.getElementById("addModal").style.display = "flex";
+    }
+
+    function closeAddModal() {
+        document.getElementById("addModal").style.display = "none";
+        document.getElementById("newName").value = "";
+        document.getElementById("newType").value = "";
+        document.getElementById("newPrice").value = "";
+        document.getElementById("newImage").value = "";
+    }
+
+    function addHall() {
+        const name = document.getElementById("newName").value.trim();
+        const type = document.getElementById("newType").value;
+        const price = parseInt(document.getElementById("newPrice").value);
+        const image = document.getElementById("newImage").value || "https://via.placeholder.com/300x180";
+
+        if (!name || !type || isNaN(price)) {
+            alert("Completează toate câmpurile!");
+            return;
+        }
+
+        const newHall = {
+            id: halls.length + 1,
+            ownerId: currentUserId,
+            name,
+            type,
+            price,
+            image,
+            description: "Sală adăugată de utilizator"
+        };
+
+        halls.push(newHall);
+        closeAddModal();
+        applyFilters();
+    }
+
+    document.getElementById("searchName").addEventListener("input", applyFilters);
+
+    document.addEventListener("DOMContentLoaded", function () {
+        displayHalls();
+        const calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
+            initialView: 'dayGridMonth',
+            locale: 'ro',
+            height: 400,
+            events: [
+                { title: "Eveniment 1", start: "2025-07-15" },
+                { title: "Eveniment 2", start: "2025-07-20" }
+            ],
+            dateClick: function(info) {
+                const title = prompt("Titlu eveniment:");
+                if (title) {
+                    calendar.addEvent({ title, start: info.dateStr });
+                }
+            }
+        });
+        calendar.render();
+    });
+</script>
+
+</body>
+</html>
