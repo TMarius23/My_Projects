@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="COMPOZITIE" EntityType="Model.Store.COMPOZITIE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FURNIZORI" EntityType="Model.Store.FURNIZORI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MENIURI" EntityType="Model.Store.MENIURI" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PREPARATE" EntityType="Model.Store.PREPARATE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RESTAURANTE" EntityType="Model.Store.RESTAURANTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="STOCURI" EntityType="Model.Store.STOCURI" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="COMPOZITIE">
+    <Key>
+      <PropertyRef Name="idC" />
+    </Key>
+    <Property Name="idC" Type="int" Nullable="false" />
+    <Property Name="Denumire_aliment" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Cantitate_aliment" Type="real" Nullable="false" />
+    <Property Name="idP" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FURNIZORI">
+    <Key>
+      <PropertyRef Name="idF" />
+    </Key>
+    <Property Name="idF" Type="int" Nullable="false" />
+    <Property Name="Denumire" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telefon" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Email" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MENIURI">
+    <Key>
+      <PropertyRef Name="idM" />
+    </Key>
+    <Property Name="idM" Type="int" Nullable="false" />
+    <Property Name="Denumire_Principala" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="idR" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PREPARATE">
+    <Key>
+      <PropertyRef Name="idP" />
+    </Key>
+    <Property Name="idP" Type="int" Nullable="false" />
+    <Property Name="Denumire" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="Cantitate" Type="real" Nullable="false" />
+    <Property Name="Alergeni" Type="nchar" MaxLength="20" />
+    <Property Name="Pret" Type="money" Nullable="false" />
+    <Property Name="idM" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RESTAURANTE">
+    <Key>
+      <PropertyRef Name="idR" />
+    </Key>
+    <Property Name="idR" Type="int" Nullable="false" />
+    <Property Name="Denumire" Type="nchar" Nullable="false" MaxLength="55" />
+    <Property Name="Locatie" Type="nchar" Nullable="false" MaxLength="43" />
+    <Property Name="Numar_locuri_disp" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STOCURI">
+    <Key>
+      <PropertyRef Name="idS" />
+    </Key>
+    <Property Name="idS" Type="int" Nullable="false" />
+    <Property Name="Denumire_produs" Type="nchar" Nullable="false" MaxLength="20" />
+    <Property Name="Cantitate" Type="int" Nullable="false" />
+    <Property Name="Data_achizitiei" Type="date" Nullable="false" />
+    <Property Name="Data_expirari" Type="date" Nullable="false" />
+    <Property Name="Pret_kg" Type="money" Nullable="false" />
+    <Property Name="idR" Type="int" Nullable="false" />
+    <Property Name="idF" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>
