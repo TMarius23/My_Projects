@@ -1,0 +1,151 @@
+Time: 0
+Waiting clients: 
+(4, 2, 3) (1, 5, 3) (5, 5, 2) (9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 1
+Waiting clients: 
+(4, 2, 3) (1, 5, 3) (5, 5, 2) (9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 2
+Waiting clients: 
+(1, 5, 3) (5, 5, 2) (9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (4, 2, 3) 
+Server 1: closed
+
+
+Time: 3
+Waiting clients: 
+(1, 5, 3) (5, 5, 2) (9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (4, 2, 2) 
+Server 1: closed
+
+
+Time: 4
+Waiting clients: 
+(1, 5, 3) (5, 5, 2) (9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (4, 2, 1) 
+Server 1: closed
+
+
+Time: 5
+Waiting clients: 
+(9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (5, 5, 2) 
+Server 1: (1, 5, 3) 
+
+
+Time: 6
+Waiting clients: 
+(9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (5, 5, 1) 
+Server 1: (1, 5, 2) 
+
+
+Time: 7
+Waiting clients: 
+(9, 8, 3) (3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: closed
+Server 1: (1, 5, 1) 
+
+
+Time: 8
+Waiting clients: 
+(3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (9, 8, 3) 
+Server 1: closed
+
+
+Time: 9
+Waiting clients: 
+(3, 10, 4) (6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (9, 8, 2) 
+Server 1: closed
+
+
+Time: 10
+Waiting clients: 
+(6, 11, 4) (2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (9, 8, 1) 
+Server 1: (3, 10, 4) 
+
+
+Time: 11
+Waiting clients: 
+(2, 12, 3) (7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (6, 11, 4) 
+Server 1: (3, 10, 3) 
+
+
+Time: 12
+Waiting clients: 
+(7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (6, 11, 3) (2, 12, 3) 
+Server 1: (3, 10, 2) 
+
+
+Time: 13
+Waiting clients: 
+(7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (6, 11, 2) (2, 12, 3) 
+Server 1: (3, 10, 1) 
+
+
+Time: 14
+Waiting clients: 
+(7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (6, 11, 1) (2, 12, 3) 
+Server 1: closed
+
+
+Time: 15
+Waiting clients: 
+(7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (2, 12, 3) 
+Server 1: closed
+
+
+Time: 16
+Waiting clients: 
+(7, 17, 2) (8, 17, 4) (10, 17, 4) 
+Server 0: (2, 12, 2) 
+Server 1: closed
+
+
+Time: 17
+Waiting clients: 
+
+Server 0: (2, 12, 1) (8, 17, 4) 
+Server 1: (7, 17, 2) (10, 17, 4) 
+
+
+Time: 18
+Waiting clients: 
+
+Server 0: (8, 17, 4) 
+Server 1: (7, 17, 1) (10, 17, 4) 
+
+
+Time: 19
+Waiting clients: 
+
+Server 0: (8, 17, 3) 
+Server 1: (10, 17, 4) 
+
+
+Time: 20
+Waiting clients: 
+
+Server 0: (8, 17, 2) 
+Server 1: (10, 17, 3) 
+
+
+Ora de varf: 17
+Timp mediu de servire: 3.2
+Timp mediu de asteptare: 10.4
+

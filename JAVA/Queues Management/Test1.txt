@@ -1,0 +1,431 @@
+Time: 0
+Waiting clients: 
+(3, 3, 3) (2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 1
+Waiting clients: 
+(3, 3, 3) (2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 2
+Waiting clients: 
+(3, 3, 3) (2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 3
+Waiting clients: 
+(2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: (3, 3, 3) 
+Server 1: closed
+
+
+Time: 4
+Waiting clients: 
+(2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: (3, 3, 2) 
+Server 1: closed
+
+
+Time: 5
+Waiting clients: 
+(2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: (3, 3, 1) 
+Server 1: closed
+
+
+Time: 6
+Waiting clients: 
+(2, 7, 3) (1, 8, 2) (4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 7
+Waiting clients: 
+(1, 8, 2) (4, 14, 2) 
+Server 0: (2, 7, 3) 
+Server 1: closed
+
+
+Time: 8
+Waiting clients: 
+(4, 14, 2) 
+Server 0: (2, 7, 2) 
+Server 1: (1, 8, 2) 
+
+
+Time: 9
+Waiting clients: 
+(4, 14, 2) 
+Server 0: (2, 7, 1) 
+Server 1: (1, 8, 1) 
+
+
+Time: 10
+Waiting clients: 
+(4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 11
+Waiting clients: 
+(4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 12
+Waiting clients: 
+(4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 13
+Waiting clients: 
+(4, 14, 2) 
+Server 0: closed
+Server 1: closed
+
+
+Time: 14
+Waiting clients: 
+
+Server 0: (4, 14, 2) 
+Server 1: closed
+
+
+Time: 15
+Waiting clients: 
+
+Server 0: (4, 14, 1) 
+Server 1: closed
+
+
+Time: 16
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 17
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 18
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 19
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 20
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 21
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 22
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 23
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 24
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 25
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 26
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 27
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 28
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 29
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 30
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 31
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 32
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 33
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 34
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 35
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 36
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 37
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 38
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 39
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 40
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 41
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 42
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 43
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 44
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 45
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 46
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 47
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 48
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 49
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 50
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 51
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 52
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 53
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 54
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 55
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 56
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 57
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 58
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 59
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Time: 60
+Waiting clients: 
+
+Server 0: closed
+Server 1: closed
+
+
+Ora de varf: 8
+Timp mediu de servire: 2.5
+Timp mediu de asteptare: 8.0
+
