@@ -1,0 +1,14 @@
+ID_PROPRIETAR,NUME,PRENUME,EMAIL
+8,Tudor,Elena,elena.tudor@email.com
+11,Popescu,Maria,maria.popescu@email.com
+12,Ionescu,Andrei,andrei.ionescu@email.com
+1,Popescu,Ion,popescu.ion@email.com
+10,Popescu,Mihai,mihai.popescu@email.com
+5,Georgescu,Mihai,mihai.georgescu@email.com
+9,Popescu,Dan,dan.popescu@email.com
+2,Ionescu,Maria,maria.ionescu@email.com
+3,Dumitru,Andrei,andrei.dumitru@email.com
+4,Vasile,Ana,ana.vasile@email.com
+7,Radulescu,Cristina,cristina.radulescu@email.com
+13,Georgescu,Elena,elena.georgescu@email.com
+41,Popescu,,popescu@email.com

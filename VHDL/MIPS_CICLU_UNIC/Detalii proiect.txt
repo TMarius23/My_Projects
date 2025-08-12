@@ -1,0 +1,33 @@
+Proiectul este functional. Este incarcat si pe placuta si merge si totodata este testat si in simulare. Are valori corecte atat la citirea din memorie cat si la scriere. Valorile semnalelor sunt corecte si corespunzatoare documentatie si programului dorit de catre utilizator. Toate elementele functioneaza. 
+Probleme intampinate pe parcursul proiectarii procesorului: 
+~ Citirea gresita a datelor din memorie.
+~ Jump urile facute la adrese gresite
+~ Salvarea in memorie la adresa gresita/ nu era cea care mi-o doream eu
+~ Scrierea unui cod putin mai ilizibil
+
+
+"MOD"
+Instructiunea imprementata de mine este de de "mod". Ea este de tip "R". Astfel lucreaza pe 3 registrii. d s t
+in d sunt stocate datele. Iar mai apoi se face instructiunea de modulo/ aflarea restului impartirii astfel =>
+d <= s % t
+
+
+"ORI – bitwise OR Immediate"
+SAU logic între un registru și o valoare imediată, rezultatul memoranduse într-un alt registru. Se produce un OR logic pe biti.
+Este o instructiune de tip I. cu 2 registry si un extins immediate cu semn
+$t  $s | ZE(imm); 
+
+
+XOR – bitwise eXclusive-OR 
+SAU-Exclusiv logic între două registre, memorează rezultatul în alt registru. Este o instructiune de tipul R. care se foloseste de
+fiecare bit in parte pentru a face xor pe acestia
+$d  $s ^ $t;
+
+"SLTI – Set on Less Than Immediate (signed)"
+Dacă $s este mai mic decât un imediat arunci $t este inițializat cu 1, altfel cu 0 
+Se face astfel un if $s < SE(imm) then $t  1 else $t  0
+Este o insructiune de tipul I avand 2 registry si un extins immediate cu semn.
+
+
+
+

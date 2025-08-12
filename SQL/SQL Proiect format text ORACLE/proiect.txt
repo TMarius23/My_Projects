@@ -1,0 +1,113 @@
+CREATE TABLE Proprietar(
+    id_proprietar NUMBER(6) primary key,
+    nume VARCHAR2(30) NOT NULL, 
+    prenume VARCHAR2(30) NOT NULL,
+    email VARCHAR2(30) UNIQUE
+)
+
+CREATE TABLE Apartament(
+    id_ap NUMBER(6) primary key,
+    adresa VARCHAR2(40) NOT NULL, 
+    nr_ap NUMBER(3),
+    suprafata NUMBER(3),
+    id_proprietar NUMBER(6),
+
+    CONSTRAINT propr_id_proprietar_fk FOREIGN KEY (id_proprietar) REFERENCES Proprietar(id_proprietar)
+
+)
+
+CREATE TABLE Consum (
+    id_ap NUMBER(6),
+    an NUMBER(4) NOT NULL, 
+    luna NUMBER(2) NOT NULL CHECK (luna BETWEEN 1 AND 12), 
+    nr_pers NUMBER(3),
+    cantitate NUMBER(5,2), 
+    valoare NUMBER(6,2),
+    pret_apa NUMBER(5,2),
+
+    CONSTRAINT consum_pk PRIMARY KEY (id_ap, an, luna),
+    CONSTRAINT consum_fk_ap FOREIGN KEY (id_ap) REFERENCES Apartament(id_ap)
+);
+
+
+CREATE TABLE CHITANȚĂ(
+    nr NUMBER(6)  PRIMARY KEY,
+    data DATE DEFAULT SYSDATE,
+    id_ap NUMBER(6) NOT NULL,
+    valoare NUMBER(5, 2) NOT NULL,
+
+    CONSTRAINT id_ap_ap FOREIGN KEY(id_ap) REFERENCES Apartament (id_ap)
+)
+
+ALTER TABLE PROPRIETAR
+MODIFY NUME VARCHAR(100)
+
+
+
+06.03)
+
+a)
+SELECT *
+FROM PROPRIETAR 
+WHERE NUME LIKE '%p%' OR NUME LIKE '%e%' 
+ORDER BY NUME ASC, PRENUME DESC
+
+b)
+SELECT *
+FROM CHITANȚĂ
+WHERE TO_CHAR(data, 'YYYY') = '2024'
+ORDER BY valoare;
+
+06.04)
+
+a)
+SELECT nr_ap, nume, prenume, valoare
+FROM APARTAMENT NATURAL JOIN CONSUM NATURAL JOIN PROPRIETAR 
+WHERE adresa = 'Cluj-Napoca strada Observatorului, nr. 9' and luna = 1 and AN = 2024
+
+
+b)
+SELECT c1.id_ap as id_ap1, c2.id_ap as id_ap2
+FROM CONSUM c1 JOIN CONSUM c2 ON
+c1.an = c2.an
+and c1.luna = c2.luna
+and c1.id_ap < c2.id_ap
+
+06.05)
+a)
+SELECT *
+FROM CONSUM c1
+WHERE c1.LUNA = 1 and c1.AN = 2024 and
+VALOARE >= ALL (SELECT VALOARE
+            FROM CONSUM c2
+            WHERE c2.LUNA = 1 and c2.AN = 2024 
+            )
+
+
+b)
+SELECT p1.nume, p1.prenume
+FROM APARTAMENT ap JOIN CONSUM cs ON (ap.ID_AP = cs.ID_AP) JOIN PROPRIETAR p1 ON (p1.ID_PROPRIETAR = ap.ID_PROPRIETAR)
+WHERE cs.LUNA = 3 and cs.AN = 2024 and
+cs.VALOARE IN (SELECT cs1.VALOARE 
+               FROM CONSUM cs1
+               WHERE cs1.ID_AP = 1 and cs1.LUNA = 3 and cs1.AN = 2024
+            )
+and ap.id_ap <> 1
+
+06.06)
+
+a)
+SELECT ROUND(LUNA / 4, 0) + 1 as "trimestru", id_ap, MIN(VALOARE), MAX(VALOARE), ROUND(AVG(VALOARE), 2)
+FROM CONSUM
+GROUP BY ROUND(LUNA / 4, 0), id_ap
+--ORDER BY ROUND(LUNA / 4, 0)
+
+Clauza GROUP BY grupează rândurile care au valori comune într-una sau mai multe coloane și permite aplicarea funcțiilor agregate (SUM, COUNT, AVG, etc.) pe fiecare grup.
+
+b)
+SELECT pr.nume--, pr.prenume, ap.id_ap, SUM(ch.valoare) AS suma_chitante, SUM(co.valoare) AS suma_consum, SUM(ch.valoare) - SUM(co.valoare) AS diferenta
+FROM PROPRIETAR pr JOIN APARTAMENT ap ON (pr.ID_PROPRIETAR = ap.ID_PROPRIETAR) JOIN CHITANȚĂ ch ON (ap.ID_AP = ch.ID_AP)
+ JOIN CONSUM co ON (ap.ID_AP = co.ID_AP)
+WHERE ch.DATA <= TO_DATE('01-OCT-2024', 'DD-MONTH-YYYY')  AND ap.ADRESA = 'Turda, strada Baladei, nr. 3'  AND (co.AN < 2024 OR (co.AN = 2024 AND co.LUNA < 10))
+GROUP BY pr.nume, pr.prenume, ap.id_ap
+HAVING (SUM(ch.valoare) - SUM(co.valoare)) < 0;
