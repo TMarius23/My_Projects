@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaugă Sală</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background:
+            url("https://wonderland.ro/wp-content/uploads/2023/04/Evenimente-Orice-tip-de-Eveniment-Cine-festive-Aniversari.png")
+            no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #4a6cf7;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #3651c9;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <h2>Adaugă o Sală</h2>
+        <form action="/adaugareSala" method="post" enctype="multipart/form-data">
+
+            <!-- Nume sala -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nume Sală</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- Descriere -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Descriere</label>
+                <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+            </div>
+
+            <!-- Preț -->
+            <div class="mb-3">
+                <label for="price" class="form-label">Preț (RON)</label>
+                <input type="number" step="0.01" class="form-control" id="price" name="price" required>
+            </div>
+
+            <!-- Tip sală -->
+            <div class="mb-3">
+                <label class="form-label">Tip Sală</label>
+                <select class="form-select" id="tipSala" name="tipSala" required>
+                    <option value="Nunta">Nuntă</option>
+                    <option value="Botez">Botez</option>
+                    <option value="Majorat">Majorat</option>
+                </select>
+            </div>
+
+            <!-- Poze -->
+            <div class="mb-3">
+                <label for="images" class="form-label">Adaugă Poze</label>
+                <input class="form-control" type="file" id="images" name="images" multiple accept="image/*">
+            </div>
+
+            <input type="hidden" name="id_admin" th:value="${id_admin}">
+
+            <!-- Buton submit -->
+            <button type="submit" class="btn btn-primary w-100">Adaugă Sala</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
