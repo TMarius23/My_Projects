@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ro" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${sala.name}">Detalii Sala</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #1abc9c, #16a085);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 36px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-menu {
+            background-color: #3498db;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+            color: #ecf0f1;
+        }
+
+        .content {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hall-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            flex: 1 1 400px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .details {
+            flex: 1 1 400px;
+        }
+
+        .details h2 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: #16a085;
+        }
+
+        .details p {
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .details label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: 500;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1abc9c;
+            margin-bottom: 15px;
+        }
+
+        /* Rezervare: buton + select */
+        .reservation-options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .all-day-btn {
+            background: linear-gradient(90deg, #1abc9c, #16a085);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .all-day-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #16a085, #1abc9c);
+        }
+
+        .all-day-btn.active {
+            background: #159c88;
+        }
+
+        .select-wrapper {
+            position: relative;
+            flex: 1;
+        }
+
+        .select-wrapper select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #1abc9c;
+            border-radius: 10px;
+            font-size: 16px;
+            appearance: none;
+            background: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .select-wrapper::after {
+            content: "▼";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #1abc9c;
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        .select-wrapper select:hover {
+            border-color: #16a085;
+        }
+
+        .btn-reserve {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-reserve:hover {
+            background-color: #159c88;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hall-details {
+                flex-direction: column;
+            }
+
+            .gallery, .details {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Magic Style Events</div>
+
+<div class="nav-menu">
+    <a th:href="@{/indexAdmin}">Acasă</a>
+    <a th:href="@{/about}">Despre noi</a>
+    <a th:href="@{/contactAdmin}">Contact</a>
+    <a th:href="@{/contulMeuAdmin}">Contul meu</a>
+</div>
+
+<div class="content">
+    <div class="hall-details">
+        <div class="gallery">
+            <img th:if="${sala.getImagine()[0] != null}" th:src="@{${sala.getImagine()[0]}}" alt="Imagine Sala"/>
+            <p th:if="${sala.getImagine()[0] == null}">Nu există imagini pentru această sală.</p>
+        </div>
+
+        <div class="details">
+            <h2 th:text="${sala.getName()}">Numele sălii</h2>
+            <p th:text="${sala.getDescription()}">Descriere sala...</p>
+
+            <label for="date">Selectează data:</label>
+            <input type="date" id="date" min="${#dates.format(T(java.time.LocalDate).now(),'yyyy-MM-dd')}">
+
+            <label>Selectează durata rezervării:</label>
+            <div class="reservation-options">
+                <button type="button" id="allDayBtn" class="all-day-btn">☀️ Toată ziua</button>
+
+                <div class="select-wrapper">
+                    <select id="time">
+                        <option value="">-- Selectează ora --</option>
+                        <option th:each="i : ${#numbers.sequence(17, 24)}"
+                                th:value="${i + ':00'}"
+                                th:text="${i + ':00'}"></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="price">Preț: <span th:text="${sala.price}">200</span> RON</div>
+
+            <button class="btn-reserve" onclick="reserve()">Rezervă</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Magic Style Events · Toate drepturile rezervate
+</footer>
+
+<script th:inline="javascript">
+    document.getElementById("allDayBtn").addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        if (this.classList.contains("active")) {
+            document.getElementById("time").value = "";
+            this.textContent = "✅ Toată ziua selectată";
+        } else {
+            this.textContent = "☀️ Toată ziua";
+        }
+    });
+
+    function reserve() {
+        const date = document.getElementById("date").value;
+        const time = document.getElementById("time").value;
+        const allDay = document.getElementById("allDayBtn").classList.contains("active");
+
+        if (!date) {
+            alert("Te rog selectează o dată!");
+            return;
+        }
+
+        let rezervareText = allDay ? "ToataZiua" : time;
+        if (!rezervareText) {
+            alert("Selectează o oră sau toată ziua!");
+            return;
+        }
+
+        fetch(`/rezerva/${date}/${rezervareText}`, {method: "POST"})
+            .then(response => {
+                if (response.ok) {
+                    alert(`Rezervarea pentru ${date} (${rezervareText}) a fost realizată!`);
+                } else {
+                    alert("Nu se poate realiza rezervarea.");
+                }
+            });
+    }
+</script>
+
+</body>
+</html>

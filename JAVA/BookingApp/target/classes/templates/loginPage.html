@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Event Hall</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('imagini/SalaEvenimente1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: 0.3s ease-in-out;
+        }
+
+        input[type="text"]:hover, input[type="password"]:hover {
+            border-color: #1abc9c;
+        }
+
+        .radio-container {
+            text-align: left;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .radio-container input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1abc9c;
+        }
+
+        .new-account {
+            font-size: 14px;
+            margin-top: 10px;
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .new-account:hover {
+            text-decoration: underline;
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="login">
+    <h1>Login site de evenimente</h1>
+    <form method="post" action="/login">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="account_type" value="user" checked>
+                Cont personal
+            </label><br>
+            <label>
+                <input type="radio" name="account_type" value="admin">
+                Cont business
+            </label>
+        </div>
+
+        <button type="submit">Logare</button>
+        <a href="new_account" class="new-account">Crează un cont nou</a>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Style Events</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #1abc9c, #16a085);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 36px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-menu {
+            background-color: #3498db;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+            color: #ecf0f1;
+        }
+
+        .command-bar {
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .command-bar select,
+        .command-bar input,
+        .command-bar button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .command-bar button {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .command-bar button:hover {
+            background-color: #159c88;
+        }
+
+        .content {
+            padding: 40px 20px;
+            background: url('https://images.unsplash.com/photo-1525163133706-b1c1d739140e?auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
+            position: relative;
+            min-height: 80vh;
+        }
+
+        .content::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .hall-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hall-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .hall-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .hall-card h3 {
+            margin: 15px 15px 5px;
+            font-size: 20px;
+        }
+
+        .hall-card p {
+            margin: 0 15px 15px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .btn {
+            display: block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        #pagination {
+            margin-top: 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        #pagination button {
+            padding: 6px 12px;
+            margin: 0 4px;
+            border: none;
+            border-radius: 4px;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        #pagination button.active {
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .command-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .command-bar select,
+            .command-bar input,
+            .command-bar button {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .header {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Magic Style Events</div>
+
+<div class="nav-menu">
+    <a href="indexUser">Acasă</a>
+    <a href="about">Despre noi</a>
+    <a href="contactUser">Contact</a>
+    <a href="contulMeuUser">Contul meu</a>
+</div>
+
+<div class="command-bar">
+    <select id="filterType">
+        <option value="">Tip eveniment</option>
+        <option value="Nunta">Nuntă</option>
+        <option value="Botez">Botez</option>
+        <option value="Majorat">Majorat</option>
+    </select>
+    <input type="number" id="maxBudget" placeholder="Buget maxim (RON)" min="0">
+    <input type="date" id="eventDate">
+    <button onclick="applyFilters()">Filtrează</button>
+</div>
+
+<div class="content">
+    <div class="hall-grid" id="hallContainer">
+        <div th:each="hall : ${sali}" class="hall-card">
+            <img th:src="${hall.imagine[0]}" alt="Sala">
+            <h3 th:text="${hall.name}">Numele sălii</h3>
+            <p th:text="${hall.description}">Descrierea sălii</p>
+            <p><strong>Preț:</strong> <span th:text="${hall.price}">0</span> RON</p>
+            <p><strong>Tip:</strong> <span th:text="${hall.tipSala}">Tip</span></p>
+            <p><strong>Status:</strong> <span th:text="${hall.inchiriata} ? 'Închiriată' : 'Disponibilă'">Status</span>
+            <p><strong>Data:</strong> <span class="rezervare-data">Nicio dată selectată</span></p>
+            <a th:href="@{/salaDetaliiUser/{idSala}(idSala=${hall.idSala})}" class="btn btn-primary">Vezi detalii</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Magic Style Events · Toate drepturile rezervate
+</footer>
+
+<script th:inline="javascript">
+    let halls = /*[[${sali}]]*/ [];
+    let filteredHalls = [...halls];
+
+    function applyFilters() {
+        const type = document.getElementById("filterType").value;
+        const budget = parseInt(document.getElementById("maxBudget").value);
+        const date = document.getElementById("eventDate").value;
+
+        filteredHalls = halls.filter(h => {
+            const matchType = type ? h.tipSala === type : true;
+            const matchBudget = !isNaN(budget) ? h.price <= budget : true;
+            return matchType && matchBudget;
+        });
+
+        const container = document.getElementById("hallContainer");
+        container.innerHTML = "";
+
+        if (filteredHalls.length === 0) {
+            container.innerHTML = "<p>Nu s-au găsit săli.</p>";
+            return;
+        }
+
+        filteredHalls.forEach(hall => {
+            const card = document.createElement("div");
+            card.className = "hall-card";
+
+            const rezervareDate = date || "Nicio dată selectată";
+
+            // verificăm disponibilitatea pe data selectată
+            let status = hall.inchiriata ? "Închiriată" : "Disponibilă";
+            if (date && hall.rezervari && hall.rezervari.length > 0) {
+                const conflict = hall.rezervari.some(r =>
+                    date >= r.startDate && date <= r.endDate
+                );
+                status = conflict ? "Închiriată" : "Disponibilă";
+            }
+
+            card.innerHTML = `
+        <img src="${hall.imagine}" alt="Hall Image"/>
+        <h3>${hall.name}</h3>
+        <p>${hall.description || ''}</p>
+        <p><strong>Preț:</strong> ${hall.price} RON</p>
+        <p><strong>Tip:</strong> ${hall.tipSala}</p>
+        <p><strong>Status:</strong> ${status}</p>
+        <p><strong>Data:</strong> ${rezervareDate}</p>
+        <a href="/salaDetaliiUser/${hall.idSala}" class="btn btn-primary">Vezi detalii</a>
+    `;
+
+            container.appendChild(card);
+        });
+
+
+    }
+</script>
+
+</body>
+</html>
