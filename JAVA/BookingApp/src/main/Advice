@@ -1,9 +1,0 @@
-Daca am un port ocupat pe care lucreaza app
-netstat -ano | findstr :8080
-
-taskkill /PID xxxx /F
-
-si asa il inchid
-
-
-Daca vreau sa intru pe pagina web accesez:  http://localhost:8080/new_account
