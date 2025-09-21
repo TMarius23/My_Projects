@@ -1,0 +1,25 @@
+1. Introdu instructiunea
+2. Lista intructiuni disponibile
+3. Exit
+
+Nu s-a putut efectua citirea 1
+ Volume in drive C has no label.
+ Volume Serial Number is D29E-1607
+
+ Directory of C:\Users\Marius\Desktop\folder pt foldere\UTCN\MyProject
+
+17.09.2025  18:20    <DIR>          .
+17.09.2025  18:20    <DIR>          ..
+21.09.2025  22:21    <DIR>          C.C++
+17.09.2025  13:43    <DIR>          Java
+17.09.2025  17:53    <DIR>          Linux
+               0 File(s)              0 bytes
+               5 Dir(s)  21.131.997.184 bytes free
+
+
+1. Introdu instructiunea
+2. Lista intructiuni disponibile
+3. Exit
+
+Nu s-a putut efectua citirea 1
+Nu s-a putut efectua citirea 1

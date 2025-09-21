@@ -1,0 +1,4 @@
+Un mini-shell
+Acceptă comenzi simple (ls, pwd, cd, echo, cd .., ls -l).
+Suport pentru redirect >.
+Te poate plimba prin toate directoarele si face acele comenzi ca in linux cu ajutorul comenzilor date de sistemul de operare Windows

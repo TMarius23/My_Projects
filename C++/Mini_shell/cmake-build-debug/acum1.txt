@@ -1,0 +1,4 @@
+1. Introdu instructiunea
+2. Lista intructiuni disponibile
+3. Exit
+
