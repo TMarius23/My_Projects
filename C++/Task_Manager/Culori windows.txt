@@ -1,0 +1,26 @@
+Perfect! Pe Windows, comanda system("color XY"); schimbă culoarea textului și a fundalului în consolă.
+
+X = culoarea fundalului
+
+Y = culoarea textului
+
+Valorile sunt hex (0–F), iar fiecare cod reprezintă o culoare.
+
+🔹 Coduri de culoare Windows:
+Cod	Culoare
+0	Black
+1	Blue
+2	Green
+3	Aqua
+4	Red
+5	Purple
+6	Yellow
+7	White
+8	Gray
+9	Light Blue
+A	Light Green
+B	Light Aqua
+C	Light Red
+D	Light Purple
+E	Light Yellow
+F	Bright White

@@ -1,0 +1,5 @@
+Este o aplicatie care permite monitorizarea task-urilor active. 
+Este o aplicatie scrisa in C++ cu functii de sistem pentru Windows.
+Afiseaza detaliile importante adica PID, nume, memorie: RAM, ROM
+Are text dinamic, care se schimba la culoare si refresh automat al textului
+Se folosește WinAPI (psapi.h, windows.h) pentru gestionarea proceselor.
