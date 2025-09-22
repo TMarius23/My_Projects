@@ -1,0 +1,22 @@
+Aplicația este o platformă web de booking pentru săli de evenimente. 
+Utilizatorii pot vizualiza lista sălilor disponibile, pot adăuga săli noi și pot accesa o pagină detaliată pentru fiecare sală.
+Proiectul este construit folosind Spring Boot + Spring MVC + Thymeleaf + Bootstrap.
+
+Utlitati:
+Afișare listă săli disponibile / închiriate.
+Adăugare sală nouă.
+Pagină detaliată pentru fiecare sală (dinamic, pe baza id).
+Status sală: disponibilă sau închiriată.
+Integrare cu Thymeleaf pentru șabloane HTML.
+
+Tehnologii utilizate:
+Backend
+Spring Boot – framework principal.
+Spring MVC – controlere pentru mapping-ul cererilor.
+Service Layer – gestionează logica pentru săli.
+Repository (DAO) – acces la date (în memorie sau DB).
+
+Frontend
+Thymeleaf – generare pagini dinamice.
+Bootstrap 5 – design responsive și modern.
+CSS custom – pentru personalizarea interfeței.
