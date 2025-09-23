@@ -1,0 +1,4 @@
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Password_Manager/cmake-build-debug/CMakeFiles/Password_Manager.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Password_Manager/cmake-build-debug/CMakeFiles/PasswordManager.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Password_Manager/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Password_Manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
