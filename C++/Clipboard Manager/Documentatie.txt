@@ -1,0 +1,6 @@
+                            Clipboard Manager
+Interceptezi conținutul copiat cu Ctrl + C sau Ctrl + X și îl salvezi într-un istoric.
+Fiecare lucru copiat v-a fi salvat intr-un fisier adnotat cu data si ora primului acces
+Aplicatia daca este pornita poate tine mult mai multe texte copiate decat cea integrata in sistemul Windows.
+Aplicatia merge explicit si in afara programului de unde este rulata
+Textul se actualizeaza astfel cel mai recent text copiat sa fie primul in clipboard

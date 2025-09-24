@@ -1,0 +1,8 @@
+  fout << text << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                fout << oldContent;
+                ///Inversam contentul
+24_9_2025_23_17_22
+
+text
+24_9_2025_23_16_11
+

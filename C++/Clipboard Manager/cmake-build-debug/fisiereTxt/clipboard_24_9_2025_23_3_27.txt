@@ -1,0 +1,51 @@
+ios::app
+24_9_2025_23_3_31
+
+  fout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                cout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                fout.close();
+                GlobalUnlock(hData);
+24_9_2025_23_3_59
+
+     fout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                cout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                fout.close();
+                GlobalUnlock(hData);
+24_9_2025_23_4_11
+
+ios::app
+24_9_2025_23_3_31
+
+  fout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                cout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                fout.close();
+                GlobalUnlock(hData);
+24_9_2025_23_3_59
+
+
+24_9_2025_23_4_11
+
+ios::app
+24_9_2025_23_3_31
+
+  fout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                cout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                fout.close();
+                GlobalUnlock(hData);
+24_9_2025_23_3_59
+
+
+24_9_2025_23_4_11
+
+ios::app
+24_9_2025_23_3_31
+
+  fout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                cout << ptxt << endl << st.wDay << "_" << st.wMonth << "_" << st.wYear << "_" << st.wHour << "_" << st.wMinute << "_" << st.wSecond << endl << endl;
+                fout.close();
+                GlobalUnlock(hData);
+24_9_2025_23_3_59
+
+
+24_9_2025_23_7_39
+
