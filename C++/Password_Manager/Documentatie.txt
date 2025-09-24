@@ -1,3 +1,0 @@
-Password Manager simplificat
-Stochezi parole criptate (AES sau XOR pentru demo).
-UI mic pentru adăugare/căutare.
