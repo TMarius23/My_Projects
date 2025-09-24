@@ -1,3 +1,7 @@
 Password Manager simplificat
-Stochezi parole criptate (AES sau XOR pentru demo).
+Programul folosește libsodium pentru criptarea simetrică a datelor.
 UI mic pentru adăugare/căutare.
+Cheia de criptare (32 bytes) se derivă din parola master și un salt (16 bytes).
+Fiecare mesaj criptat este unic datorită unui nonce (24 bytes) generat aleator.
+Rezultatul criptării este un ciphertext (datele criptate + 16 bytes MAC pentru integritate).
+Fișierul binar stochează datele în format: [Salt][Nonce][Ciphertext].
