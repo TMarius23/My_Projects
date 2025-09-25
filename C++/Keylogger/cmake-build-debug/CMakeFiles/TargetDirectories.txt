@@ -1,0 +1,3 @@
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Keylogger/cmake-build-debug/CMakeFiles/Keylogger.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Keylogger/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Keylogger/cmake-build-debug/CMakeFiles/rebuild_cache.dir

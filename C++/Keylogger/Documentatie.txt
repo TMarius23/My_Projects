@@ -1,0 +1,5 @@
+Keylogger local
+Capturezi input de la tastatură cu GetAsyncKeyState.
+Datele se salveaza la primirea unui semnal de la tastatura in fisier.
+Datele sunt salvate intr-un fisier nou la fiecare pornire a acestei aplicatii.
+Este facut in scop educativ
