@@ -1,0 +1,3 @@
+Downloader simplu HTTP
+Dai un URL și descarci pagina HTML.
+Demonstrează lucru cu sockets și protocoale.
