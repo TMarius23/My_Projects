@@ -1,0 +1,3 @@
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Downloader HTTP/cmake-build-debug/CMakeFiles/Downloader_HTTP.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Downloader HTTP/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marius/Desktop/folder pt foldere/UTCN/MyProject/C.C++/Downloader HTTP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
