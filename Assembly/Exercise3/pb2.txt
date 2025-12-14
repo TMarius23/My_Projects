@@ -1,0 +1,621 @@
+	mov ebx, 0 ;i
+	mov ecx, 0 ;j
+	mov edi, 0 ;k
+	
+	while_first:
+	cmp ebx, nr_a
+	jnb out_while_first
+	cmp ecx, nr_b
+	jnb out_while_first
+	
+	
+	
+	while_sec_first:;(a[i] <= b[j] && i < n && j < m)
+	mov esp, A[ebx]
+	cmp esp, B[ecx]
+	jnbe out_while_sec_first
+	cmp ebx, nr_a
+	jnb out_while_sec_first
+	cmp ecx, nr_b
+	jnb out_while_sec_first
+	
+	
+	cmp esp, B[ecx]
+	jne urm_line
+		add ecx, 4
+	urm_line:
+	mov D[edi],esp
+	add ebx, 4
+	add edi, 4
+	
+	jmp while_sec_first
+	out_while_sec_first:
+	
+	
+	
+	
+	while_sec_sec:;(a[i] > b[j] && i < n && j < m)
+	mov esp, B[ecx] 
+	cmp A[ebx], esp
+	jng out_while_sec_sec
+	cmp ebx, nr_a
+	jnb out_while_sec_sec
+	cmp ecx, nr_b
+	jnb out_while_sec_sec
+	
+	
+	mov D[edi], esp
+	add ecx, 4
+	add edi, 4
+	
+	jmp while_sec_sec
+	out_while_sec_sec:
+	
+	
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;afisare string
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+	
+	
+	afisare_loop1:
+	cmp eax, edi
+	je out_afisare_loop1
+	
+	
+	push D[eax]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add eax, 4
+	
+	jmp afisare_loop1
+	out_afisare_loop1:
+	
+	
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;continuare
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+	
+	
+	
+	jmp while_first
+	out_while_first:
+	
+	
+	cmp ebx, nr_a
+	je salt
+	
+	while_out_first:
+	cmp ecx, nr_b
+	jnb out_while_out_first
+	
+	mov eax,  B[ecx]
+	mov D[edi], eax
+	add edi, 4
+	add ecx, 4
+	
+	jmp while_out_first
+	out_while_out_first:
+	
+	jmp salt_out
+	salt:
+	
+	cmp ecx, nr_b
+	jne salt_out
+	
+	while_out_sec:
+	cmp ebx, nr_a
+	jnb out_while_out_sec
+	
+	mov eax, A[ebx]
+	mov D[edi], eax
+	add edi, 4
+	add ebx, 4
+	
+	jmp while_out_sec
+	out_while_out_sec:
+	
+	salt_out:
+	
+
+
+
+
+
+5
+5 9 20 23 27
+7
+3 7 11 18 25 30 33
+
+
+6
+33 34 35 36 67 88
+3
+90 99 102
+
+
+
+
+
+	while_sec_first:;(a[i] <= b[j] && i < n && j < m)
+	mov eax, A[ebx]
+	cmp eax, B[ecx]
+	jnbe out_while_sec_first
+	cmp ebx, nr_a
+	jnb out_while_sec_first
+	cmp ecx, nr_b
+	jnb out_while_sec_first
+	
+	
+	cmp eax, B[ecx]
+	jne urm_line
+		add ecx, 4
+	urm_line:
+	mov D[edi],eax
+	add ebx, 4
+	add edi, 4
+	
+	jmp while_sec_first
+	out_while_sec_first:
+
+
+
+	
+	while_sec_sec:;(a[i] > b[j] && i < n && j < m)
+	mov eax, B[ecx] 
+	cmp A[ebx], eax
+	jng out_while_sec_sec
+	cmp ebx, nr_a
+	jnb out_while_sec_sec
+	cmp ecx, nr_b
+	jnb out_while_sec_sec
+	
+	
+	mov D[edi], eax
+	add ecx, 4
+	add edi, 4
+	
+	jmp while_sec_sec
+	out_while_sec_sec:
+
+	
+
+
+
+
+
+
+
+
+
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;afisare string
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+	
+	
+	push offset format2
+	call printf
+	add esp, 4
+	
+	mov ebp, edi
+	cmp ebp, 0
+	je afara
+	
+	mov eax, 0
+	ele_a_loop_print2:
+	
+	push D[eax]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add eax, 4
+	dec edi
+	
+	
+	cmp edi, 0
+	je out_a_print2
+	
+	jmp ele_a_loop_print2
+	out_a_print2:
+	afara:
+	
+	mov edi, ebp
+	
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;continuare
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+
+
+
+
+
+
+
+	cmp ebx, nr_a
+	je salt
+	
+	while_out_first:
+	cmp ecx, nr_b
+	jnb out_while_out_first
+	
+	mov eax, B[ecx]
+	mov D[edi], eax
+	add edi, 4
+	add ecx, 4
+	
+	jmp while_out_first
+	out_while_out_first:
+	
+	jmp salt_out
+	salt:
+	
+	cmp ecx, nr_b
+	jne salt_out
+	
+	while_out_sec:
+	cmp ebx, nr_a
+	jnb out_while_out_sec
+	
+	mov eax, A[ebx]
+	mov D[edi], eax
+	add edi, 4
+	add ebx, 4
+	
+	jmp while_out_sec
+	out_while_out_sec:
+	
+	salt_out:
+	
+	
+	
+
+
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;afisare string
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+
+	push offset format2
+	call printf
+	add esp, 4	
+	
+	push offset format2
+	call printf
+	add esp, 4
+	
+
+	mov eax, 0
+	ele_a_loop_print1:
+	
+	push A[eax]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add eax, 4
+	dec edi
+	
+	
+	cmp edi, 0
+	je out_a_print1
+	
+	jmp ele_a_loop_print1
+	out_a_print1:
+	
+
+
+
+
+
+
+
+
+
+
+
+	push offset nr_a
+	push offset format_scanf
+	call scanf
+	add esp, 8
+	
+	;push nr_a
+	;push offset format1
+	;call printf
+	
+	mov ebx, nr_a
+	mov edi, 0
+	
+	
+	;;;;;;;;
+	;;;;citire elem a
+	;;;;;;;;
+	
+	
+	ele_a_loop:
+	
+	push offset elem_a
+	push offset format_scanf
+	call scanf
+	add esp, 8
+	
+	mov eax, elem_a
+	
+	mov A[edi], eax
+	
+	;push A[edi]
+	;push offset format1
+	;call printf
+	
+	
+	add edi, 4
+	sub ebx, 1
+
+	cmp ebx, 0
+	je out_a
+	
+	jmp ele_a_loop
+	out_a:
+	
+	;;;;;;;;;;;;;;;
+	;;;;;;;;print a
+	;;;;;;;;;;;;;;;
+	
+	push offset format_spa
+	call printf
+	add esp, 4
+	
+	push nr_a
+	push offset format1
+	call printf
+	add esp, 8
+	
+	mov ebx, nr_a
+	mov edi, 0
+	ele_a_loop_print:
+	
+	push A[edi]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add edi, 4
+	sub ebx, 1
+	
+	
+	cmp ebx, 0
+	je out_a_print
+	
+	jmp ele_a_loop_print
+	out_a_print:
+	
+	
+	push offset nr_b
+	push offset format_scanf
+	call scanf
+	add esp, 8
+	
+	mov ebx, nr_b
+	mov edi, 0
+	
+	
+	;;;;;;;;
+	;;;;citire elem b
+	;;;;;;;;
+	
+	
+	ele_b_loop:
+	
+	push offset elem_b
+	push offset format_scanf
+	call scanf
+	add esp, 8
+	
+	mov eax, elem_b
+	
+	mov B[edi], eax
+	
+	add edi, 4
+	sub ebx, 1
+
+	cmp ebx, 0
+	je out_b
+	
+	jmp ele_b_loop
+	out_b:
+	
+
+	
+	
+	;;;;;;;;;;;;;
+	;;;;;;;;print b
+	;;;;;;;;;;;;;
+	
+	
+	push offset format_spa
+	call printf
+	add esp, 4
+	
+	push nr_b
+	push offset format1	
+	call printf
+	add esp, 8
+	
+	mov ebx, nr_b
+	mov edi, 0
+	ele_b_loop_print:
+	
+	push B[edi]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add edi, 4
+	sub ebx, 1
+	
+	
+	cmp ebx, 0
+	je out_b_print
+	
+	jmp ele_b_loop_print
+	out_b_print:
+
+	push offset format_spa
+	call printf
+	add esp, 4
+	
+
+
+
+..;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;afisare string
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+	
+	
+	push offset format2
+	call printf
+	add esp, 4
+	
+	mov eax, 0
+	ele_a_loop_print2:
+	
+	push A[eax]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add eax, 4
+	dec edi
+	
+	
+	cmp edi, 0
+	je out_a_print1
+	
+	jmp ele_a_loop_print2
+	out_a_print1:
+	
+	
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;continuare
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;afisare string
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+	
+	
+	push offset format2
+	call printf
+	add esp, 4
+	
+	mov ebp, edi
+	cmp ebp, 0
+	je afara
+	
+	mov eax, 0
+	ele_a_loop_print2:
+	
+	push D[eax]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add eax, 4
+	dec edi
+	
+	
+	cmp edi, 0
+	je out_a_print2
+	
+	jmp ele_a_loop_print2
+	out_a_print2:
+	afara:
+	
+	mov edi, ebp
+	
+	;;;;;;;;;;;;;
+	;;;;;;;;;;;;;
+	;;;continuare
+	;;;;;;;;;;;;
+	;;;;;;;;;;;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	mov ebx, 0
+	afisare_loop1:
+	cmp edi, 0
+	je out_afisare_loop1
+	
+	
+	push D[ebx]
+	push offset format
+	call printf
+	add esp, 8
+	
+	add ebx, 4
+	dec edi
+	
+	jmp afisare_loop1
+	out_afisare_loop1:
+	
+
+
+
+
+
+
+	

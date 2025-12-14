@@ -1,0 +1,10 @@
+	mov esi, eax
+	;eax^3 + z
+	mov eax, x
+	mul x	
+	mul x
+	add eax, z
+	
+	
+	mov ebp, eax
+	;ebp = eax^3 + z

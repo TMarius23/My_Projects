@@ -1,0 +1,62 @@
+	mov eax, 0
+	
+	mov esi, 0
+	mov edi, 0
+	
+	mov eax, M
+	mul N
+	
+	mov ecx, eax ; ecx = n * m repetari
+	
+	mov eax, 0
+	
+	et_lin:
+	
+	mov edx, 0
+	mov ax ,mat[esi][edi]
+	cwde
+	
+	cmp eax, 0
+	jge nr_pozitiv
+	not eax
+	add eax, 1
+	
+	nr_pozitiv:
+	div k
+	cmp edx, 0
+	jnz salt
+	
+	mov dx, mat[esi][edi]
+	add sum, dx
+	
+	
+	salt:
+	cmp edi, M
+	jnz urm_el;daca elementul curent este pe pozitia finala sau nu din linie
+	
+	cmp esi, N
+	jz final_loop;daca elementul curent este pe pozitia finala sau nu din line si coloana
+	
+	inc edi
+	inc edi
+	
+	add esi, edi
+	mov edi, 0
+	;trec la primul element de pe urmatoarea linie
+	
+	jmp lin_noua
+	
+	
+	urm_el:
+	
+	inc edi
+	inc edi
+		
+	
+	lin_noua:
+	
+	loop et_lin
+	
+	final_loop:
+	
+	mov ax, sum

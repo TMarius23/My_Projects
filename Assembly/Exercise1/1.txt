@@ -1,0 +1,38 @@
+.386
+.model flat, stdcall
+
+includelib msvcrt.lib
+
+extern exit: proc
+
+public start
+
+.data
+
+.code
+start:
+	
+	mov di, 9
+	mov dx, 2
+	mov si, dx	
+	
+	mov ax, 14
+	add ax, di
+	
+	mul si
+	mov dx, si
+	
+	mov si, ax
+	
+	mov ax, 4
+	sub ax, si
+	
+	
+	mov si, dx
+	mov dx, 0
+	div si
+	
+	
+	push 0
+	call exit
+end start
