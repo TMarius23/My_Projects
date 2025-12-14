@@ -1,0 +1,11 @@
+vhdl xpm  \
+"C:/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../AXIS4-STREAM.srcs/sources_1/new/MPG.vhd" \
+"../../../AXIS4-STREAM.srcs/sources_1/new/axis_receiver.vhd" \
+"../../../AXIS4-STREAM.srcs/sources_1/new/axis_transmitter.vhd" \
+"../../../AXIS4-STREAM.srcs/sources_1/new/top.vhd" \
+
+# Do not sort compile order
+nosort

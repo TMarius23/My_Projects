@@ -1,0 +1,9 @@
+verilog xil_defaultlib --include "C:/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../sumator_sel_t_ant.gen/sources_1/bd/design_sum_hibrid/ipshared/ec67/hdl" --include "../../../../sumator_sel_t_ant.gen/sources_1/bd/design_sum_hibrid/ipshared/b28c/hdl" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_processing_system7_0_0/sim/design_sum_hibrid_processing_system7_0_0.v" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_xbar_0/sim/design_sum_hibrid_xbar_0.v" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_auto_pc_0/sim/design_sum_hibrid_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,51 @@
+# =========================
+# FPGA / Vivado / Vitis
+# =========================
+*.jou
+*.log
+*.rpt
+*.wlf
+*.bak
+*.cache
+*.dcp
+*.vds
+*.vdi
+*.xpr
+
+.cache/
+.gen/
+.runs/
+.ip_user_files/
+.sim/
+.hw/
+.sw/
+
+# Vivado IP
+**/*.cache/
+**/*.gen/
+**/*.runs/
+**/ip_user_files/
+
+# Vitis / BSP / SDK
+bsp/
+build/
+build_configs/
+standalone_*/
+*.obj
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+
+# =========================
+# Node / ELM
+# =========================
+node_modules/
+
+# =========================
+# OS
+# =========================
+Thumbs.db
+.DS_Store

@@ -1,0 +1,3 @@
+domain_path: C:\Users\Marius\Desktop\UTCN\SSC_AN3_Sem1\Lab9\platform_lab9\export\platform_lab9\sw\standalone_ps7_cortexa9_0
+app_src_dir: C:\Vitis\2024.1\data\embeddedsw\lib\sw_apps\hello_world
+template: hello_world

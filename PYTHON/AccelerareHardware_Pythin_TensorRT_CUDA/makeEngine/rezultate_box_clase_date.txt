@@ -1,0 +1,578 @@
+[INFO] Engine 'yolo11n-seg.engine' încărcat cu succes.
+[INFO] Segmentator TRT gata. Input shape: (1, 3, 640, 640)
+
+--- Procesare Cadru 1 ---
+[INFO] Timp inferență (GPU/Total): 113.41 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 25.20 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7261
+  Box (x1, y1, x2, y2): [1064 408 1373 797]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.6040
+  Box (x1, y1, x2, y2): [16 2 1911 990]
+=====================================================================
+
+--- Procesare Cadru 2 ---
+[INFO] Timp inferență (GPU/Total): 27.54 ms
+  [Rezultat] Obiecte detectate și filtrate: 4
+[INFO] Timp Post-Procesare (CPU): 39.22 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 4
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7554
+  Box (x1, y1, x2, y2): [1068 438 1393 853]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.6772
+  Box (x1, y1, x2, y2): [15 3 1913 1004]
+--- Obiectul 3 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.3630
+  Box (x1, y1, x2, y2): [1258 47 1393 172]
+--- Obiectul 4 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.3511
+  Box (x1, y1, x2, y2): [1826 0 1880 41]
+=====================================================================
+
+--- Procesare Cadru 3 ---
+[INFO] Timp inferență (GPU/Total): 44.31 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 22.58 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7905
+  Box (x1, y1, x2, y2): [19 0 1919 1006]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7417
+  Box (x1, y1, x2, y2): [1073 468 1421 914]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4922
+  Box (x1, y1, x2, y2): [1830 0 1874 43]
+=====================================================================
+
+--- Procesare Cadru 4 ---
+[INFO] Timp inferență (GPU/Total): 38.29 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 35.93 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8398
+  Box (x1, y1, x2, y2): [13 0 1917 1051]
+--- Obiectul 2 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4727
+  Box (x1, y1, x2, y2): [1828 0 1882 46]
+--- Obiectul 3 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.3813
+  Box (x1, y1, x2, y2): [1077 500 1448 991]
+=====================================================================
+
+--- Procesare Cadru 5 ---
+[INFO] Timp inferență (GPU/Total): 36.13 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 28.33 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8701
+  Box (x1, y1, x2, y2): [3 1 1917 1071]
+--- Obiectul 2 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.5215
+  Box (x1, y1, x2, y2): [1827 0 1879 53]
+--- Obiectul 3 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.4844
+  Box (x1, y1, x2, y2): [1280 76 1427 212]
+=====================================================================
+
+--- Procesare Cadru 6 ---
+[INFO] Timp inferență (GPU/Total): 24.44 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 16.85 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8828
+  Box (x1, y1, x2, y2): [0 0 1918 1073]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.3884
+  Box (x1, y1, x2, y2): [1287 85 1436 222]
+=====================================================================
+
+--- Procesare Cadru 7 ---
+[INFO] Timp inferență (GPU/Total): 24.71 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 17.49 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8311
+  Box (x1, y1, x2, y2): [7 0 1917 1080]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.4321
+  Box (x1, y1, x2, y2): [1289 95 1444 235]
+=====================================================================
+
+--- Procesare Cadru 8 ---
+[INFO] Timp inferență (GPU/Total): 23.64 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 63.21 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8096
+  Box (x1, y1, x2, y2): [6 0 1918 1071]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.5293
+  Box (x1, y1, x2, y2): [1297 104 1457 246]
+=====================================================================
+
+--- Procesare Cadru 9 ---
+[INFO] Timp inferență (GPU/Total): 41.86 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 14.23 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8428
+  Box (x1, y1, x2, y2): [5 0 1918 1076]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.5981
+  Box (x1, y1, x2, y2): [1301 110 1466 266]
+=====================================================================
+
+--- Procesare Cadru 10 ---
+[INFO] Timp inferență (GPU/Total): 51.72 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 16.52 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8535
+  Box (x1, y1, x2, y2): [4 0 1918 1082]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7217
+  Box (x1, y1, x2, y2): [1304 119 1477 274]
+=====================================================================
+
+--- Procesare Cadru 11 ---
+[INFO] Timp inferență (GPU/Total): 44.60 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 54.49 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8496
+  Box (x1, y1, x2, y2): [6 0 1918 1083]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.4688
+  Box (x1, y1, x2, y2): [1312 126 1490 290]
+=====================================================================
+
+--- Procesare Cadru 12 ---
+[INFO] Timp inferență (GPU/Total): 38.27 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 18.00 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8398
+  Box (x1, y1, x2, y2): [7 0 1918 1082]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.3777
+  Box (x1, y1, x2, y2): [1321 137 1503 301]
+=====================================================================
+
+--- Procesare Cadru 13 ---
+[INFO] Timp inferență (GPU/Total): 41.75 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 19.38 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8081
+  Box (x1, y1, x2, y2): [9 2 1914 1078]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7056
+  Box (x1, y1, x2, y2): [1327 145 1518 322]
+=====================================================================
+
+--- Procesare Cadru 14 ---
+[INFO] Timp inferență (GPU/Total): 43.45 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 26.91 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.8354
+  Box (x1, y1, x2, y2): [1 2 1914 1076]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.5947
+  Box (x1, y1, x2, y2): [1335 156 1533 335]
+=====================================================================
+
+--- Procesare Cadru 15 ---
+[INFO] Timp inferență (GPU/Total): 41.56 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 12.44 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7261
+  Box (x1, y1, x2, y2): [9 2 1914 1080]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.5981
+  Box (x1, y1, x2, y2): [1345 167 1548 353]
+=====================================================================
+
+--- Procesare Cadru 16 ---
+[INFO] Timp inferență (GPU/Total): 20.44 ms
+  [Rezultat] Obiecte detectate și filtrate: 4
+[INFO] Timp Post-Procesare (CPU): 29.40 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 4
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7373
+  Box (x1, y1, x2, y2): [1 3 1913 1076]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.6299
+  Box (x1, y1, x2, y2): [1349 180 1564 376]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4600
+  Box (x1, y1, x2, y2): [1817 0 1878 65]
+--- Obiectul 4 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.3857
+  Box (x1, y1, x2, y2): [1881 0 1919 57]
+=====================================================================
+
+--- Procesare Cadru 17 ---
+[INFO] Timp inferență (GPU/Total): 43.00 ms
+  [Rezultat] Obiecte detectate și filtrate: 4
+[INFO] Timp Post-Procesare (CPU): 28.93 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 4
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7324
+  Box (x1, y1, x2, y2): [1362 193 1584 393]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7217
+  Box (x1, y1, x2, y2): [2 2 1912 1075]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.3701
+  Box (x1, y1, x2, y2): [1817 0 1878 66]
+--- Obiectul 4 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.3657
+  Box (x1, y1, x2, y2): [1881 0 1919 58]
+=====================================================================
+
+--- Procesare Cadru 18 ---
+[INFO] Timp inferență (GPU/Total): 42.20 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 13.85 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7817
+  Box (x1, y1, x2, y2): [1371 204 1597 414]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7295
+  Box (x1, y1, x2, y2): [1 3 1913 1076]
+=====================================================================
+
+--- Procesare Cadru 19 ---
+[INFO] Timp inferență (GPU/Total): 43.64 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 23.58 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.8018
+  Box (x1, y1, x2, y2): [1378 217 1622 437]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.6514
+  Box (x1, y1, x2, y2): [3 2 1905 1076]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.3574
+  Box (x1, y1, x2, y2): [1815 0 1877 67]
+=====================================================================
+
+--- Procesare Cadru 20 ---
+[INFO] Timp inferență (GPU/Total): 45.21 ms
+  [Rezultat] Obiecte detectate și filtrate: 4
+[INFO] Timp Post-Procesare (CPU): 25.02 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 4
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7866
+  Box (x1, y1, x2, y2): [1392 228 1642 460]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.6724
+  Box (x1, y1, x2, y2): [3 2 1897 1075]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.5264
+  Box (x1, y1, x2, y2): [1814 0 1874 64]
+--- Obiectul 4 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.3540
+  Box (x1, y1, x2, y2): [1879 0 1919 57]
+=====================================================================
+
+--- Procesare Cadru 21 ---
+[INFO] Timp inferență (GPU/Total): 45.78 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 18.73 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7261
+  Box (x1, y1, x2, y2): [1406 243 1668 487]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.5640
+  Box (x1, y1, x2, y2): [3 2 1890 1076]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4524
+  Box (x1, y1, x2, y2): [1814 0 1873 62]
+=====================================================================
+
+--- Procesare Cadru 22 ---
+[INFO] Timp inferență (GPU/Total): 42.38 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 18.41 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.8364
+  Box (x1, y1, x2, y2): [1416 257 1694 515]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.6460
+  Box (x1, y1, x2, y2): [3 1 1889 1075]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4658
+  Box (x1, y1, x2, y2): [1814 0 1873 64]
+=====================================================================
+
+--- Procesare Cadru 23 ---
+[INFO] Timp inferență (GPU/Total): 24.75 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 24.27 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7852
+  Box (x1, y1, x2, y2): [1430 273 1719 550]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7119
+  Box (x1, y1, x2, y2): [1 2 1871 1076]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4124
+  Box (x1, y1, x2, y2): [1813 0 1871 67]
+=====================================================================
+
+--- Procesare Cadru 24 ---
+[INFO] Timp inferență (GPU/Total): 45.88 ms
+  [Rezultat] Obiecte detectate și filtrate: 3
+[INFO] Timp Post-Procesare (CPU): 35.48 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 3
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7891
+  Box (x1, y1, x2, y2): [1443 294 1750 582]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7637
+  Box (x1, y1, x2, y2): [0 2 1884 1077]
+--- Obiectul 3 ---
+  Clasă: person (ID: 0)
+  Încredere (Scor): 0.4885
+  Box (x1, y1, x2, y2): [1813 0 1873 67]
+=====================================================================
+
+--- Procesare Cadru 25 ---
+[INFO] Timp inferență (GPU/Total): 47.44 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 20.89 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7817
+  Box (x1, y1, x2, y2): [1464 312 1786 619]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7520
+  Box (x1, y1, x2, y2): [1 2 1898 1076]
+=====================================================================
+
+--- Procesare Cadru 26 ---
+[INFO] Timp inferență (GPU/Total): 25.00 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 17.25 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.8408
+  Box (x1, y1, x2, y2): [1481 334 1825 658]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7432
+  Box (x1, y1, x2, y2): [2 2 1908 1076]
+=====================================================================
+
+--- Procesare Cadru 27 ---
+[INFO] Timp inferență (GPU/Total): 27.49 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 14.65 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7891
+  Box (x1, y1, x2, y2): [2 2 1900 1076]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7388
+  Box (x1, y1, x2, y2): [1500 357 1864 707]
+=====================================================================
+
+--- Procesare Cadru 28 ---
+[INFO] Timp inferență (GPU/Total): 21.37 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 49.37 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7734
+  Box (x1, y1, x2, y2): [2 2 1909 1077]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7261
+  Box (x1, y1, x2, y2): [1517 382 1916 756]
+=====================================================================
+
+--- Procesare Cadru 29 ---
+[INFO] Timp inferență (GPU/Total): 43.80 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 13.99 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7734
+  Box (x1, y1, x2, y2): [0 2 1911 1077]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.6978
+  Box (x1, y1, x2, y2): [1536 408 1918 811]
+=====================================================================
+
+--- Procesare Cadru 30 ---
+[INFO] Timp inferență (GPU/Total): 23.17 ms
+  [Rezultat] Obiecte detectate și filtrate: 2
+[INFO] Timp Post-Procesare (CPU): 31.49 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 2
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7969
+  Box (x1, y1, x2, y2): [1558 438 1919 868]
+--- Obiectul 2 ---
+  Clasă: train (ID: 6)
+  Încredere (Scor): 0.7676
+  Box (x1, y1, x2, y2): [1 1 1912 1077]
+=====================================================================
+
+--- Procesare Cadru 31 ---

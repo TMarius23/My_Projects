@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L xpm -L axis_infrastructure_v1_1_1 -L axis_data_fifo_v2_0_13 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot top xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log

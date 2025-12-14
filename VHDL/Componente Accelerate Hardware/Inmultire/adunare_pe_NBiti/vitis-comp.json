@@ -1,0 +1,15 @@
+{
+  "name": "adunare_pe_NBiti",
+  "type": "HOST",
+  "platform": "C:\\Users\\Marius\\Desktop\\UTCN\\SSC_AN3_Sem1\\Lab5\\platform_pb2_NBitiADD\\export\\platform_pb2_NBitiADD\\platform_pb2_NBitiADD.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}

@@ -1,0 +1,160 @@
+{
+  "ExampleTests.CursorTests": {
+    "module Cursor": {
+      "back": {
+        "#back: \n\n    nonEmpty 1 [ 2, 3 ] |> forward |> Maybe.andThen back\n    --> Just (withSelectedElement [] 1 [2, 3])": 0.25,
+        "#back: \n\n    back (nonEmpty 1 [])\n    --> Nothing": 0.25,
+        "#back: \n\n    back (nonEmpty 1 [ 2, 3 ])\n    --> Nothing": 0.25
+      },
+      "forward": {
+        "#forward: \n\n    nonEmpty 1 [ 2, 3 ] |> forward |> Maybe.andThen forward\n    --> Just (withSelectedElement [1, 2] 3 [])": 0.25,
+        "#forward: \n\n    forward (nonEmpty 1 [])\n    --> Nothing": 0.25,
+        "#forward: \n\n    forward (nonEmpty 1 [ 2, 3 ])\n    --> Just (withSelectedElement [1] 2 [3])": 0.25
+      },
+      "fromList": {
+        "#fromList: \n\n    fromList []\n    --> Nothing": 0.25,
+        "#fromList: \n\n    fromList [ 1, 2, 3 ]\n    --> Just (withSelectedElement [] 1 [2, 3])": 0.25
+      },
+      "length": {
+        "#length: \n\n    length (nonEmpty 1 [ 2, 3 ])\n    --> 3": 0.25,
+        "#length: \n\n    length (nonEmpty 1 [])\n    --> 1": 0.25
+      },
+      "toList": {
+        "#toList: \n\n    toList (nonEmpty 1 [ 2, 3 ])\n    --> [1, 2, 3]": 0.5
+      }
+    }
+  },
+  "ExampleTests.ModelPostIdsTests": {
+    "module Model.PostIds": {
+      "advance": {
+        "#advance: \n\n    advance (PostIds (Cursor.withSelectedElement [ 1, 2 ] 3 []))\n    --> Nothing": 0.125,
+        "#advance: \n\n    advance (PostIds (Cursor.nonEmpty 1 [ 2, 3 ]))\n    --> Just ( 2, PostIds (Cursor.withSelectedElement [1] 2 [3]))": 0.125
+      },
+      "decode": {
+        "#decode: \n\n    De.decodeString decode \"[]\"\n    --> Ok (Nothing)": 0.16666666666666666,
+        "#decode: \n\n    De.decodeString decode \"[1]\"\n    --> Ok (Just (PostIds (Cursor.nonEmpty 1 [])))": 0.16666666666666666,
+        "#decode: \n\n    De.decodeString decode \"[1, 2, 3]\"\n    --> Ok (Just (PostIds (Cursor.nonEmpty 1 [2, 3])))": 0.16666666666666666
+      }
+    }
+  },
+  "ExampleTests.ModelPostsConfigTests": {
+    "module Model.PostsConfig": {
+      "sortFromString": {
+        "#sortFromString: \n\n    sortFromString \"Title\"\n    --> Just Title": 0.08333333333333333,
+        "#sortFromString: \n\n    sortFromString \"Invalid\"\n    --> Nothing": 0.08333333333333333,
+        "#sortFromString: \n\n    sortFromString \"Score\"\n    --> Just Score": 0.08333333333333333
+      }
+    }
+  },
+  "ExampleTests.UtilTimeTests": {
+    "module Util.Time": {
+      "durationBetween": {
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 1000) (Time.millisToPosix 1000)\n    --> Nothing": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 1000) (Time.millisToPosix 0)\n    --> Nothing": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 0) (Time.millisToPosix (4 * 24 * 60 * 60 * 1000 + 3 * 60 * 60 * 1000 + 2 * 60 * 1000 + 1000))\n    --> Just (Duration 1 2 3 4)": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 0) (Time.millisToPosix (24 * 60 * 60 * 1000 + 1000))\n    --> Just (Duration 1 0 0 1)": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 0) (Time.millisToPosix (24 * 60 * 60 * 1000))\n    --> Just (Duration 0 0 0 1)": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 0) (Time.millisToPosix (60 * 60 * 1000))\n    --> Just (Duration 0 0 1 0)": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 0) (Time.millisToPosix (60 * 1000))\n    --> Just (Duration 0 1 0 0)": 0.0625,
+        "#durationBetween: \n\n    durationBetween (Time.millisToPosix 0) (Time.millisToPosix (1000))\n    --> Just (Duration 1 0 0 0)": 0.0625
+      },
+      "formatDuration": {
+        "#formatDuration: \n\n    formatDuration (Duration 0 30 0 1)\n    --> \"1 day 30 minutes ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 0 47 6 2)\n    --> \"2 days 6 hours 47 minutes ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 0 1 1 1)\n    --> \"1 day 1 hour 1 minute ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 0 0 0 3)\n    --> \"3 days ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 0 0 2 0)\n    --> \"2 hours ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 0 1 0 0)\n    --> \"1 minute ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 2 0 0 0)\n    --> \"2 seconds ago\"": 0.0625,
+        "#formatDuration: \n\n    formatDuration (Duration 1 0 0 0)\n    --> \"1 second ago\"": 0.0625
+      }
+    }
+  },
+  "PostsConfigTests": {
+    "module Model.PostsConfig": {
+      "showTextOnly": {
+        "text posts are removed when showTextOnly is False": 0.25
+      },
+      "showJobs": {
+        "job posts are removed when showJobs is False": 0.25
+      },
+      "postsToShow": {
+        "the number of posts returned is at most postsToShow": 0.5
+      },
+      "sortBy": {
+        "The final list is not sorted when sortBy is None": 0.16666666666666666,
+        "The final list is sorted by title when sortBy is Title": 0.16666666666666666,
+        "The final list is sorted descending by score when sortBy is Score": 0.16666666666666666
+      },
+      "applyChanges": {
+        "The ConfigChange message is sent when the \"Show job posts\" checkbox is clicked": 0.25,
+        "The ConfigChange message is sent when the \"Show text only posts\" checkbox is clicked": 0.25,
+        "The ConfigChange message is sent when the \"Posts to show\" select is changed": 0.25,
+        "The ConfigChange message is sent when the \"Sort by\" select is changed": 0.25
+      }
+    }
+  },
+  "PostsViewTests": {
+    "module View.Posts": {
+      "\"Show job posts\" checkbox": {
+        "postsConfigView has a checkbox for \"Show job posts\"": 0.25
+      },
+      "\"Show text only posts\" checkbox": {
+        "postsConfigView has a checkbox for \"Show text only posts\"": 0.25
+      },
+      "\"posts per page\" select": {
+        "postsConfigView has a \"posts per page\" select input wiht 3 options": 0.25,
+        "The options for \"posts per page\" select input are 10, 25, 50": 0.25
+      },
+      "\"sort by\" select": {
+        "postsConfigView has a \"sort by\" select input with 4 options": 0.25,
+        "The options for \"sort by\" select input are Score, Title, Posted, None": 0.25
+      },
+      "postsConfigView update": {
+        "The ConfigChange message is sent when the \"Show job posts\" checkbox is clicked": 0.25,
+        "The ConfigChange message is sent when the \"Show text only posts\" checkbox is clicked": 0.25,
+        "The ConfigChange message is sent when the \"Posts to show\" select is changed": 0.25,
+        "The ConfigChange message is sent when the \"Sort by\" select is changed": 0.25
+      },
+      "postTable": {
+        "View contains a table element": 0,
+        "The table has 5 columns": 0
+      },
+      "first row": {
+        "The first row of the table contains the field names": 1
+      },
+      "field tags": {
+        "Each body row contains a cell with class post-score": 0.2,
+        "Each body row contains a cell with class post-title": 0.2,
+        "Each body row contains a cell with class post-type": 0.2,
+        "Each body row contains a cell with class post-time": 0.2,
+        "Each body row contains a cell with class post-url": 0.2
+      },
+      "field values": {
+        "the number of rows is equal to the number of elements in the list": 0.5,
+        "each row contains all fields": 0.5
+      },
+      "uses relative time": {
+        "the relative time is shown using a title attribute": 0.5
+      }
+    }
+  },
+  "PostTests": {
+    "module Post": {
+      "Post.decode": {
+        "decode parses post correctly": 0.25,
+        "decode fails if a field is missing": 0.25
+      }
+    }
+  },
+  "MainTests": {
+    "module Main": {
+      "Main.update handles config update message": {
+        "The ConfigChange message is sent when the \"Show job posts\" checkbox is clicked": 0.25,
+        "The ConfigChange message is sent when the \"Show text only posts\" checkbox is clicked": 0.25,
+        "The ConfigChange message is sent when the \"Posts to show\" select is changed": 0.25,
+        "The ConfigChange message is sent when the \"Sort by\" select is changed": 0.25
+      }
+    }
+  }
+}

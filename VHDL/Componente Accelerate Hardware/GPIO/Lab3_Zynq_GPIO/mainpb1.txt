@@ -1,0 +1,74 @@
+#include <stdio.h> //Include biblioteca standard pentru input/output 
+//Include definiții și funcții pentru inițializarea și curățarea 
+//platformei 
+#include "platform.h" 
+//Include funcții pentru gestionarea GPIO-urilor 
+#include <xgpio.h> 
+//Include adrese de bază și alte setări pentru periferice 
+#include "xparameters.h" 
+//Include funcția usleep pentru a întârzia execuția 
+#include "sleep.h" 
+ 
+int main() 
+{ 
+//Declară două structuri XGpio pentru pinii de intrare și ieșire 
+ XGpio input, output; 
+ int button_data = 0;//Variabilă pentru stocarea stării butoanelor 
+ int switch_data = 0; //Variabilă pentru stocarea stării switch-urilor 
+ 
+// Inițializează pinii de intrare (GPIO0) cu adresa de bază  
+//specificată în xparameters.h  
+   XGpio_Initialize(&input, XPAR_AXI_GPIO_0_BASEADDR);  
+// Inițializează pinii de ieșire (GPIO1) cu adresa de bază specificată 
+//în xparameters.h  
+   XGpio_Initialize(&output, XPAR_AXI_GPIO_1_BASEADDR);  
+ 
+// Setează canalul 1 al primului GPIO ca intrare (tristate buffer  
+//pentru citire) 
+   XGpio_SetDataDirection(&input, 1, 0xF);   
+// Setează canalul 2 al primului GPIO ca intrare (tristate buffer  
+//pentru citire)       
+   XGpio_SetDataDirection(&input, 2, 0xF);   
+   // Setează unicul canal al GPIO-ului de ieșire (tristate buffer pentru 
+//scriere) 
+XGpio_SetDataDirection(&output, 1, 0x0);      
+init_platform();//Inițializează platforma hardware 
+//Afișează un mesaj la începutul execuției 
+print("Incepem procesarea \r\n"); 
+// Buclează infinit pentru a citi și scrie date in continuu  
+while(1){ 
+// Citește datele de la switch-uri de pe canalul 2 al GPIO-ului de 
+//intrare 
+      switch_data = XGpio_DiscreteRead(&input, 2);  
+// Citește datele de la butoane de pe canalul 1 al GPIO-ului de 
+//intrare  
+      button_data = XGpio_DiscreteRead(&input, 1);   
+//Scrie datele de la butoane pe canalul 1 al GPIO-ului de ieșire 
+//(LED-uri) 
+      XGpio_DiscreteWrite(&output, 1, button_data);  
+//Mai jos sunt condiții pentru a afișa mesajul corespunzător în  
+//funcție de switch-ul acționat  
+// Dacă niciun switch nu este apăsat, nu face nimic 
+      if(switch_data == 0b00000){}  
+ //Dacă switch-ul 0 este apăsat afizeaza mesajul corespunzator 
+      else if(switch_data == 0b00001) 
+          print("switchul 0 a fost actionat \r\n"); 
+ //Dacă switch-ul 1 este apăsat afiseaza mesajul  
+      else if(switch_data == 0b00010) 
+          print("switchul 1 a fost actionat \r\n"); 
+ //Dacă switch-ul 2 este apăsat afiseaza mesajul si asa mai departe 
+      else if(switch_data == 0b00100) 
+          print("switchul 2 a fost actionat \r\n"); 
+      else if(switch_data == 0b01000) 
+          print("switchul 3 a fost actionat \r\n"); 
+ //Daca sunt mai multe switchuri apasate mentioneaza acest lucru 
+      else 
+          print("mai multe switchuri au fost actionate \r\n"); 
+ //Întârzie execuția buclei pentru 200 de milisecunde 
+      usleep(200000); //delay 
+   } 
+//Curăță resursele platformei hardware înainte de ieșirea din program 
+    cleanup_platform(); 
+//Returnează 0 pentru a indica execuția finalizata cu succes 
+    return 0; 
+}

@@ -1,0 +1,15 @@
+{
+  "name": "app_sum_hibrid",
+  "type": "HOST",
+  "platform": "C:\\Users\\Marius\\Desktop\\UTCN\\SSC_AN3_Sem1\\Lab4\\Pb3\\platform_sum_hibrid\\export\\platform_sum_hibrid\\platform_sum_hibrid.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}

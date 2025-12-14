@@ -1,0 +1,15 @@
+{
+  "name": "app_sum_sel_t",
+  "type": "HOST",
+  "platform": "C:\\Users\\Marius\\Desktop\\UTCN\\SSC_AN3_Sem1\\Lab4\\Pb2\\platform_sum_sel_t\\export\\platform_sum_sel_t\\platform_sum_sel_t.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED"
+}

@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_top_0_0/sim/design_sum_hibrid_top_0_0.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_0_0/sim/design_sum_hibrid_axi_gpio_0_0.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_0_1/sim/design_sum_hibrid_axi_gpio_0_1.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_2_0/sim/design_sum_hibrid_axi_gpio_2_0.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_rst_ps7_0_50M_0/sim/design_sum_hibrid_rst_ps7_0_50M_0.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_3_0/sim/design_sum_hibrid_axi_gpio_3_0.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_3_1/sim/design_sum_hibrid_axi_gpio_3_1.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_3_2/sim/design_sum_hibrid_axi_gpio_3_2.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_3_3/sim/design_sum_hibrid_axi_gpio_3_3.vhd" \
+"../../../bd/design_sum_hibrid/ip/design_sum_hibrid_axi_gpio_3_4/sim/design_sum_hibrid_axi_gpio_3_4.vhd" \
+"../../../bd/design_sum_hibrid/sim/design_sum_hibrid.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,35 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port hdmi_out -pg 1 -lvl 3 -x 950 -y 110 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 950 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 950 -y 50 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 3 -x 950 -y 80 -defaultsOSRD
+preplace port sws_4bits -pg 1 -lvl 3 -x 950 -y 140 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 630 -y 620 -defaultsOSRD
+preplace inst hdmi -pg 1 -lvl 2 -x 630 -y 440 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 910 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 170 -y 100 -defaultsOSRD
+preplace inst axi_gpio_btn_and_sw -pg 1 -lvl 2 -x 630 -y 80 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 2 -x 630 -y 250 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -10 200 340 1180 920
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 0 1190 NJ 1190 910
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 1 350 100n
+preplace netloc axi_gpio_btn_and_sw_GPIO 1 2 1 920 70n
+preplace netloc axi_gpio_btn_and_sw_GPIO2 1 2 1 900 90n
+preplace netloc hdmi_M00_AXI 1 1 2 420 1110 900
+preplace netloc hdmi_hdmi_out 1 2 1 920 110n
+preplace netloc processing_system7_0_DDR 1 2 1 910 20n
+preplace netloc processing_system7_0_FIXED_IO 1 2 1 930 50n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 410 1120 890
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 2 400 1130 880
+preplace netloc ps7_0_axi_periph_M01_AXI 1 1 2 370 1160 870
+preplace netloc ps7_0_axi_periph_M02_AXI 1 1 2 390 1140 860
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 2 380 1150 840
+preplace netloc ps7_0_axi_periph_M04_AXI 1 1 2 360 1170 850
+levelinfo -pg 1 -30 170 630 950
+pagesize -pg 1 -db -bbox -sgen -30 0 1070 1200
+"
+}
+
