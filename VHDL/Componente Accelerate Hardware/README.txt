@@ -1,0 +1,1 @@
+In this file we can find some hardware component that are optimize
