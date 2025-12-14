@@ -1,0 +1,459 @@
+dupa ce fac mkdir build
+cd build
+
+pt ca sunt pe Jetson Orin Nano care are un toolchain preinstalat de CUDA
+
+
+cmake -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc ..
+
+
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+scrie sta in terminal sa fie pathul corect de cuda
+
+si dupa ca sa iti faci tot pachetul omplet scri si asta:
+make -j$(nproc)
+
+si dupa ce sa legat complet tot proiectul apelezi cu asta: ./yolo11_seg_trt
+
+
+
+rmdir build
+mkdir build
+cd build
+
+rm -rf *
+cmake -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc ..
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+make -j$(nproc)
+
+
+Se da tot din build
+./yolo11_seg_trt
+
+
+
+
+Modelul tău este un YOLO cu 80 de clase (COCO) și, de obicei, 32 de coeficienți de mască.
+Lungimea unei intrări (stride): 4(box)+1(conf)+80(clase)+32(coeficienți)=117 elemente pe box.
+
+
+rm -rf *
+cmake -DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc ..
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+make -j$(nproc)
+./yolo11_seg_trt
+
+
+
+
+
+
+--------------------------------------
+--------------------------------------
+--------------------------------------
+--------------------------------------
+--------------------------------------
+
+helping file:
+https://gemini.google.com/app
+https://docs.ultralytics.com/guides/nvidia-jetson/
+
+
+
+Ok. acum ca am reusit sa ne dee mastile bine.
+Facem upgrade la engine. adica il facem sa fie pe FP16
+
+yolo export model=yolo11n-seg.pt format=onnx device=cpu dynamic=False opset=12
+trtexec --onnx=yolo11n-seg.onnx --saveEngine=yolo11n-seg.engine --fp16
+
+
+
+
+pentru cuda:
+pip3 uninstall torch torchvision torchaudio
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+
+sau 
+
+sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
+pip3 install --no-cache --extra-index-url https://pypi.nvidia.com torch torchvision
+
+
+
+https://www.youtube.com/watch?v=A1V8yYlGEkI&t=518s
+
+
+sau mai exact asa de pe site ul oficial:
+
+
+sudo apt update
+sudo apt install python3-pip -y
+pip install -U pip
+
+pip install ultralytics[export]
+
+sudo reboot
+
+
+
+pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torch-2.5.0a0+872d972e41.nv24.08-cp310-cp310-linux_aarch64.whl
+pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torchvision-0.20.0a0+afc54f7-cp310-cp310-linux_aarch64.whl
+
+
+
+ca sa avem cuda pus in path:
+echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+
+
+
+
+Utilitare Jetson status
+
+sudo apt-get update
+sudo apt-get install python3-pip
+sudo pip3 install -U jetson-stats
+
+
+
+
+
+initial pe CPU:
+python mainYoloV11.py 
+WARNING ⚠️ 'source' is missing. Using 'source=/home/mmp/.local/lib/python3.10/site-packages/ultralytics/assets'.
+
+image 1/2 /home/mmp/.local/lib/python3.10/site-packages/ultralytics/assets/bus.jpg: 640x480 4 persons, 1 bus, 1 stop sign, 780.0ms
+Speed: 8.9ms preprocess, ----CPU
+702.1ms inference, ---GPU
+12.5ms postprocess per image at shape (1, 3, 384, 640) ---- CPU
+Results saved to /home/mmp/Desktop/TMarius_YoloV11/modelInitial/runs/segment/predict
+
+
+
+initial pe GPU:
+image 1/1 /home/mmp/Desktop/TMarius_YoloV11/modelInitial/masini.jpeg: 416x640 14 cars, 6 trucks, 268.9ms
+Speed: 7.7ms preprocess, --CPU
+268.9ms inference, ---GPU
+41.1ms postprocess per image at shape (1, 3, 416, 640) ---CPU
+
+
+
+
+
+o rulare la yolo putin optimizat este:
+
+python3 segmentarePreluareClaseImagPy_v5.py 
+[12/14/2025-11:41:02] [TRT] [W] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[INFO] Engine 'yolo11n-seg.engine' încărcat cu succes.
+[INFO] Segmentator TRT gata. Input shape: (1, 3, 640, 640)
+
+[INFO] Procesare imagine: masini.jpeg
+[INFO] Timp inferență (GPU/Total): 131.06 ms
+  [Rezultat] Obiecte detectate și filtrate: 10
+[INFO] Timp Post-Procesare (CPU): 14.12 ms
+
+========================= DETALII REZULTATE =========================
+Total obiecte detectate și filtrate: 10
+--- Obiectul 1 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.8325
+  Box (x1, y1, x2, y2): [46 141 118 179]
+--- Obiectul 2 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7202
+  Box (x1, y1, x2, y2): [131 61 171 94]
+--- Obiectul 3 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.7188
+  Box (x1, y1, x2, y2): [179 130 249 179]
+--- Obiectul 4 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.6338
+  Box (x1, y1, x2, y2): [80 99 136 143]
+--- Obiectul 5 ---
+  Clasă: truck (ID: 7)
+  Încredere (Scor): 0.5273
+  Box (x1, y1, x2, y2): [49 64 95 97]
+--- Obiectul 6 ---
+  Clasă: truck (ID: 7)
+  Încredere (Scor): 0.4646
+  Box (x1, y1, x2, y2): [207 90 255 135]
+--- Obiectul 7 ---
+  Clasă: car (ID: 2)
+  Încredere (Scor): 0.4646
+  Box (x1, y1, x2, y2): [181 29 208 54]
+--- Obiectul 8 ---
+  Clasă: truck (ID: 7)
+  Încredere (Scor): 0.4417
+  Box (x1, y1, x2, y2): [9 84 60 124]
+--- Obiectul 9 ---
+  Clasă: truck (ID: 7)
+  Încredere (Scor): 0.4148
+  Box (x1, y1, x2, y2): [115 73 164 112]
+--- Obiectul 10 ---
+  Clasă: bus (ID: 5)
+  Încredere (Scor): 0.3721
+  Box (x1, y1, x2, y2): [148 34 191 74]
+=====================================================================
+
+
+
+
+O rulare la yolo optimizat si cu pined memory si cu FP16 si cu cuda in anumite zone:
+
+ Platform:   TensorRT + CUDA
+  Iterations: 100
+  Avg Time:   189.461 ms
+  Avg Time CPU:   160.659 ms
+  Avg Time GPU:   28.8027 ms
+  Avg FPS:    5.27812 FPS
+  Detections: 13 objects (last frame)
+========================================
+--> Rendering results...
+--> Result saved to: ../output/result_final.jpg
+
+
+
+
+
+
+
+
+keernel cuda cu Interpolarea Biliniară
+
+pentru poza
+========================================
+  Platform:   TensorRT + CUDA
+  Iterations: 100
+  Avg Time:   52.4276 ms
+  Avg CPU:    31.4701 ms
+  Avg GPU:    20.9575 ms
+  Avg FPS:    19.0739 FPS
+  Detections: 4 objects (last frame)
+========================================
+--> Imagine salvata in: ../output/result_bus.jpg
+
+
+
+pentru video 
+========================================
+  Platform:   TensorRT + CUDA
+  Iterations: 716
+  Avg Time:   129.97 ms
+  Avg CPU:    108.852 ms
+  Avg GPU:    21.1177 ms
+  Avg FPS:    7.69409 FPS
+  Detections: 6 objects (last frame)
+========================================
+--> Video salvat in: ../output/result_Cars Moving On Road Stock Footage - Free Download.mp4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
+-------------------------------------------
+
+
+Computer Vision de înaltă performanță
+
+TEHNOLOGII FOLOSITE LA PROIECT:
+    - NVIDIA CUDA (Compute Unified Device Architecture)
+    - NVIDIA TensorRT
+    - OpenCV (Open Source Computer Vision Library)
+    - YOLOv11 (Modelul AI - Arhitectura)
+    - C++ Modern (Standard 11/14/17)
+
+
+Explicatii:
+
+1. NVIDIA CUDA (Compute Unified Device Architecture)
+
+Ce este: Este platforma de calcul paralel creată de NVIDIA. Îți permite să folosești miile de mici nuclee (cores) de pe placa video pentru a face calcule matematice, nu doar pentru grafică de jocuri.
+Rolul în proiectul tău: În mod normal, redimensionarea imaginilor (resize) și procesarea pixelilor se fac pe CPU (procesor). Dar procesorul este lent la operații pe milioane de pixeli simultan. Tu ai scris un "Kernel CUDA" personalizat.
+    Unde apare în cod:
+        Fișier: preprocess_cuda.cu.
+        Funcția preprocess_bilinear_kernel: Aceasta este inima CUDA. Fiecare fir de execuție (thread) de pe GPU ia un singur pixel din imaginea rezultată și calculează ce culoare trebuie să aibă, folosind interpolare biliniară.
+        Această abordare este de 10-50x mai rapidă decât cv::resize din OpenCV pe CPU, eliberând procesorul pentru alte sarcini.
+
+
+2. NVIDIA TensorRT
+
+Ce este: Este un SDK (Software Development Kit) pentru "inferență deep learning de înaltă performanță". Gândește-te la el ca la un compilator și optimizator pentru rețele neurale.
+Rolul în proiectul tău: Un model AI antrenat (în PyTorch, de exemplu) este generic. TensorRT ia acest model și îl "re-scrie" special pentru placa ta video specifică (Jetson, RTX, etc.).
+        Unește straturi (layers) ale rețelei pentru eficiență.
+        Alege precizia optimă (FP16 sau FP32) pentru viteză maximă.
+        Gestionează memoria GPU eficient.
+        
+Unde apare în cod:
+        Fișier: engine_loader.cpp.
+        Clasele nvinfer1::IRuntime, ICudaEngine, IExecutionContext.
+        Funcția enqueueV3: Aceasta este comanda care spune plăcii video "Rulează rețeaua neurală ACUM".
+        Faptul că folosești fișierul .engine înseamnă că modelul a fost deja compilat și optimizat.
+
+
+3. OpenCV (Open Source Computer Vision Library)
+
+Ce este: Cea mai populară bibliotecă pentru procesarea imaginilor.
+Rolul în proiectul tău: Deși "creierul" este TensorRT și "mușchii" sunt CUDA, OpenCV este "ochiul" și "mâna" care desenează.
+        Input: Citește fișierul video .mp4 sau imaginea și o decodifică într-o matrice de pixeli (Mat).
+        Vizualizare: După ce AI-ul îți dă rezultatele, folosești OpenCV pentru a desena dreptunghiurile (cv::rectangle), măștile colorate și textul (cv::putText) peste imaginea originală.
+        Output: Salvează rezultatul final pe disc.
+
+Unde apare în cod:
+        Fișier: main.cpp, utils.cpp.
+        Obiecte precum cv::Mat, cv::VideoCapture, cv::VideoWriter.
+ 
+        
+        
+        
+4. YOLOv11 (Modelul AI - Arhitectura)
+
+Ce este: "You Only Look Once" versiunea 11. Este un algoritm de ultimă generație (State-of-the-Art) care poate detecta obiecte și le poate segmenta (adică le desenează conturul exact, nu doar un pătrat în jurul lor).
+ Rolul în proiectul tău: Este logica matematică propriu-zisă care recunoaște că "acest grup de pixeli este o mașină".
+ Unde apare în cod:
+        Fișier: postprocess.cpp.
+        Aici are loc "decodarea" rezultatelor brute (tensorilor) care ies din TensorRT.
+        Codul tău gestionează două ieșiri specifice YOLO-Seg:
+            Cutii (Boxes): Coordonatele obiectelor.
+            Măști (Masks/Protos): Informația pixel-cu-pixel pentru forma obiectului.
+        Logica cu sigmoid, combinarea liniară a "Proto-Mștilor" și coeficienților este specifică arhitecturii YOLO Segmentation.
+
+
+
+
+
+5. C++ Modern (Standard 11/14/17)
+
+
+Ce este: Limbajul care leagă totul.
+ Rolul în proiectul tău: Oferă control direct asupra memoriei (pointeri, alocare). Pentru aplicații Real-Time (timp real), C++ este preferat în fața Python deoarece elimină "overhead-ul" (întârzierile) interpretorului Python.
+Unde apare în cod:
+        Managementul memoriei (cudaMalloc, new, delete).
+        Structurile de date (std::vector).
+        Măsurarea timpului (std::chrono).
+
+
+
+
+
+
+
+
+
+Instalare ROS pe jetson:
+
+Pasul 1: Setări de limbă (Locale)
+
+ROS 2 are nevoie de UTF-8 ca să funcționeze corect.
+Bash
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+Pasul 2: Adăugarea surselor ROS 2
+
+Trebuie să îi spunem lui Ubuntu de unde să descarce ROS.
+Bash
+
+# 1. Ne asigurăm că avem "Ubuntu Universe" activat
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+
+# 2. Descărcăm cheia de securitate ROS
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+# 3. Adăugăm repository-ul în lista de surse
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+Pasul 3: Instalarea efectivă (ROS 2 Humble)
+
+Acum instalăm pachetele. Varianta desktop include și vizualizarea (RViz), de care avem nevoie.
+Bash
+
+sudo apt update
+sudo apt install ros-humble-desktop
+
+(Acest pas va dura câteva minute, descarcă vreo 2-3 GB).
+Pasul 4: Instalarea uneltelor de compilare (Colcon)
+
+Vom avea nevoie de ele ca să compilăm codul tău C++ în format ROS.
+Bash
+
+sudo apt install python3-colcon-common-extensions
+
+Pasul 5: Activarea ROS (Sourcing)
+
+Ca să poți folosi comanda ros2 în terminal, trebuie să rulezi un script de setup. Ca să nu îl scrii manual de fiecare dată când deschizi un terminal, îl punem în fișierul de configurare .bashrc:
+Bash
+
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+Verificarea
+
+După ce ai terminat totul, scrie în terminal:
+Bash
+
+ros2
+
+Dacă îți apare o listă cu comenzi (usage: ros2 ...), felicitări! Ai instalat cu succes sistemul nervos al robotului tău.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+Pentru a creea un ROS2
+
+# 1. Creăm folderul workspace-ului
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+
+# 2. Creăm pachetul ROS 2
+# Adăugăm dependențele de bază: rclcpp (C++ core), sensor_msgs (imagini), cv_bridge (conversie OpenCV)
+ros2 pkg create --build-type ament_cmake yolo_tensorrt --dependencies rclcpp sensor_msgs cv_bridge image_transport std_msgs
+
+# 3. Intrăm în pachet
+cd yolo_tensorrt
+
+
+scriem asta in teminal.
+
+ROS2 sau in general este format din:
+
+ROS vine de la Robot Operating System.
+
+Totuși, numele este puțin înșelător. Nu este un sistem de operare (precum Windows sau Linux), ci este un set de unelte și biblioteci software (un "middleware") care rulează peste Linux (de obicei Ubuntu).
+
+Imaginează-ți ROS ca pe sistemul nervos al unui robot.
+De ce ai nevoie de ROS? (Problema pe care o rezolvă)
+
+În acest moment, ai o aplicație C++ (main.cpp) care face totul:
+
+    Citește video.
+
+    Face inferență YOLO (TensorRT).
+
+    Desenează rezultatul.
+
+Dar, dacă pui acest cod pe un robot autonom, vei vrea ca robotul să și reacționeze la ce vede. De exemplu:
+
+    Dacă vede un pieton (clasa "person"), să oprească motoarele.
+
+    Dacă vede banda de circulație (segmentare), să vireze roțile.
+
+Dacă continui stilul actual, va trebui să scrii codul pentru motoare, senzori LIDAR, GPS și decizii în același main.cpp. Codul va deveni un "monstru" imens, imposibil de întreținut.
+
+Soluția ROS: Sparge problema în bucăți mici și independente.
+Cum funcționează ROS (Concepte Cheie)
+
+ROS se bazează pe o arhitectură modulară. Iată cei 3 termeni pe care trebuie să îi știi:
+1. Noduri (Nodes)
+
+Un nod este un mic program care face un singur lucru bine. În cazul tău, ai putea împărți aplicația actuală în 3 noduri separate:
+
+    Nodul Cameră: Doar citește imaginile de la cameră și le trimite mai departe.
+
+    Nodul YOLO (ce ai făcut tu): Primește imaginea, rulează TensorRT și trimite mai departe lista de obiecte detectate.
+
+    Nodul Motoare: Primește lista de obiecte și decide dacă accelerează sau frânează.
+
+Avantajul? Dacă vrei să schimbi camera, modifici doar Nodul Cameră. Nodul YOLO nici nu știe că ai schimbat camera.
+2. Subiecte (Topics)
+
+Topic-urile sunt "țevile" prin care circulă datele între noduri. Au nume unice, de exemplu /camera/image_raw sau /vision/detections.
+3. Mesaje (Messages) - Pub/Sub
+
+Acesta este mecanismul de comunicare:
+
+    Publisher (Publicator): Un nod care strigă date într-un topic (ex: Nodul Cameră publică poze).
+
+    Subscriber (Abonat): Un nod care ascultă un topic (ex: Nodul YOLO se abonează la topicul cu poze).
+
+Exemplu aplicat pe proiectul tău
+
+Dacă treci la ROS, fluxul tău va arăta așa:
+
+    Node 1 (Camera Driver):
+
+        Citește traffic.mp4 sau fluxul live.
+
+        Publică pe topicul: /image_raw.
+
+    Node 2 (YOLOv11 Wrapper - Codul tău):
+
+        Se abonează la /image_raw.
+
+        În loc să deseneze pe ecran (imshow), ia rezultatul (bounding boxes + masks) și îl împachetează într-un mesaj ROS.
+
+        Publică pe topicul: /yolo/detections.
+
+    Node 3 (Visualization / Rviz):
+
+        Un tool grafic din ROS care îți arată ce vede robotul (mult mai avansat decât cv::imshow).
+
+        Se abonează la /yolo/detections și îți arată cutiile 3D.
+
+ROS 1 vs. ROS 2
+
+Există două versiuni majore.
+
+    ROS 1 (Noetic): Este vechi și nu se mai dezvoltă. Nu îl folosi.
+
+    ROS 2 (Humble / Jazzy): Este standardul actual. Este făcut pentru sisteme moderne, este real-time și mult mai stabil.
+
+Deoarece folosești un Jetson Orin Nano (care probabil rulează Ubuntu 20.04 sau 22.04), ar trebui să folosești ROS 2 Humble. NVIDIA oferă un pachet numit ISAAC ROS, care conține noduri ROS 2 optimizate cu CUDA (exact ce faci tu acum manual, dar standardizat).
+
+
+
+
+Daca vrem sa vedem daca vmerge build-ul dam asta:
+cd ~/ros2_ws
+# Ștergem cache-ul vechi ca să fim siguri
+rm -rf build install log
+
+# Compilăm
+colcon build --symlink-install --packages-select yolo_tensorrt
+
+
+
+daca merge si primim mesajul asta:
+Starting >>> yolo_tensorrt
+[Processing: yolo_tensorrt]                             
+--- stderr: yolo_tensorrt                                
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+---
+Finished <<< yolo_tensorrt [51.2s]
+
+Summary: 1 package finished [51.9s]
+  1 package had stderr output: yolo_tensorrt
+
+
+
+mergem mai departe. si ne deschidem inca 2 terminale. Avem un nod in prezent care asteapta ca input o imagine/ un video
+
+Ne deschidem un terinal unde o sa icnarcam un path catre un video printr-un porgram un python, si inca un terminal pentru a vedea rezultatu.
+
+
+
+Gen apel de functie/ sau de program
+Asa se activeaza pachetul nou creat:
+source install/setup.bash  # Activează pachetul nou creat
+ros2 run yolo_tensorrt yolo_node
+
+
+Terminal2:
+python3 play_foto.py
+
+
+Terminal3:
+ros2 run rqt_image_view rqt_image_view
+
+si ne uitam in partea stanga la /yolo/result
+
+
+
+
+deci avem un topics image_raw de la fisierul pythn de video/ foto la partea de procesae a datelor, iar unca un topics cu numele: /yolo/result de la partea de procesare la partea de vizualizare a datelor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
