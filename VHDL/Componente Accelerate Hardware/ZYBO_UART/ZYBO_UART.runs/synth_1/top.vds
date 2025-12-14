@@ -1,0 +1,330 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Oct 22 18:59:05 2025
+# Process ID: 8860
+# Current directory: C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.runs/synth_1/top.vds
+# Journal file: C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.runs/synth_1\vivado.jou
+# Running On        :LAPTOP-P3BOIPB0
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency     :2803 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8271 MB
+# Swap memory       :7582 MB
+# Total Virtual     :15854 MB
+# Available Virtual :3149 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 553.324 ; gain = 236.125
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/utils_1/imports/synth_1/transmitfsm.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/utils_1/imports/synth_1/transmitfsm.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9700
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1407.090 ; gain = 448.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:29]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:85]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/MPG.vhd:18' bound to instance 'monopulse1' of component 'MPG' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/MPG.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/MPG.vhd:24]
+INFO: [Synth 8-3491] module 'transmitfsm' declared at 'C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/transmitfsm.vhd:17' bound to instance 'inst_TFSM' of component 'transmitfsm' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'transmitfsm' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/transmitfsm.vhd:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/transmitfsm.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'transmitfsm' (0#1) [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/transmitfsm.vhd:27]
+INFO: [Synth 8-3491] module 'receivefsm' declared at 'C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/receivefsm.vhd:18' bound to instance 'inst_RFSM' of component 'receivefsm' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'receivefsm' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/receivefsm.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'receivefsm' (0#1) [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/receivefsm.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:29]
+WARNING: [Synth 8-3848] Net led in module/entity top does not have driver. [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:21]
+WARNING: [Synth 8-7129] Port led[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1519.066 ; gain = 560.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1519.066 ; gain = 560.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1519.066 ; gain = 560.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1519.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/zybo.xdc]
+Finished Parsing XDC File [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/zybo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/zybo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1603.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1603.008 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'transmitfsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'receivefsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE2 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'transmitfsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   start |                              001 |                              001
+                    bits |                              010 |                              010
+                    stop |                              011 |                              100
+                   waitt |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'receivefsm'
+WARNING: [Synth 8-327] inferring latch for variable 'prematur_finish_reg' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:228]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               60 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input   16 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port led[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module top is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (prematur_finish_reg) is unused and will be removed from module top.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'prematur_finish_reg__0/Q' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:148]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:148]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.srcs/sources_1/new/top.vhd:148]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|top         | tx_data    | 64x8          | LUT            | 
+|top         | tx_data    | 64x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     5|
+|4     |LUT2   |    10|
+|5     |LUT3   |    14|
+|6     |LUT4   |    17|
+|7     |LUT5   |    44|
+|8     |LUT6   |    52|
+|9     |FDRE   |   191|
+|10    |FDSE   |    10|
+|11    |IBUF   |     6|
+|12    |OBUF   |     1|
+|13    |OBUFT  |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1603.008 ; gain = 560.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1603.008 ; gain = 644.707
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1603.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1603.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e4af3d8f
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 20 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1603.008 ; gain = 1045.230
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1603.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/SSC/Lab-uri/Lab 1/ZYBO_UART/ZYBO_UART.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 22 18:59:45 2025...
