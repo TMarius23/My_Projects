@@ -49,7 +49,7 @@ const uint8_t SOFT_MISO_PIN = 12;
 const uint8_t SOFT_MOSI_PIN = 11;
 const uint8_t SOFT_SCK_PIN  = 13;
 
-// Acum linia asta va fi recunoscuta:
+// Modifica in SdFatConfig.h din SdFat -> Src linia: #define SPI_DRIVER_SELECT 0 si in loc de 0 pune 2 si o sa mearga
 SoftSpiDriver<SOFT_MISO_PIN, SOFT_MOSI_PIN, SOFT_SCK_PIN> softSpi;
 #define SD_CONFIG SdSpiConfig(SD_CS_PIN, DEDICATED_SPI, SD_SCK_MHZ(0), &softSpi)
 
