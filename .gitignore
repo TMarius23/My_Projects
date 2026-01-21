@@ -49,3 +49,10 @@ node_modules/
 # =========================
 Thumbs.db
 .DS_Store
+
+
+#ca sa nu mai am fisierele urmatoare
+*.rar
+*.zip
+*.blend
+*.blend

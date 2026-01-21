@@ -1,0 +1,27 @@
+Ok acum trebuie sa mai fac inca o teava prin care sa duc toate coordonatele masini din video catre un nou nod, unde sa le salvez si sa ma pot folosii de ele.
+
+
+Asa imi deschid si al 4 terminal/ al 4 nod:
+cd ~/ros2_ws
+colcon build --symlink-install --packages-select yolo_tensorrt
+source install/setup.bash
+
+Rulează (4 Terminale):
+
+    Term 1 (YOLO): ros2 run yolo_tensorrt yolo_node
+
+    Term 2 (Logger): ros2 run yolo_tensorrt data_logger
+
+    Term 3 (Imagine): python3 ~/Desktop/play_image.py (sau video)
+
+    Term 4 (Verificare): tail -f ~/Desktop/detections_log.txt
+    
+    Terminal 5 vizualizae: 
+    
+    
+    
+    
+    
+Extra in plus daca mai am timp sa il fac:
+	Ok. pe viitor pot sa ma uit la un small llm care sa primeasca o poza/ un frame si sa imi interpreteze ce am acolo. de eemplu daca am masini care nu sunt facute corect sau etc.
+ 

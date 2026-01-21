@@ -177,7 +177,6 @@ void postprocess(EngineLoader& loader,
     }
 
     // 7. GENERARE MASTI (Doar pentru supraviețuitori!)
-    // Acum procesăm doar cele ~17 obiecte, nu sute.
     for (auto& det : finalDetections) {
         // a. Combinare liniară: Proto * Coeffs
         cv::Mat mask_proto = cv::Mat::zeros(protoH, protoW, CV_32FC1);

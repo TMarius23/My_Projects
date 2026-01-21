@@ -1,0 +1,68 @@
+# Blender 5.0.1 MTL File: 'potir.blend'
+# www.blender.org
+
+newmtl blinn4
+Ns 63.117920
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Open_temple/textures/oldgold copy.jpg
+map_Bump Open_temple/textures/oldgoldespecular.jpg
+
+newmtl blinn4.001
+Ns 63.117920
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Open_temple/textures/oldgold copy.jpg
+map_Bump Open_temple/textures/oldgoldespecular.jpg
+
+newmtl blinn4.002
+Ns 63.117920
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Open_temple/textures/oldgold copy.jpg
+map_Bump Open_temple/textures/oldgoldespecular.jpg
+
+newmtl lambert2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Open_temple/textures/germany0WHITE.jpg
+map_Bump Open_temple/textures/germany010b.jpg
+
+newmtl lambert2.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Open_temple/textures/germany0WHITE.jpg
+map_Bump Open_temple/textures/germany010b.jpg
+
+newmtl lambert2.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Open_temple/textures/germany0WHITE.jpg
+map_Bump Open_temple/textures/germany010b.jpg

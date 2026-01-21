@@ -126,7 +126,7 @@ WARNING ⚠️ 'source' is missing. Using 'source=/home/mmp/.local/lib/python3.1
 
 image 1/2 /home/mmp/.local/lib/python3.10/site-packages/ultralytics/assets/bus.jpg: 640x480 4 persons, 1 bus, 1 stop sign, 780.0ms
 Speed: 8.9ms preprocess, ----CPU
-702.1ms inference, ---GPU
+702.1ms inference, ---CPU
 12.5ms postprocess per image at shape (1, 3, 384, 640) ---- CPU
 Results saved to /home/mmp/Desktop/TMarius_YoloV11/modelInitial/runs/segment/predict
 

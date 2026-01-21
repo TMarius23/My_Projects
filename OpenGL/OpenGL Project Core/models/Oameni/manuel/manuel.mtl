@@ -1,0 +1,12 @@
+# Blender 5.0.1 MTL File: 'None'
+# www.blender.org
+
+newmtl rp_manuel_animated_001_mat
+Ns 20.000006
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd rp_manuel_animated_001_dancing_A.jpg

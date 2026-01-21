@@ -1,0 +1,44 @@
+# Blender 3.3.12 MTL File: 'RAN_Halloween_Pumpkin_2025.blend'
+# www.blender.org
+
+newmtl Candle
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:/Candle_512_albedo.png
+map_Ns C:/Candle_512_roughness.png
+map_refl C:/Candle_512_metallic.png
+
+newmtl Flame
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+illum 2
+map_Kd C:/Candle_512_albedo.png
+map_d C:/Candle_512_alpha.png
+map_Ke C:/Candle_512_albedo.png
+
+newmtl Leaves
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd C:/Leaves_1K_albedo.png
+map_Ns C:/Leaves_1K_roughness.png
+map_d C:/Leaves_1K_alpha.png
+map_Bump -bm 1.000000 C:/Leaves_1K_normal.png
+
+newmtl Pumpkin
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Pumpkin_2K_albedo.png
+map_Ns C:/Pumpkin_2K_roughness.png

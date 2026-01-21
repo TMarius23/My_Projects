@@ -89,8 +89,9 @@ extern "C" void launch_preprocess(
     float scale, int padX, int padY,
     cudaStream_t stream
 ) {
-    // Păstrăm blocuri mici pentru siguranță pe Jetson
+
     dim3 blockSize(16, 16);
+    //dim3 blockSize(32, 32);
     dim3 gridSize((dstW + blockSize.x - 1) / blockSize.x, 
                   (dstH + blockSize.y - 1) / blockSize.y);
 

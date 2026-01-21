@@ -1,0 +1,1382 @@
+# Blender 5.0.1 MTL File: 'teren.blend'
+# www.blender.org
+
+newmtl Floor
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Floor.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/grass3.jpg
+
+newmtl Green_Elka
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Green_sosna.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Vetka_elka.png
+
+newmtl Kust_1
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_1.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_2.png
+
+newmtl Kust_2
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+map_d C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Kust_1.jpg
+
+newmtl Material.000001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/magic-war-horse-lowpoly/textures/AmbientOcclusionMap.png
+map_Bump -bm 1.000000 C:/Program Files/Autodesk/3ds Max 2014/Maps/fx/scene
+
+newmtl Paporotnik
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Paporotnik.png
+
+newmtl Wood_tree.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl Wood_tree.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree.jpg
+
+newmtl Wood_tree.036
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/forest/textures/Tree_android.png
+
+newmtl lambert13
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert13.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert13.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 C:/Users/Marius/Desktop/UTCN/AN 3/Semestru 1/PG/Proiect/Componente proiect/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert41.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd -o 0.35298422 -0.1916548 0 C:/germany010a copy.jpg
+map_Bump -o 0.35298422 -0.1916548 0 -bm 0.050000 C:/germany010b.jpg
+
+newmtl lambert42.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/wndw038M.jpg
+map_Bump -bm 1.000000 C:/wndw038M.jpg
+
+newmtl lambert43.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd -o 0.35298422 -0.1916548 0 C:/sweden008.jpg
+map_Bump -o 0.35298422 -0.1916548 0 -bm 1.000000 C:/sweden008b.jpg
+
+newmtl lambert44.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/entr045M.jpg
+map_Bump -bm 0.100000 C:/entr045Mb.jpg
+
+newmtl lambert45.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/egypt_011.jpg
+map_Bump -bm 1.000000 C:/egypt_011b.jpg
+
+newmtl lambert46.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/slat20XL.jpg
+map_Bump -bm 1.000000 C:/slat20XLb.jpg

@@ -1,0 +1,1 @@
+/home/mmp/Desktop/TMarius_YoloV11/ROS2_P/build/yolo_tensorrt/ament_cmake_environment_hooks/local_setup.sh

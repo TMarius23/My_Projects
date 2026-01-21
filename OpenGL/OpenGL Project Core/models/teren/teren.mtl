@@ -1,0 +1,4060 @@
+# Blender 5.0.1 MTL File: 'teren_oameni_completV1.blend'
+# www.blender.org
+
+newmtl Floor.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.036
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.037
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.038
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.039
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.040
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.041
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.042
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.043
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.044
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.045
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.046
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.047
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.048
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.049
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.050
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.051
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.052
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.053
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.054
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.055
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.056
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.057
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.058
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.059
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.060
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.061
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.062
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.063
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.064
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.065
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.066
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.067
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.068
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.069
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.070
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.071
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.072
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.073
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.074
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.075
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.076
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.077
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.078
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.079
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.080
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.081
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.082
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.083
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.084
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.085
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.086
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.087
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.088
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.089
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.090
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.101
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.102
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.103
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.104
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.105
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.106
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.107
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.108
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.109
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Floor.110
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/grass3.jpg
+
+newmtl Green_Elka
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.036
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.037
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.038
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.039
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.040
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.041
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.042
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.043
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.044
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.045
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.046
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.047
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.048
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.049
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.050
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.051
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.052
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.053
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_Elka.054
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Green_sosna.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Green_sosna.036
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Vetka_elka.png
+
+newmtl Kust_1
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_1.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_2.png
+
+newmtl Kust_2
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.png
+
+newmtl Kust_2.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Kust_2.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Kust_2.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Kust_1.jpg
+map_d Componente proiectV1/forest/textures/Kust_1.jpg
+
+newmtl Material.003
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/WoodHouse/Diffuse.png
+
+newmtl Material.004
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/WoodHouse/Diffuse.png
+
+newmtl Material.005
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/WoodHouse/Diffuse.png
+
+newmtl Paporotnik
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Paporotnik.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/forest/textures/Paporotnik.png
+
+newmtl Wood_tree.001
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.002
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.003
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.004
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.005
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.006
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.007
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.008
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.009
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.010
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.011
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.012
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.013
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.014
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.015
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.016
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.017
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.018
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.019
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.020
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.021
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.022
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.023
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.024
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.025
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.026
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.027
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.028
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.029
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.030
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.031
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.032
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.033
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.034
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.035
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.036
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.037
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.038
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.039
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.040
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.041
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.042
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.043
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.044
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.045
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.046
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.047
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.048
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.049
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.050
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.051
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.052
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.053
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.054
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.055
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.056
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.057
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.058
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.059
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.060
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.061
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.062
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.063
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.064
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.065
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.066
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.067
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.068
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.069
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.070
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.071
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.072
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.073
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.074
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.075
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.076
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.077
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.078
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.079
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.080
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.081
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.082
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.083
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.084
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.085
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.086
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.087
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.088
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.089
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.090
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree.jpg
+
+newmtl Wood_tree.091
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.092
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.093
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.094
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.095
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl Wood_tree.096
+Ns 96.078453
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/forest/textures/Tree_android.png
+
+newmtl lambert13.006
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert13.007
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert13.008
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert13.009
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture.jpg
+map_Bump -bm 0.012000 Componente proiectV1/Case/4vd2sk31doow-farmhouse_maya16/Farmhouse Maya 2016 Updated/Farmhouse Texture Bump Map .jpg
+
+newmtl lambert2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Componente proiectV1/Open_temple/textures/germany0WHITE.jpg
+map_Bump Componente proiectV1/Open_temple/textures/germany010b.jpg
+
+newmtl lambert41.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd -o 0.35298422 -0.1916548 0 germany010a copy.jpg
+map_Bump -o 0.35298422 -0.1916548 0 -bm 0.050000 C:/germany010b.jpg
+
+newmtl lambert9SG
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/Case/97zgg91l2pvk-Cottagemodel/Texture/Cottage Texture.jpg
+map_Bump Componente proiect/Case/97zgg91l2pvk-Cottagemodel/Cottage Texture Bump.jpg -bm 0.02
+
+newmtl lambert9SG.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd Componente proiectV1/Case/97zgg91l2pvk-Cottagemodel/Texture/Cottage Texture.jpg
+map_Bump Componente proiect/Case/97zgg91l2pvk-Cottagemodel/Cottage Texture Bump.jpg -bm 0.02

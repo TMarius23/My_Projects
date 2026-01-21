@@ -26,7 +26,8 @@ Adafruit_CCS811 ccs;
 #include <Fonts/FreeMonoBoldOblique12pt7b.h>
 #include <Fonts/FreeSerif9pt7b.h>
 #include "Adafruit_ILI9341.h"
-#include "SD.h"
+// #include "SD.h"
+#include "SdFat.h"
 // #include <WiFi.h>
 #include <Adafruit_HMC5883_U.h>
 #include <EEPROM.h>
@@ -38,13 +39,26 @@ Adafruit_CCS811 ccs;
 
 //id admin logare aplicatie
 #define ID_ADMIN_LOGIN 1362
+
 const long MAGIX_NUMBER_ADDRESS = 0xAA55AA55L;
 
 
-///initializare pozitie card SD
-const int ARDUINO_SS_PIN = 10;
-const int SD_CHIP_SELECT = 4;
+
+const uint8_t SD_CS_PIN = 10;
+const uint8_t SOFT_MISO_PIN = 12;
+const uint8_t SOFT_MOSI_PIN = 11;
+const uint8_t SOFT_SCK_PIN  = 13;
+
+// Modifica in SdFatConfig.h din SdFat -> Src linia: #define SPI_DRIVER_SELECT 0 si in loc de 0 pune 2 si o sa mearga
+SoftSpiDriver<SOFT_MISO_PIN, SOFT_MOSI_PIN, SOFT_SCK_PIN> softSpi;
+#define SD_CONFIG SdSpiConfig(SD_CS_PIN, DEDICATED_SPI, SD_SCK_MHZ(0), &softSpi)
+
+SdFat sd;
+SdFile file;
+
 const char* NUME_FISIER_CSV = "DATE.CSV";
+
+
 
 
 unsigned char hexdata[9] = { 0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79 };
@@ -2081,13 +2095,20 @@ void screen(int ok, int y) {
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
 
+void createHeader() {
+  if (file.open(NUME_FISIER_CSV, O_CREAT | O_WRITE | O_AT_END)) {
+    file.println("Temperatura;TVOC;CO2;PM2_5;PM10;Umiditate;CO;NH3;NO2;O3;Fonic;Magnetic;Hidrogen;Presiune");
+    file.close();
+    Serial.println("Antet creat.");
+  }
+}
 
 //ok = 10 meniu principal
-int ok = 12;
+int ok = 10;
 int y = 0;
 
 bool prim_run = true;
-bool incarcare_SD = true;
+bool initializare_sd = true;
 
 void setup() {
 
@@ -2095,26 +2116,33 @@ void setup() {
     prim_run = false;
     delay(2000);
   }
-
-  pinMode(ARDUINO_SS_PIN, OUTPUT);
-  pinMode(SD_CHIP_SELECT, OUTPUT);
-  digitalWrite(SD_CHIP_SELECT, HIGH);
   
-  if (incarcare_SD){
-    incarcare_SD = false;
-    Serial.println("Sunt aici!");
-    if (!SD.begin(SD_CHIP_SELECT)) {
-      Serial.println("Eroare la initializarea cardului SD!");
-      while (true); // Opreste executia daca nu detecteaza cardul
+  if(initializare_sd){
+    initializare_sd = false;
+    if (!sd.begin(SD_CONFIG)) {
+      Serial.println("EROARE: Initializare ESUATA!");
+      Serial.println("Verifica: Cardul e introdus? E formatat FAT32?");
+      
+      if (sd.card()->errorCode()) {
+        Serial.print("Cod eroare intern: 0x");
+        Serial.println(sd.card()->errorCode(), HEX);
+        Serial.print("Data eroare: 0x");
+        Serial.println(sd.card()->errorData(), HEX);
+      }
+    } 
+    if (!sd.exists(NUME_FISIER_CSV)) {
+      // Deschidem cu flag-uri de scriere
+      if (file.open(NUME_FISIER_CSV, O_WRONLY | O_CREAT)) {
+        file.println("Temperatura;TVOC;CO2;PM2_5;PM10;Umiditate;CO;NH3;NO2;O3;Fonic;Magnetic;Hidrogen;Presiune");
+        file.close();
+        Serial.println("Fisier nou creat si antet scris.");
+      } else {
+        Serial.println("Eroare la crearea fisierului!");
+      }
+    } else {
+      Serial.println("Fisierul exista deja. Voi adauga date.");
     }
-    Serial.println("Initializare card SD reusita.");
-    File antetFile = SD.open(NUME_FISIER_CSV, FILE_WRITE);
-    if (antetFile) {
-      // Defineste antetul (Numele coloanelor, separate prin virgula)
-      String antet = "Temperatura,TVOC,CO2,PM2_5,PM10,Umiditate,CO,NH3,NO2,O3,Fonic,Magnetic,Hidrogen,Presiune";
-      antetFile.println(antet);
-      antetFile.close();
-    }
+    Serial.println("Card SD configurat cu success!");
   }
 
   ///incarcam din memorie valorile pentru calibrarea senzorilor
@@ -3507,7 +3535,7 @@ int decibelotmetru() {
 }
 
 int H() {
-  return (analogRead(A14) + adreseEEPROMSenzori.val_H);
+  return ((analogRead(A14) / 10 ) + adreseEEPROMSenzori.val_H);
 }
 
 int O3() {
@@ -4937,31 +4965,37 @@ void apel_urgenta(int TMP_VAL, int TVOC_VAL, int CO2_VAL, int HUM_VAL, int CO_VA
   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
 
+int scriere_date_sd = 0;
+
 void scrieLinieCSV(int TMP_VAL, int TVOC_VAL, int CO2_VAL, int HUM_VAL, int CO_VAL, int NH3_VAL, int NO2_VAL, int O3_VAL, int SOUND_VAL, int Mag_VAL, int H_VAL, int PRES_VAL){
-  File dataFile = SD.open(NUME_FISIER_CSV, FILE_WRITE);
-  if(dataFile){
 
-    String linieCSV = "";
-    linieCSV += String(TMP_VAL) + ",";
-    linieCSV += String(TVOC_VAL) + ",";
-    linieCSV += String(CO2_VAL) + ",";
-    linieCSV += String(pm2) + ",";
-    linieCSV += String(pm10) + ",";
-    linieCSV += String(HUM_VAL) + ",";
-    linieCSV += String(CO_VAL) + ",";
-    linieCSV += String(NH3_VAL) + ",";
-    linieCSV += String(NO2_VAL) + ",";
-    linieCSV += String(O3_VAL) + ",";
-    linieCSV += String(SOUND_VAL) + ",";
-    linieCSV += String(Mag_VAL) + ",";
-    linieCSV += String(H_VAL) + ",";
-    linieCSV += String(PRES_VAL);
+  if(scriere_date_sd <= 5000){
+    scriere_date_sd++;
+    return;
+  }
+  scriere_date_sd = 0;
 
+  if (file.open(NUME_FISIER_CSV, O_RDWR | O_CREAT | O_AT_END)) {
+    
+    file.print(TMP_VAL); file.print(";");
+    file.print(TVOC_VAL); file.print(";");
+    file.print(CO2_VAL); file.print(";");
+    file.print(pm2); file.print(";");
+    file.print(pm10); file.print(";");
+    file.print(HUM_VAL); file.print(";");
+    file.print(CO_VAL); file.print(";");
+    file.print(NH3_VAL); file.print(";");
+    file.print(NO2_VAL); file.print(";");
+    file.print(O3_VAL); file.print(";");
+    file.print(SOUND_VAL); file.print(";");
+    file.print(Mag_VAL); file.print(";");
+    file.print(H_VAL); file.print(";");
+    file.println(PRES_VAL);
 
-    dataFile.println(linieCSV);
-    dataFile.close();
-  }else{
-    Serial.println("Eroare scriere date fisier");
+    file.close();
+    // Serial.println("Date salvate.");
+  } else {
+    Serial.println("Eroare la deschiderea fisierului!");
   }
 }
 

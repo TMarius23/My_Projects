@@ -21,13 +21,12 @@ find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(CUDA REQUIRED)
 
-# TensorRT (pe Jetson e de obicei în directoare standard, dar uneori trebuie ajutat)
+# TensorRT (caută bibliotecile manual)
 find_library(NVINFER NAMES nvinfer)
 find_library(NVINFER_PLUGIN NAMES nvinfer_plugin)
 find_library(NVONNXPARSER NAMES nvonnxparser)
 
-# --- 3. SURSE ---
-# Adună fișierele tale sursă (inclusiv .cu)
+# --- 3. SURSE YOLO ---
 set(SOURCES
   src/yolo_node.cpp
   src/engine_loader.cpp
@@ -37,15 +36,15 @@ set(SOURCES
   src/preprocess_cuda.cu
 )
 
-# --- 4. EXECUTABIL ---
+# --- 4. EXECUTABIL PRINCIPAL: YOLO_NODE ---
 add_executable(yolo_node ${SOURCES})
 
 # Include directories
 target_include_directories(yolo_node PUBLIC
-  # 1. Calea standard ROS (pentru include/yolo_tensorrt/header.h)
+  # 1. Calea standard ROS
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   
-  # 2. FIX-UL TĂU: Adăugăm folderul specific ca să meargă #include "utils.h" direct
+  # 2. FIX: Adăugăm folderul specific ca să meargă #include "utils.h" direct
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/yolo_tensorrt>
 
   $<INSTALL_INTERFACE:include>
@@ -53,16 +52,7 @@ target_include_directories(yolo_node PUBLIC
   ${CUDA_INCLUDE_DIRS}
 )
 
-
-# Include directories
-target_include_directories(yolo_node PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-  ${OpenCV_INCLUDE_DIRS}
-  ${CUDA_INCLUDE_DIRS}
-)
-
-# --- 5. LINKARE ---
+# Linkare Dependențe ROS
 ament_target_dependencies(yolo_node
   rclcpp
   sensor_msgs
@@ -71,7 +61,7 @@ ament_target_dependencies(yolo_node
   std_msgs
 )
 
-# Linkăm bibliotecile non-ROS manual
+# Linkare Biblioteci Externe (Non-ROS)
 target_link_libraries(yolo_node
   ${OpenCV_LIBS}
   ${NVINFER}
@@ -80,8 +70,17 @@ target_link_libraries(yolo_node
   ${CUDA_LIBRARIES}
 )
 
+# --- 5. EXECUTABIL SECUNDAR: DATA_LOGGER ---
+# Acesta este nodul nou care salvează coordonatele în fișier text
+add_executable(data_logger src/data_logger.cpp)
+ament_target_dependencies(data_logger rclcpp std_msgs)
+
 # --- 6. INSTALARE ---
-install(TARGETS yolo_node
-  DESTINATION lib/${PROJECT_NAME})
+# Instalăm ambele noduri ca să le poți rula cu "ros2 run"
+install(TARGETS 
+  yolo_node 
+  data_logger
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()

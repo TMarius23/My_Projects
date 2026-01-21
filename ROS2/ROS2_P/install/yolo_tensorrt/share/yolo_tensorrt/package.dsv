@@ -1,0 +1,8 @@
+source;share/yolo_tensorrt/hook/cmake_prefix_path.ps1
+source;share/yolo_tensorrt/hook/cmake_prefix_path.dsv
+source;share/yolo_tensorrt/hook/cmake_prefix_path.sh
+source;share/yolo_tensorrt/local_setup.bash
+source;share/yolo_tensorrt/local_setup.dsv
+source;share/yolo_tensorrt/local_setup.ps1
+source;share/yolo_tensorrt/local_setup.sh
+source;share/yolo_tensorrt/local_setup.zsh
