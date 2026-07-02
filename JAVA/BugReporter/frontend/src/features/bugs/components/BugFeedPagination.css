@@ -1,0 +1,38 @@
+.bug-feed-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 14px;
+    color: var(--color-text-on-dark-muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.bug-feed-pagination button {
+    min-height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.bug-feed-pagination button:hover:not(:disabled) {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.bug-feed-pagination button:disabled {
+    cursor: not-allowed;
+    color: var(--color-placeholder);
+    opacity: 0.55;
+}

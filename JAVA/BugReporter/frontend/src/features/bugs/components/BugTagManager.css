@@ -1,0 +1,150 @@
+.bug-report-tags {
+    display: grid;
+    gap: 10px;
+    align-content: start;
+    overflow: visible;
+    padding: 18px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface-panel);
+    box-shadow: var(--shadow-panel), var(--inset-highlight);
+    backdrop-filter: blur(14px);
+}
+
+.bug-report-tags__header {
+    display: grid;
+    gap: 8px;
+}
+
+.bug-report-tags__header > span,
+.bug-report-tag-picker__create > span {
+    color: var(--color-text-on-dark-soft);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.bug-report-tags__header div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.bug-report-tags__header button {
+    min-height: 24px;
+    padding: 0 8px;
+    border: 1px solid var(--color-accent-border-soft);
+    border-radius: var(--radius-pill);
+    background: var(--color-accent-soft);
+    color: var(--color-accent-text);
+    font: inherit;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.bug-report-tags__header button:hover {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.bug-report-tags__controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+}
+
+.bug-report-tag-picker .dropdown-menu__trigger {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.bug-report-tag-picker__list {
+    display: grid;
+    gap: 0;
+}
+
+.bug-report-tag-picker__list .dropdown-menu__item,
+.bug-report-tags__controls .bug-report-tag-picker__list .dropdown-menu__item {
+    min-height: 26px;
+    padding: 0 14px;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.bug-report-tag-picker__create {
+    display: grid;
+    gap: 8px;
+    padding: 10px 14px 12px;
+    border-top: 1px solid var(--color-border-muted);
+    background: rgba(5, 7, 11, 0.62);
+}
+
+.bug-report-tag-picker__create div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+}
+
+.bug-report-tags input {
+    width: 100%;
+    min-width: 0;
+    min-height: 38px;
+    padding: 0 10px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-control);
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+}
+
+.bug-report-tags input::placeholder {
+    color: var(--color-placeholder);
+}
+
+.bug-report-tags input:focus {
+    border-color: var(--color-accent-border-strong);
+    box-shadow: 0 0 0 3px var(--color-accent-soft);
+}
+
+.bug-report-tags__controls > button,
+.bug-report-tag-picker__create button {
+    min-height: 38px;
+    padding: 0 12px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-control);
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.bug-report-tags__controls > button:hover:not(:disabled),
+.bug-report-tag-picker__create button:hover:not(:disabled) {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.bug-report-tags__controls > button:disabled,
+.bug-report-tag-picker__create button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

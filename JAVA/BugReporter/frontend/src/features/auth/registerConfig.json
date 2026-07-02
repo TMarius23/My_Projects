@@ -1,0 +1,78 @@
+{
+  "title": "Bug Reporter",
+  "subtitle": "Create your operative account",
+  "fields": {
+    "username": {
+      "label": "USERNAME",
+      "placeholder": "e.g. agent_smith",
+      "icon": "user"
+    },
+    "email": {
+      "label": "EMAIL",
+      "placeholder": "e.g. user@example.com",
+      "icon": "user"
+    },
+    "phoneNumber": {
+      "label": "PHONE NUMBER",
+      "placeholder": "e.g. 0712345678",
+      "icon": "user"
+    },
+    "password": {
+      "label": "PASSWORD",
+      "placeholder": "",
+      "icon": "lock"
+    },
+    "confirmPassword": {
+      "label": "CONFIRM PASSWORD",
+      "placeholder": "",
+      "icon": "lock"
+    }
+  },
+  "submitLabel": "REGISTER ACCOUNT",
+  "submittingLabel": "REGISTERING...",
+  "loginPrompt": "Already registered?",
+  "loginLinkLabel": "Return to Login",
+  "loginHref": "/login",
+  "validation": {
+    "username": {
+      "minLength": 3,
+      "maxLength": 50,
+      "messages": {
+        "required": "Username is required.",
+        "minLength": "Username must be at least 3 characters.",
+        "maxLength": "Username must be at most 50 characters."
+      }
+    },
+    "email": {
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "messages": {
+        "required": "Email is required.",
+        "pattern": "Enter a valid email address."
+      }
+    },
+    "phoneNumber": {
+      "pattern": "^(0[0-9]{9}|\\+40[0-9]{9})$",
+      "messages": {
+        "required": "Phone number is required.",
+        "pattern": "Enter a Romanian phone number, e.g. 0712345678 or +40712345678."
+      }
+    },
+    "password": {
+      "minLength": 6,
+      "messages": {
+        "required": "Password is required.",
+        "minLength": "Password must be at least 6 characters."
+      }
+    },
+    "confirmPassword": {
+      "messages": {
+        "required": "Please confirm your password.",
+        "mismatch": "Passwords do not match."
+      }
+    }
+  },
+  "errors": {
+    "network": "Unable to reach authentication server. Check your connection.",
+    "unknown": "An unexpected error occurred. Please try again."
+  }
+}

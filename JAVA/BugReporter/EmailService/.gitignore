@@ -1,0 +1,4 @@
+# Local-only overrides (may contain secrets)
+src/main/resources/application-local.properties
+.env
+.env.*

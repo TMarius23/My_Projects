@@ -1,0 +1,97 @@
+.bug-feed-sidebar {
+    position: sticky;
+    top: 0;
+    display: grid;
+    align-content: start;
+    gap: 22px;
+    align-self: start;
+}
+
+.bug-panel {
+    padding: 18px;
+}
+
+.bug-panel h2 {
+    margin: 0 0 16px;
+    color: var(--color-text-on-dark);
+    font-size: 15px;
+}
+
+.tag-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text-on-dark-muted);
+    font-size: 13px;
+}
+
+.tag-list button {
+    min-height: 28px;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.tag-list button:hover,
+.tag-list button.is-selected {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    font-weight: 800;
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.tag-list strong {
+    min-width: 28px;
+    border-radius: 4px;
+    background: var(--color-accent-medium);
+    color: var(--color-text-on-dark);
+    font-size: 11px;
+    text-align: center;
+}
+
+.hunter-list {
+    display: grid;
+    gap: 14px;
+}
+
+.hunter-list p {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    margin: 0;
+    column-gap: 10px;
+    color: var(--color-text-on-dark);
+}
+
+.hunter-list p span {
+    display: grid;
+    place-items: center;
+    grid-row: span 2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: var(--color-accent-contrast);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.hunter-list small {
+    color: var(--color-text-on-dark-soft);
+}

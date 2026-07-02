@@ -1,0 +1,55 @@
+import { test, expect } from '@playwright/test';
+
+test('testAllbButtonsModerator', async ({ page }) => {
+  await page.goto('http://localhost:5173/login');
+  await page.getByRole('textbox', { name: 'EMAIL' }).click();
+  await page.getByRole('textbox', { name: 'EMAIL' }).click();
+  await page.getByRole('textbox', { name: 'EMAIL' }).click();
+  await page.getByRole('textbox', { name: 'EMAIL' }).fill('test@example3.com');
+  await page.getByRole('textbox', { name: 'EMAIL' }).press('Tab');
+  await page.getByRole('textbox', { name: 'PASSWORD' }).click();
+  await page.getByRole('textbox', { name: 'PASSWORD' }).fill('test123');
+  await page.getByRole('button', { name: 'INITIALIZE SESSION' }).click();
+  await page.getByRole('link', { name: 'My Profile' }).click();
+  await page.pause();
+  await page.getByRole('main').filter({ hasText: 'Hhunortest@example3.' }).click();
+  await page.getByRole('link', { name: 'Report Bug' }).click();
+  await page.pause();
+  await page.getByRole('main').click();
+  await page.getByRole('link', { name: 'User Management' }).click();
+  await page.getByRole('main').click();
+  await page.getByRole('link', { name: 'Bug Feed' }).click();
+  await page.getByRole('button', { name: 'Upvote CreereBugInstagarm' }).click();
+  await page.getByRole('link', { name: 'CreereBugInstagarm', exact: true }).click();
+  await page.getByRole('textbox', { name: 'Add a comment or suggest a' }).click();
+  await page.getByRole('textbox', { name: 'Add a comment or suggest a' }).fill('Acesta este un comenatriu util');
+  await page.getByRole('button', { name: 'Post Comment' }).click();
+  await page.getByRole('button', { name: 'Edit' }).click();
+  await page.getByText('Acesta este un comenatriu util').click();
+  await page.getByText('Acesta este un comenatriu util').fill('Acesta nu mai e un comentaiu util.');
+  await page.getByRole('button', { name: 'Save' }).click();
+  await page.getByRole('textbox', { name: 'Add a comment or suggest a' }).click();
+  await page.getByRole('textbox', { name: 'Add a comment or suggest a' }).fill('Vreau o poza la comentariu');
+  await page.getByRole('button', { name: 'Attach screenshot' }).click();
+  await page.getByRole('textbox', { name: 'Paste screenshot here or add' }).click();
+  await page.getByRole('textbox', { name: 'Paste screenshot here or add' }).fill('https://socialweb.ro/wp-content/uploads/2018/07/prima-poza-pe-instagram.jpg');
+  await page.getByRole('button', { name: 'Post Comment' }).click();
+  page.once('dialog', dialog => {
+    console.log(`Dialog message: ${dialog.message()}`);
+    dialog.dismiss().catch(() => {});
+  });
+  await page.getByRole('button', { name: 'Delete' }).nth(1).click();
+  await page.getByRole('link', { name: 'Edit' }).click();
+  await page.getByRole('textbox', { name: 'Bug title' }).click();
+  await page.getByRole('textbox', { name: 'Bug title' }).fill('CreereBugInstagarmFrumos');
+  await page.getByRole('button', { name: 'Save Changes' }).click();
+  await page.getByRole('link', { name: 'CreereBugInstagarmFrumos', exact: true }).click();
+  page.once('dialog', dialog => {
+    console.log(`Dialog message: ${dialog.message()}`);
+    dialog.dismiss().catch(() => {});
+  });
+  await page.getByRole('button', { name: 'Delete' }).first().click();
+  await page.getByRole('link', { name: 'User Management' }).click();
+  await page.getByRole('row', { name: 'Andrei mariustrif0323@yahoo.' }).getByRole('button').click();
+  await page.getByRole('link', { name: 'Bug Feed' }).click();
+});

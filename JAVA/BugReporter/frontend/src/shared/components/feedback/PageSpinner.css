@@ -1,0 +1,22 @@
+.page-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    background: var(--color-bg);
+}
+
+.page-spinner__ring {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 3px solid var(--color-accent-medium);
+    border-top-color: var(--color-accent);
+    animation: spinner-rotate 0.7s linear infinite;
+}
+
+@keyframes spinner-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}

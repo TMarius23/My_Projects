@@ -1,0 +1,46 @@
+.app-layout {
+    position: relative;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    height: 100vh;
+    overflow: hidden;
+    background: var(--color-page-bg-dark);
+}
+
+.app-layout::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background-image: url("../../../assets/app-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.app-layout__content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    width: 100%;
+    padding: 28px 24px;
+    overflow: auto;
+}
+
+.app-layout__content > * {
+    position: relative;
+    z-index: 1;
+}
+
+.app-layout > .sidebar {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 820px) {
+    .app-layout {
+        grid-template-columns: 1fr;
+    }
+}

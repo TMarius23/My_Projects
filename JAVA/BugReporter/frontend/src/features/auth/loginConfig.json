@@ -1,0 +1,44 @@
+{
+  "title": "Bug Reporter",
+  "subtitle": "Authenticate to your operative console",
+  "alertTitle": "Account suspended",
+  "alertMessage": "Your account has been suspended. Please contact an administrator for assistance.",
+  "fields": {
+    "email": {
+      "label": "EMAIL",
+      "placeholder": "e.g. user@example.com",
+      "icon": "user"
+    },
+    "password": {
+      "label": "PASSWORD",
+      "placeholder": "",
+      "icon": "lock"
+    }
+  },
+  "submitLabel": "INITIALIZE SESSION",
+  "submittingLabel": "AUTHENTICATING...",
+  "registerPrompt": "New operative?",
+  "registerLinkLabel": "Register User Account",
+  "registerHref": "/register",
+  "validation": {
+    "email": {
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "messages": {
+        "required": "Email is required.",
+        "pattern": "Enter a valid email address."
+      }
+    },
+    "password": {
+      "minLength": 6,
+      "messages": {
+        "required": "Password is required.",
+        "minLength": "Password must be at least 6 characters."
+      }
+    }
+  },
+  "errors": {
+    "invalidCredentials": "Invalid credentials. Verify your email and password.",
+    "network": "Unable to reach authentication server. Check your connection.",
+    "unknown": "An unexpected error occurred. Please try again."
+  }
+}

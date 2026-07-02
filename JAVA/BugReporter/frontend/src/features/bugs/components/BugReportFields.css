@@ -1,0 +1,91 @@
+.bug-report-field {
+    display: grid;
+    gap: 10px;
+    padding: 18px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface-panel);
+    box-shadow: var(--shadow-panel), var(--inset-highlight);
+    backdrop-filter: blur(14px);
+}
+
+.bug-report-field span {
+    color: var(--color-text-on-dark-soft);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.bug-report-field input,
+.bug-report-field textarea {
+    width: 100%;
+    min-width: 0;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-control);
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+}
+
+.bug-report-field input::placeholder,
+.bug-report-field textarea::placeholder {
+    color: var(--color-placeholder);
+}
+
+.bug-report-field input {
+    min-height: 40px;
+    padding: 0 12px;
+}
+
+.bug-report-field textarea {
+    min-height: 190px;
+    resize: vertical;
+    padding: 12px;
+    line-height: 1.5;
+}
+
+.bug-report-field input:focus,
+.bug-report-field textarea:focus {
+    border-color: var(--color-accent-border-strong);
+    box-shadow: 0 0 0 3px var(--color-accent-soft);
+}
+
+.bug-report-image-preview {
+    display: grid;
+    gap: 10px;
+}
+
+.bug-report-image-preview img {
+    display: block;
+    max-width: 100%;
+    max-height: 240px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-image);
+    object-fit: contain;
+}
+
+.bug-report-image-preview button {
+    justify-self: start;
+    min-height: 32px;
+    padding: 0 12px;
+    border: 1px solid var(--color-danger-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-danger-bg);
+    color: var(--color-danger-text);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.bug-report-image-preview button:hover {
+    border-color: var(--color-danger-border-hover);
+    background: var(--color-danger-bg-hover);
+    box-shadow: var(--color-danger-shadow);
+}

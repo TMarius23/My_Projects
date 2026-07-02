@@ -1,0 +1,58 @@
+.vote-control button {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--color-placeholder);
+    font-size: 17px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.vote-control button:hover:not(:disabled),
+.vote-control button.is-selected {
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.vote-control button.is-selected {
+    color: var(--color-accent-text);
+}
+
+.vote-control button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.vote-control .vote-arrow {
+    width: 7px;
+    height: 7px;
+}
+
+.vote-control .vote-arrow--up {
+    border-top: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+    transform: translateY(2px) rotate(45deg);
+}
+
+.vote-control .vote-arrow--down {
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+}
+
+.vote-control strong {
+    display: grid;
+    place-items: center;
+    min-height: 18px;
+    color: var(--color-text-on-dark);
+    font-size: 13px;
+}

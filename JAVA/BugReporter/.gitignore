@@ -1,0 +1,41 @@
+# ===== Java / Maven / Gradle =====
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.mvn/wrapper/maven-wrapper.jar
+build/
+.gradle/
+out/
+
+# ===== Spring Boot =====
+application-local.properties
+application-local.yml
+
+# ===== Node / React =====
+node_modules/
+dist/
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== IDEs =====
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vite/

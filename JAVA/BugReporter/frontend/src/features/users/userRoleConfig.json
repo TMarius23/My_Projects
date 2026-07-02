@@ -1,0 +1,10 @@
+{
+  "MODERATOR": {
+    "label": "MODERATOR",
+    "modifier": "moderator"
+  },
+  "USER": {
+    "label": "USER",
+    "modifier": "user"
+  }
+}

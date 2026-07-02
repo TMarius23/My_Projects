@@ -1,0 +1,246 @@
+.moderator-users-page {
+    display: grid;
+    gap: 18px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.moderator-users-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.moderator-users-header p {
+    margin: 0 0 8px;
+    color: var(--color-accent);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.moderator-users-header h1 {
+    margin: 0;
+    color: var(--color-text-on-dark);
+    font-size: 28px;
+}
+
+.moderator-users-search {
+    position: relative;
+    width: min(360px, 100%);
+}
+
+.moderator-users-search span {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #8fa1b8;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.moderator-users-search span::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    bottom: -5px;
+    width: 7px;
+    height: 2px;
+    border-radius: var(--radius-pill);
+    background: #8fa1b8;
+    transform: rotate(45deg);
+}
+
+.moderator-users-search input {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 14px 0 38px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-control);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    outline: none;
+}
+
+.moderator-users-search input:focus {
+    border-color: var(--color-accent-border);
+    box-shadow: 0 0 0 3px var(--color-accent-soft);
+}
+
+.moderator-users-state,
+.moderator-users-empty {
+    padding: 18px;
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface-panel);
+    color: var(--color-text-on-dark-muted);
+    box-shadow: var(--shadow-panel), var(--inset-highlight);
+    backdrop-filter: blur(14px);
+}
+
+.moderator-users-table {
+    overflow: auto;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface-panel);
+    box-shadow: var(--shadow-panel), var(--inset-highlight);
+    backdrop-filter: blur(14px);
+}
+
+.moderator-users-table table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+}
+
+.moderator-users-table th,
+.moderator-users-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--color-border-muted);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.moderator-users-table th {
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark-soft);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.moderator-users-table td {
+    color: var(--color-text-on-dark-muted);
+    font-size: 13px;
+}
+
+.moderator-users-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.moderator-users-table tbody tr:hover {
+    background: rgba(19, 119, 242, 0.08);
+}
+
+.moderator-users-table strong {
+    color: var(--color-text-on-dark);
+    font-size: 14px;
+}
+
+.moderator-user-role,
+.moderator-user-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24px;
+    padding: 0 9px;
+    border-radius: var(--radius-pill);
+    background: var(--color-border-muted);
+    color: var(--color-tag-text);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.moderator-user-role--moderator {
+    background: var(--color-accent-soft);
+    color: var(--color-accent);
+}
+
+.moderator-user-status.is-banned {
+    background: rgba(127, 29, 29, 0.2);
+    color: var(--color-danger-text);
+}
+
+.moderator-user-status.is-active {
+    background: var(--color-accent-soft);
+    color: var(--color-accent);
+}
+
+.moderator-users-table button {
+    min-height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.moderator-users-table button:hover:not(:disabled) {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.moderator-users-table button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.moderator-users-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 14px;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface-panel);
+    box-shadow: var(--shadow-panel), var(--inset-highlight);
+    backdrop-filter: blur(14px);
+}
+
+.moderator-users-pagination button {
+    min-height: 34px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-panel-strong);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.moderator-users-pagination button:hover:not(:disabled) {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.moderator-users-pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.moderator-users-pagination span {
+    color: var(--color-text-on-dark-muted);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+@media (max-width: 760px) {
+    .moderator-users-header {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}

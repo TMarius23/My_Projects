@@ -1,0 +1,24 @@
+.bug-status-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 0 9px;
+    border-radius: var(--radius-pill);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.bug-status-badge--in_progress {
+    background: var(--color-status-progress-bg);
+    color: var(--color-status-progress-text);
+}
+
+.bug-status-badge--solved {
+    background: var(--color-accent);
+    color: var(--color-accent-contrast);
+}
+
+.bug-status-badge--received {
+    background: #fee2e2;
+    color: var(--color-status-received-text);
+}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+    <defs>
+        <linearGradient id="page" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#05070B"/>
+            <stop offset="0.46" stop-color="#081225"/>
+            <stop offset="1" stop-color="#0D1B33"/>
+        </linearGradient>
+        <radialGradient id="blueGlowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(220 120) rotate(48) scale(560 420)">
+            <stop offset="0" stop-color="#1377F2" stop-opacity="0.18"/>
+            <stop offset="1" stop-color="#1377F2" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="blueGlowTop" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(1660 160) rotate(120) scale(620 470)">
+            <stop offset="0" stop-color="#1377F2" stop-opacity="0.12"/>
+            <stop offset="1" stop-color="#1377F2" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="deepGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(1500 930) rotate(140) scale(640 420)">
+            <stop offset="0" stop-color="#0D1B33" stop-opacity="0.72"/>
+            <stop offset="1" stop-color="#0D1B33" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+            <path d="M72 0H0V72" stroke="#1377F2" stroke-opacity="0.07"/>
+        </pattern>
+        <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+            <circle cx="12" cy="12" r="1.2" fill="#FFFFFF" fill-opacity="0.07"/>
+        </pattern>
+        <filter id="softGlow" x="-80" y="-80" width="520" height="520" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+            <feDropShadow dx="0" dy="0" stdDeviation="28" flood-color="#1377F2" flood-opacity="0.16"/>
+        </filter>
+        <linearGradient id="rightFade" x1="1160" y1="0" x2="1920" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#05070B" stop-opacity="0"/>
+            <stop offset="1" stop-color="#05070B" stop-opacity="0.74"/>
+        </linearGradient>
+    </defs>
+
+    <rect width="1920" height="1080" fill="url(#page)"/>
+    <rect width="1920" height="1080" fill="url(#blueGlowLeft)"/>
+    <rect width="1920" height="1080" fill="url(#blueGlowTop)"/>
+    <rect width="1920" height="1080" fill="url(#deepGlow)"/>
+    <rect x="220" width="1700" height="1080" fill="url(#grid)" opacity="0.58"/>
+    <rect x="260" width="1660" height="1080" fill="url(#dots)" opacity="0.72"/>
+
+    <g opacity="0.58">
+        <path d="M0 1080L1920 0" stroke="#1377F2" stroke-opacity="0.15" stroke-width="3"/>
+        <path d="M0 865L1370 0" stroke="#1377F2" stroke-opacity="0.1" stroke-width="2"/>
+        <path d="M340 1080L1920 140" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+        <path d="M900 1080L1920 390" stroke="#1377F2" stroke-opacity="0.11" stroke-width="2"/>
+    </g>
+
+    <g opacity="0.75">
+        <circle cx="1560" cy="265" r="4" fill="#1377F2" fill-opacity="0.24"/>
+        <circle cx="1768" cy="468" r="5" fill="#1377F2" fill-opacity="0.24"/>
+        <circle cx="1710" cy="810" r="3" fill="#FFFFFF" fill-opacity="0.14"/>
+        <circle cx="1420" cy="706" r="4" fill="#1377F2" fill-opacity="0.18"/>
+    </g>
+
+    <g opacity="0.62">
+        <path d="M1384 110H1902" stroke="#1377F2" stroke-opacity="0.08" stroke-width="2"/>
+        <path d="M1368 360H1902" stroke="#1377F2" stroke-opacity="0.08" stroke-width="2"/>
+        <path d="M1368 610H1902" stroke="#1377F2" stroke-opacity="0.08" stroke-width="2"/>
+        <path d="M1368 860H1902" stroke="#1377F2" stroke-opacity="0.08" stroke-width="2"/>
+    </g>
+
+    <path d="M1550 100C1550 86.745 1560.75 76 1574 76H1902V1040H1574C1560.75 1040 1550 1029.25 1550 1016V100Z"
+          stroke="#1377F2" stroke-opacity="0.12" stroke-width="2"/>
+    <path d="M1628 160C1628 127.967 1653.97 102 1686 102H1902V978H1686C1653.97 978 1628 952.033 1628 920V160Z"
+          stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="2"/>
+    <rect width="1920" height="1080" fill="url(#rightFade)"/>
+
+    <g transform="translate(1515 690) rotate(-14) scale(13.8)" fill="#1377F2" fill-opacity="0.12"
+       filter="url(#softGlow)">
+        <path d="M12 2.5a3.5 3.5 0 0 0-3.46 3H7a1 1 0 1 0 0 2h.34a5.97 5.97 0 0 0-.84 2H5a1 1 0 1 0 0 2h1.07a6 6 0 0 0 .26 2H5a1 1 0 1 0 0 2h1.85a6 6 0 0 0 1.46 2H7a1 1 0 1 0 0 2h2.34c.79.32 1.66.5 2.66.5s1.87-.18 2.66-.5H17a1 1 0 1 0 0-2h-1.31a6 6 0 0 0 1.46-2H19a1 1 0 1 0 0-2h-1.33a6 6 0 0 0 .26-2H19a1 1 0 1 0 0-2h-1.5a5.97 5.97 0 0 0-.84-2H17a1 1 0 1 0 0-2h-1.54A3.5 3.5 0 0 0 12 2.5Z"/>
+    </g>
+</svg>

@@ -1,0 +1,173 @@
+.dropdown-menu {
+    position: relative;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-on-dark-soft);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.dropdown-menu--pill {
+    min-height: 38px;
+    padding: 0 10px 0 12px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-control);
+    transition: border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.dropdown-menu--pill:hover {
+    border-color: var(--interactive-hover-border);
+    box-shadow: var(--interactive-hover-shadow);
+}
+
+.dropdown-menu--block {
+    display: block;
+    min-width: 0;
+}
+
+.dropdown-menu__label {
+    white-space: nowrap;
+}
+
+.dropdown-menu__trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    min-height: 38px;
+    min-width: 118px;
+    padding: 0 12px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-control);
+    color: var(--color-text-on-dark);
+    font: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.dropdown-menu--pill .dropdown-menu__trigger {
+    min-height: 28px;
+    min-width: 110px;
+    padding: 0 0 0 2px;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.dropdown-menu--block .dropdown-menu__trigger {
+    width: 100%;
+    border-radius: var(--radius-control);
+    background: var(--color-surface-panel-strong);
+}
+
+.dropdown-menu__trigger:hover,
+.dropdown-menu__trigger:focus {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+    outline: none;
+}
+
+.dropdown-menu--pill .dropdown-menu__trigger:hover,
+.dropdown-menu--pill .dropdown-menu__trigger:focus {
+    background: transparent;
+    box-shadow: none;
+}
+
+.dropdown-menu__trigger:disabled {
+    cursor: default;
+    opacity: 0.65;
+}
+
+.dropdown-menu__chevron {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    transform: translateY(-2px) rotate(45deg);
+}
+
+.dropdown-menu__list {
+    position: absolute;
+    z-index: 25;
+    top: calc(100% + 6px);
+    display: grid;
+    min-width: 142px;
+    max-height: 260px;
+    overflow: auto;
+    padding: 6px;
+    border: 1px solid var(--color-border-control);
+    border-radius: 10px;
+    background: var(--color-surface);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.32);
+}
+
+.dropdown-menu--right .dropdown-menu__list {
+    right: 0;
+}
+
+.dropdown-menu--left .dropdown-menu__list {
+    left: 0;
+}
+
+.dropdown-menu--block .dropdown-menu__list {
+    left: 0;
+    right: 0;
+    top: calc(100% + 2px);
+    max-height: 310px;
+    padding: 0;
+    border-radius: var(--radius-control);
+}
+
+.dropdown-menu__item {
+    min-height: 34px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 7px;
+    background: transparent;
+    color: var(--color-text-on-dark-muted);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    transition: background var(--transition-base),
+    color var(--transition-base);
+}
+
+.dropdown-menu__item:hover,
+.dropdown-menu__item.is-selected {
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+}
+
+.dropdown-menu__empty {
+    margin: 0;
+    padding: 8px 10px;
+    color: #8a9bb3;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.dropdown-menu__list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.dropdown-menu__list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.dropdown-menu__list::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.42);
+}

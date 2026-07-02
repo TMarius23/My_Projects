@@ -1,0 +1,21 @@
+.state-message {
+    padding: 18px;
+    border: 1px dashed var(--color-border-subtle);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface-panel);
+    color: var(--color-text-on-dark-muted);
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: var(--shadow-panel), var(--inset-highlight);
+    backdrop-filter: blur(14px);
+}
+
+.state-message--error {
+    border-color: var(--color-danger-border);
+    color: var(--color-danger-text);
+}
+
+.state-message--success {
+    border-color: var(--color-accent-border-soft);
+    color: var(--color-accent-text);
+}

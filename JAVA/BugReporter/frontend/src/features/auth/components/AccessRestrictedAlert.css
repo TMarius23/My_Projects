@@ -1,0 +1,29 @@
+.access-alert {
+    background: var(--color-alert-bg);
+    border: 1px solid rgba(220, 38, 38, 0.18);
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    margin-bottom: 16px;
+}
+
+.access-alert__body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.access-alert__title {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-alert-title);
+}
+
+.access-alert__message {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--color-alert-text);
+}

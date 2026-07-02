@@ -1,0 +1,110 @@
+.bug-feed-page {
+    position: relative;
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.bug-feed-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bug-feed-top h1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    color: var(--color-text-on-dark);
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.bug-feed-refreshing {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 0 8px;
+    border: 1px solid var(--color-border-control);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-control);
+    color: var(--color-text-on-dark-soft);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.bug-feed-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 900px) 300px;
+    justify-content: center;
+    gap: 28px;
+}
+
+.bug-feed-grid--single {
+    grid-template-columns: minmax(0, 900px);
+}
+
+.bug-feed-list {
+    display: grid;
+    gap: 16px;
+    align-content: start;
+}
+
+.bug-feed-state {
+    padding: 18px;
+    border: 1px dashed var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface-panel);
+    color: var(--color-text-on-dark-muted);
+}
+
+.bug-feed-floating {
+    position: fixed;
+    right: 30px;
+    bottom: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: var(--color-accent-contrast);
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1;
+    text-decoration: none;
+    box-shadow: 0 16px 34px var(--color-accent-glow);
+    transition: background var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
+}
+
+.bug-feed-floating:hover {
+    background: var(--color-accent-gradient-hover);
+    box-shadow: var(--interactive-hover-shadow), 0 18px 42px var(--color-accent-glow);
+    transform: translateY(-1px);
+}
+
+.bug-feed-floating span {
+    display: block;
+    transform: translate(0, -2px);
+}
+
+@media (max-width: 1180px) {
+    .bug-feed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .bug-feed-top {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}

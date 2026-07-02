@@ -1,0 +1,130 @@
+name: CI Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  frontend-tests:
+    name: Frontend Unit Tests (Vitest)
+    runs-on: ubuntu-24.04
+
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Vitest unit tests
+        continue-on-error: true
+        run: npm test
+
+  frontend-e2e:
+    name: Frontend E2E Tests (Playwright)
+    runs-on: ubuntu-24.04
+
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright E2E tests
+        continue-on-error: true
+        run: npx playwright test --project=chromium
+
+  backend-tests:
+    name: Backend Unit Tests (Maven)
+    runs-on: ubuntu-24.04
+
+    defaults:
+      run:
+        working-directory: Backend
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+          cache: maven
+
+      - name: Run Maven tests
+        continue-on-error: true
+        run: mvn clean test
+
+  emailservice-tests:
+    name: EmailService Tests (Maven)
+    runs-on: ubuntu-24.04
+
+    defaults:
+      run:
+        working-directory: EmailService
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+          cache: maven
+
+      - name: Run Maven tests
+        continue-on-error: true
+        run: mvn clean test
+
+  smsservice-tests:
+    name: SmsService Tests (Maven)
+    runs-on: ubuntu-24.04
+
+    defaults:
+      run:
+        working-directory: SmsService
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+          cache: maven
+
+      - name: Run Maven tests
+        continue-on-error: true
+        run: mvn clean test

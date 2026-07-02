@@ -1,0 +1,40 @@
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.page-footer__register {
+    margin: 0;
+    font-size: 13px;
+    color: var(--color-text-on-dark-soft);
+}
+
+.page-footer__register-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: background var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.page-footer__register-link:hover,
+.page-footer__register-link:focus-visible {
+    border-color: var(--interactive-hover-border);
+    background: var(--interactive-hover-bg);
+    color: var(--interactive-hover-color);
+    box-shadow: var(--interactive-hover-shadow);
+    text-decoration: none;
+    outline: none;
+}
