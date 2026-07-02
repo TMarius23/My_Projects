@@ -1,0 +1,7 @@
+SELECT status , 
+CASE cod 
+    WHEN '1' THEN 'In_Asteptare';
+    WHEN '2' THEN 'Aprobat';
+    ELSE 'Respins' ; 
+END 
+FROM comenzi ;

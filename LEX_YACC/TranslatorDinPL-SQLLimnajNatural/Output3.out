@@ -1,0 +1,4 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se extrage coloana 'status' si se evalueaza o conditie pe coloana 'cod': daca valoarea este '1' atunci rezultatul e 'In_Asteptare'; daca valoarea este '2' atunci rezultatul e 'Aprobat', iar in orice alt caz va fi 'Respins' din tabelul 'comenzi'.
+
+Parsing finalizat cu succes!

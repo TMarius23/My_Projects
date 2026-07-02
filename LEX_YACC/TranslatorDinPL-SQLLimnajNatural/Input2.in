@@ -1,0 +1,6 @@
+SELECT rol ,
+CASE owner 
+    WHEN 'ADMIN' THEN 'AccesTotal';
+    ELSE 'AccesLimitat' ; 
+END 
+FROM utilizatori ;

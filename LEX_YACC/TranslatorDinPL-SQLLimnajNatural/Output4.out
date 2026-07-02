@@ -1,0 +1,6 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se creeaza (sau inlocuieste) declansatorul (trigger) numit 'trg_salariu', care se va executa inainte de operatiunii de inserare asupra tabelului 'angajati', aplicandu-se individual pentru fiecare rand modificat. 
+Logica acestuia este urmatoarea: Se executa urmatoarele: 
+  - Se salveaza tranzactia in baza de date (COMMIT).
+
+Parsing finalizat cu succes!

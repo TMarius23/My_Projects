@@ -1,0 +1,9 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se defineste procedura 'adauga_student' care primeste parametrul 'nume_student' (de tip 'varchar').
+ 
+In interior: Se executa urmatoarele: 
+  - Se insereaza in tabelul 'studenti' valorile ('nume_student', 'clasa_noua') pe coloanele ('nume', 'clasa').
+  - Se salveaza tranzactia in baza de date (COMMIT). 
+
+
+Parsing finalizat cu succes!

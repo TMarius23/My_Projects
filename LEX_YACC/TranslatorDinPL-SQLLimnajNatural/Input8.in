@@ -1,0 +1,6 @@
+CREATE OR REPLACE PROCEDURE adauga_student ( nume_student varchar ) 
+IS 
+BEGIN
+    INSERT INTO studenti ( nume , clasa ) VALUES ( nume_student , clasa_noua ) ; 
+    COMMIT ; 
+END ;

@@ -1,0 +1,6 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se creeaza (sau inlocuieste) declansatorul (trigger) numit 'trg_vizualizare', care se va executa in loc de operatiunii de stergere asupra tabelului 'vizualizare_clienti', aplicandu-se individual pentru fiecare rand modificat. 
+Logica acestuia este urmatoarea: Se declara variabila 'id_sters' (tip 'numar'). Apoi se executa urmatoarele: 
+  - Daca [stergere_invalida], atunci se executa operatiunea: [opreste_stergere].
+
+Parsing finalizat cu succes!

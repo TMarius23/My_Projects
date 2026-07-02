@@ -1,0 +1,8 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se extrage coloana 'rol' si se evalueaza o
+ conditie pe coloana 'owner': daca valoarea este 
+ 'ADMIN' atunci rezultatul e 'AccesTotal', iar in 
+ orice alt caz va fi 'AccesLimitat' din tabelul
+  'utilizatori'.
+
+Parsing finalizat cu succes!

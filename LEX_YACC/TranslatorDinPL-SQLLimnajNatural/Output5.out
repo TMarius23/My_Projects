@@ -1,0 +1,6 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se creeaza (sau inlocuieste) declansatorul (trigger) numit 'trg_audit', care se va executa dupa operatiunii de actualizare sau stergere asupra tabelului 'clienti', aplicandu-se o singura data pentru toata tranzactia. 
+Logica acestuia este urmatoarea: Se executa urmatoarele: 
+  - Se salveaza tranzactia in baza de date (COMMIT).
+
+Parsing finalizat cu succes!

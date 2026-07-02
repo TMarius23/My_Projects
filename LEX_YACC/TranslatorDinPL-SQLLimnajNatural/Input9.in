@@ -1,0 +1,8 @@
+CREATE OR REPLACE PROCEDURE actualizare_stoc ( id_produs numar ) 
+IS 
+    DECLARE stoc_curent numar ; 
+BEGIN
+    IF stoc_insuficient THEN comanda_furnizor ; END IF ; 
+    INSERT INTO istoric ( produs , actiune ) VALUES ( id_produs , actiune_stoc ) ; 
+    COMMIT ; 
+END ;

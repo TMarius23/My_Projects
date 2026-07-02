@@ -1,0 +1,7 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se creeaza (sau inlocuieste) declansatorul (trigger) numit 'trg_istoric', care se va executa dupa operatiunii de actualizare asupra tabelului 'inventar', aplicandu-se individual pentru fiecare rand modificat. 
+Logica acestuia este urmatoarea: Se executa urmatoarele: 
+  - Se insereaza in tabelul 'log_inventar' valorile ('id_vechi', 'id_nou') pe coloanele ('id_produs', 'modificare').
+  - Se salveaza tranzactia in baza de date (COMMIT).
+
+Parsing finalizat cu succes!

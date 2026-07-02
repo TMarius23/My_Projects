@@ -1,0 +1,10 @@
+--- TRADUCERE IN LIMBAJ NATURAL ---
+Se defineste procedura 'actualizare_stoc' care primeste parametrul 'id_produs' (de tip 'numar').
+ 
+In interior: Se declara variabila 'stoc_curent' (tip 'numar'). Apoi se executa urmatoarele: 
+  - Daca [stoc_insuficient], atunci se executa operatiunea: [comanda_furnizor].
+  - Se insereaza in tabelul 'istoric' valorile ('id_produs', 'actiune_stoc') pe coloanele ('produs', 'actiune').
+  - Se salveaza tranzactia in baza de date (COMMIT). 
+
+
+Parsing finalizat cu succes!

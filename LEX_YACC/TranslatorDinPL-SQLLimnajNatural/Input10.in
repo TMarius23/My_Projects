@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER trg_istoric 
+AFTER UPDATE ON inventar 
+FOR EACH ROW 
+BEGIN
+    INSERT INTO log_inventar ( id_produs , modificare ) VALUES ( id_vechi , id_nou ) ; 
+    COMMIT ; 
+END ;

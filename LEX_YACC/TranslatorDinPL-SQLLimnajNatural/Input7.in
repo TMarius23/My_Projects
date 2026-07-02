@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER trg_vizualizare 
+INSTEAD OF DELETE ON vizualizare_clienti 
+FOR EACH ROW 
+DECLARE id_sters numar ; 
+BEGIN
+    IF stergere_invalida THEN opreste_stergere ; END IF ; 
+END ;
